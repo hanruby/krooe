@@ -1,0 +1,7 @@
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\bin\Release\EntLibHelper.dll
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\bin\Release\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\obj\Release\TimeLive.SmartMassEmail.EntLibHelper.csprojResolveAssemblyReference.cache
+C:\Users\John David Chibuk\Dropbox\Project-K\Code\Krooe\SmartMassEMail\EntLibHelper\obj\Release\EntLibHelper.dll

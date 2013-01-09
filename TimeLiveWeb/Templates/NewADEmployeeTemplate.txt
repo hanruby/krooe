@@ -1,0 +1,40 @@
+Welcome to Krooe!
+
+Your Krooe account has been created. 
+
+TimeLive Login Information
+----------------------
+
+Login Username	: [username]
+Login URL		: [url]
+
+What to do next?
+----------------
+1. Krooe is a Time Management system with support of managing
+   a. Projects
+   b. Tasks
+   c. TimeSheet
+   d. Employees
+   e. Employees Attendance
+
+2. Login to Your Account by using the login link.
+   Your login data is given above.
+
+3. Krooe support multi-Location organization.  Location represents branches / sites of 
+   an organization.  You can create new Locations under "Administrations", "Locations".  
+
+4. Create new members under "Administration", "Employees" in Your Krooe Administration menu.
+   Krooe will create an Employee account and will send New TimeLive account notification 
+   automatically.
+   
+5. Want to be informed without login on Krooe.  Just subscribe yourself for different 
+   scheduled reports which will be send to your email address automatically.
+
+We wish You a lot of success with Your new Krooe account.
+If You have any remarks or questions feel free to contact us via e-mail anytime.
+
+Best regards,
+
+Krooe Support team
+
+e-mail support@krooe.com

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/TimeLiveWeb/global.asax" hash="31cb5409" filehash="290d8e0a68a0" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/TimeLiveWeb/global.asax" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,10 @@
+<%@ master language="VB" masterpagefile="~/Masters/MasterPageBase.master" inherits="Masters_MasterPageNoAjax, App_Web_yep1isxn" %>
+<%@ Register Src="~/Home/Controls/ctlOfferIcon.ascx" TagName="ctlOfferIcon" TagPrefix="uc7" %>
+<asp:Content ID="C2" ContentPlaceHolderID="C" Runat="Server">
+	<tr>
+	    <td valign=top width="15%"><uc7:ctlOfferIcon ID="CtlOfferIcon1" runat="server" /></td>
+	    <td valign=top width="85%" style="padding:5px;"><asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+                                      </asp:ContentPlaceHolder>
+         </td>
+    </tr>  
+</asp:Content>

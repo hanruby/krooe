@@ -1,0 +1,10 @@
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\bin\Release\LiveTools.dll
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\bin\Release\LiveTools.pdb
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\bin\Release\LiveTools.xml
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\ResolveAssemblyReference.cache
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\LiveTools.Resources.resources
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\ResGen.read.1.tlog
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\ResGen.write.1.tlog
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\LiveTools.dll
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\LiveTools.xml
+D:\Livetecs\TimeLive\Build\4.1.1\LiveTools\obj\Release\LiveTools.pdb

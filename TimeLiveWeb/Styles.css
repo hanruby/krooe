@@ -1,0 +1,454 @@
+/* Default CSS Stylesheet for a new Web Application project */
+html, body, form {
+  height: 100%;
+  margin: 0 0 0 0;}
+BODY, SPAN, INPUT, TEXTAREA, SELECT, INPUT{ 
+	font-size: 11px;
+	font-family:tahoma;
+	color: #333333;}
+A{
+	font-size: 11px;}
+/* Navigation */
+#navigation {
+	FONT-SIZE: 11px; LEFT: 1em; WIDTH: 14em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; POSITION: absolute; TOP: 5em
+}
+#navigation UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#navigation LI {
+	BORDER-BOTTOM: #000033 1px solid
+}
+#navigation LI A{
+	border-right: 1px solid #CCCCCC;
+	padding-right: 5px;
+	display: block;
+	padding-left: 0.5em;
+	padding-bottom: 5px;
+	border-left: 12px solid #CCCCCC;
+	color: #FFFFFF;
+	padding-top: 5px;
+	background-color: #000033;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	FONT-SIZE: xx-small;}
+#navigation LI A:hover{
+	color: #ffffff;
+	background-color: navy;}
+#navigation UL UL {
+	MARGIN-LEFT: 12px}
+#navigation UL UL LI {
+	MARGIN: 0px; COLOR: #000000; BORDER-BOTTOM: #711515 1px solid; BACKGROUND-COLOR: #FFFFFF}
+#navigation UL UL A:link {
+	COLOR: #000033; BACKGROUND-COLOR: #FFFFFF}
+#navigation UL UL A:visited {
+	COLOR: #000033; BACKGROUND-COLOR: #FFFFFF}
+#navigation UL UL A:hover {
+	COLOR: #000000; BACKGROUND-COLOR: #CCCCCC}
+.ErrorMessage{
+	color: red;}
+.TopNavigationLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;}
+ .TopNavigationLink A:link {
+	MARGIN-TOP: 4px; 
+	FONT-WEIGHT: normal; 
+	text-decoration: none;
+	FONT-SIZE: 12px; 
+	font-weight: bold;
+	MARGIN-BOTTOM: 4px; 
+	COLOR: #ffffff; }
+.TopNavigationLink A:hover {
+	COLOR: #ffffff; 
+	font-weight: bold;
+	text-decoration: none;}
+.TopNavigationLink A:active {
+	COLOR: #ffffff; 
+	font-weight: bold;
+	text-decoration: none;}
+.TopNavigationLink A:visited {
+	COLOR: #ffffff; 
+	text-decoration: none;
+	FONT-SIZE: 12px; }
+.reqasterisk {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: -2px; COLOR: red}
+.ParentTaskStyle{
+	font-weight: bold;
+	text-decoration: underline;}
+#member  {
+	width:225px;
+	float:right;}
+table.member td.heading{
+	background: black;
+	color: white;
+	font-size:12px;
+	text-align:left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: solid 1px #7f7f7f;}
+table.member td{
+	padding:0 4 0 4;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	vertical-align:middle;}
+table.member td.withline{
+	padding: 0 4 0 4;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	vertical-align: middle;}
+table.member td.withrightline{
+	padding: 0 4 0 4;
+	border-top: black 1px solid;
+	border-right: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	vertical-align: middle;}
+table.member{
+	background: #EBF4FA;
+	color: black;
+	font-weight: bold;}
+table.member label{
+	font: bold 11px/22px "Trebuchet MS" , Arial, Helvetica, sans-serif;
+	float: left;
+	display: block;}
+table.member input.txtBox{
+	width:330px;
+	height:19px;
+	color:#000;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+	float:left;}
+table.member a{
+	text-decoration:underline;
+	text-align:center;
+	color:Red;}
+table.member input.go{
+	width:66px;
+	cursor:pointer;
+	height:px;}
+.xGridView{
+	font-family: tahoma;
+	font-size: 11px;
+	border: solid 1px #7f7f7f;
+    border-collapse:collapse;	
+    color: #333333;
+    width:100%;}
+.xGridView th a{
+	color: #333333;
+	font-weight: bold;
+	text-decoration: none;
+	text-align:center;}
+.xGridView th {
+	text-align:center;}
+.xGridView caption {
+	background: #000033;
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+	text-align:left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: solid 1px #7f7f7f;}
+.xGridView td.caption {
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+	text-align:left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: solid 1px #7f7f7f;}
+.intab  {
+	border:  0px ;text-align:center;}
+.intab  td  {
+	border: 0px;}
+.intab tr  {
+	border: 0px;}
+.altrow{
+	background-color: #EBF4FA;	}
+.row{
+    background-color: #fff;}
+.xGridView td {
+    border-bottom: solid 1px #BBD9EE;
+    height:18px;
+    border-left: #cbcbcb 1px solid;}
+.xGridView td.labeltext{
+	text-align: right;}
+.xGridView th{
+	background: url(images/sprite.png) repeat-x 0px 0px;
+	vertical-align: bottom;
+	text-align: center;
+	border-right: #cbcbcb 0px solid;
+	border-top: #989898 1px solid;
+	border-left: #cbcbcb 1px solid;
+	border-bottom: #989898 1px solid;}
+.xGridView td.FormViewSubHeader{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	height: 24px;
+	font-size:14px;
+	border-top: solid 5px #BBD9EE;
+	border-bottom: solid 5px #BBD9EE;}
+.xGridView th input{
+    width:99%;}
+.xGridView select[disabled]{
+  color:black;
+  background-color:Transparent;}
+.xGridView input[disabled]{
+  color:black;
+  background-color:Transparent;}
+.edit_button a {
+	display: block;
+	overflow: hidden;    
+	background:  url('images/edit.gif') top center no-repeat;    
+	width: 50px;    
+	height:14px;
+	text-decoration: none; }
+.edit_button{
+	vertical-align:middle;
+	text-indent: -1000px;
+	text-align:center;
+}
+.delete_button a {
+	display: block;
+	overflow: hidden;    
+	background:  url('images/delete.gif') top center no-repeat;    
+	width: 50px;    
+	height:14px;
+	text-decoration: none;}
+.delete_button{
+	vertical-align:middle;
+	text-indent: -1000px;
+	text-align:center;}
+.status_button{
+	vertical-align:middle;
+	text-align:center;}
+.xFormView, xFormViewWithoutBorder{
+	font-size: 11px;
+	border: solid 1px #7f7f7f;
+    border-collapse:collapse;	
+    color: #333333;
+    font-family: tahoma;}
+.xFormView table{
+	font-size: 11px;
+	border: solid 1px #7f7f7f;
+    border-collapse:collapse;	
+    color: #333333;}	
+.xFormView td.caption, .xFormViewWithoutBorder td.caption {
+	background: #000033;
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+	text-align:left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: solid 1px #7f7f7f;}
+.xFormView td {
+	color:#333333;
+    padding: 1px 1px 1px 1px;
+    border-bottom: solid 1px #BBD9EE;}
+.xFormViewWithoutBorder td {
+	color:#333333;
+    padding: 1px 1px 1px 1px;
+    height:8px;
+	font-size:12px;}
+.xFormViewWithoutBorder a {
+	color:#333333;
+    padding: 1px 1px 1px 1px;
+    height:8px;
+    font-size:12px;
+    font-weight:bold;}
+.xFormView td.FormViewLabelCell, .xFormViewWithoutBorder td.FormViewLabelCell{
+	text-align:right;}
+.xFormView td.FormViewLabelCellWithBorder, .xFormViewWithoutBorder td.FormViewLabelCellWithBorder{
+	text-align:right;
+	border-right: solid 1px #BBD9EE;
+	font-weight:bold;
+	height:22px;}
+.xFormView td.FormViewLabelCellBold, td.FormViewLabelCellBold, .xFormViewWithoutBorder td.FormViewLabelCellBold, td.FormViewLabelCellBold{
+	text-align:right;
+	font-weight:bold;}
+.xFormView td.FormViewSubHeader, .xFormViewWithoutBorder td.FormViewSubHeader{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	height: 24px;
+	font-size:13px;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;}
+.xFormView td.HighlightedText, .xFormViewWithoutBorder td.HighlightedText{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	height: 24px;
+	font-size:11px;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;}
+.xFormView td.HighlightedTextMedium, .xFormViewWithoutBorderMedium td.HighlightedTextMedium{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	height: 24px;
+	font-size:11px;
+	font-family:Tahoma;
+	vertical-align:middle;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;}
+.xFormView td.HighlightedTextLarge, .xFormViewWithoutBorderLarge td.HighlightedTextLarge{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	height: 24px;
+	font-size:14px;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;
+	height: 30px;}
+.tmtb{
+	border:none;
+    width:100%;}
+.tmtb td{
+	border:none;
+	height: 6px;}
+.xTableWithoutBorder{
+	border:none;
+    color: #333333;
+    width:100%;}
+.xTableWithoutBorder td{
+	color: #333333;
+	border-bottom: medium none;
+	height: 6px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;}
+.BlockTable {
+	BORDER-RIGHT: #c5d0de 1px solid; BORDER-TOP: #c5d0de 1px solid; BORDER-LEFT: #c5d0de 1px solid;  BORDER-BOTTOM: #c5d0de 1px solid; 
+	BACKGROUND-COLOR: #eff3f6;
+	font-size: 11px;
+	color: #505050;
+	font-family: Tahoma;}
+TD.block {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px ;
+	font-size: 11px;
+	color: #505050;
+	font-family: Tahoma;}
+.collapsePanel{
+	position: absolute;
+	height: 400px;
+	width: 0px;
+	overflow: hidden;
+	background-color: transparent;
+	float: left;}
+.collapsePanelHeader {
+	position: absolute;
+    width: 25px;
+    height: 50px;
+    cursor: pointer;
+    float: left;}
+.Splitter{
+	border: 0px solid #333333;}
+.SplitterDrag{
+	background-color: #000000;  
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); 
+	opacity: 0.6;}
+.SplitterHover{
+	background-color: #888888;  
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); 
+	opacity: 0.6;}
+.SplitterCollapsedHorizontal{
+	border: 0px solid #000000;
+	border-bottom-width: 0px;}
+.SplitterCollapsedVertical{
+	border: 0px solid #000000;
+	border-right-width: 0px;}
+.PanelStyle1{
+	width:100%;
+	height:100%;}
+.PanelStyle2{
+	width:100%;
+	height:100%;}
+.PanelStyle3{
+	text-align:center;width:100%;height:100%;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+	(GradientType=0, StartColorStr='#0099FF33', EndColorStr='#50000000')}
+.innerPopup, .IP
+{
+    border-top: #505050 0px solid;
+	border-bottom: #505050 0px solid;
+	border-right: #505050 0px solid;
+	border-left: #505050 0px solid;
+	background-color: #505050 ;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2.5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width:208px;
+}
+.PL 
+{
+    font-weight: bold;
+    font-family: tahoma;
+	font-size: 11px;
+	text-align: left;
+	color: white;
+	width: 200px;
+	display:inline-block;
+	width:200px;
+	}
+.pt{
+	height:60px;
+	width:200px;
+	}
+.lighttable{
+	border-right: #cbcbcb 1px solid;
+	border-top: #cbcbcb 1px solid;
+	border-left: #cbcbcb 1px solid;
+	border-bottom: #cbcbcb 1px solid;}
+table.full-height {
+  height:100%;
+  width:100%;
+  border:1px solid black;}
+.bolda{
+	color: #333333;
+	font-weight: bold;
+	text-align:center;
+	text-decoration:underline;}
+input.hiddenButton {
+	font-size: 1em;
+	color: transparent; /* Fix for Firefox */
+	border-style: none;
+	border-width: 0;padding: 0 0 0 16px !important; /* Fix for Internet Explorer */     
+	text-align: left;
+	width: 16px;height: 16px;
+	line-height: 1 !important;
+	background: transparent url(../images/button.gif) no-repeat scroll 0 0;
+	overflow: hidden;cursor: pointer;}

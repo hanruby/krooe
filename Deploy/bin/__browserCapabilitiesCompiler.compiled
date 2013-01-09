@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/TimeLiveWeb/App_Browsers/" hash="31cb5409" filehash="ffffccf05d47bd58" flags="110000" assembly="App_Browsers" type="ASP.ApplicationBrowserCapabilitiesFactory">
+    <filedeps>
+        <filedep name="/TimeLiveWeb/App_Browsers/PageStateAdapter.browser" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,4554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="]" xml:space="preserve">
+    <value>Fare clic su "Vai alla pagina di accesso" per passare alla pagina di login.</value>
+  </data>
+  <data name="&lt;All&gt;" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="&lt;None&gt;" xml:space="preserve">
+    <value>&lt;Nessuno&gt;</value>
+  </data>
+  <data name="&lt;RootLevel&gt;" xml:space="preserve">
+    <value>&lt;RootLivello&gt;</value>
+  </data>
+  <data name="100% satisfaction guaranteed or your money back" xml:space="preserve">
+    <value>Soddisfatti o rimborsati</value>
+  </data>
+  <data name="24x7 Customer Support" xml:space="preserve">
+    <value>Servizio di assistenza clienti 24x7</value>
+  </data>
+  <data name="30 Day Money Back Guarantee" xml:space="preserve">
+    <value>30 giorni di garanzia per rimborso</value>
+  </data>
+  <data name="Absence" xml:space="preserve">
+    <value>Assenza</value>
+  </data>
+  <data name="Absence Description" xml:space="preserve">
+    <value>Descrizione Assenza</value>
+  </data>
+  <data name="Absence Description:" xml:space="preserve">
+    <value>Descrizione Assenza:</value>
+  </data>
+  <data name="Absence Summary Report" xml:space="preserve">
+    <value>Riepilogo Assenze</value>
+  </data>
+  <data name="Absence Type" xml:space="preserve">
+    <value>Tipo Assenza</value>
+  </data>
+  <data name="Absence Type Information" xml:space="preserve">
+    <value>Informazioni tipo assenza</value>
+  </data>
+  <data name="Absence Type List" xml:space="preserve">
+    <value>Elenco tipi assenza</value>
+  </data>
+  <data name="Absence Types" xml:space="preserve">
+    <value>Tipi Assenza</value>
+  </data>
+  <data name="Absence:" xml:space="preserve">
+    <value>Assenza:</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>Assente</value>
+  </data>
+  <data name="Access Allowed From IP:" xml:space="preserve">
+    <value>Accesso consentito dagli IP:</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Conto</value>
+  </data>
+  <data name="Account Disable" xml:space="preserve">
+    <value>Disabilita account</value>
+  </data>
+  <data name="Account Employee Timesheet Submission Status Report" xml:space="preserve">
+    <value>Report sullo stato del Timesheet dipendente</value>
+  </data>
+  <data name="Account Expiry" xml:space="preserve">
+    <value>Scadenza account</value>
+  </data>
+  <data name="Account Id" xml:space="preserve">
+    <value>ID account</value>
+  </data>
+  <data name="Account Information (Organization Information)" xml:space="preserve">
+    <value>Informazioni account </value>
+  </data>
+  <data name="Account Invoice Form" xml:space="preserve">
+    <value>Modello fattura</value>
+  </data>
+  <data name="Account Location" xml:space="preserve">
+    <value>Account Location</value>
+  </data>
+  <data name="Account Login" xml:space="preserve">
+    <value>Login Account</value>
+  </data>
+  <data name="Account Name" xml:space="preserve">
+    <value>Nome account:</value>
+  </data>
+  <data name="Account Priority" xml:space="preserve">
+    <value>Priorità di cliente</value>
+  </data>
+  <data name="Account Setup" xml:space="preserve">
+    <value>Impostazione account</value>
+  </data>
+  <data name="Account Time Expense Billing" xml:space="preserve">
+    <value>Conto Time Billing spese</value>
+  </data>
+  <data name="Account Time Expense Billing Information" xml:space="preserve">
+    <value>Conto Time Billing Information spese</value>
+  </data>
+  <data name="Account Type Id" xml:space="preserve">
+    <value>ID tipo account</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Attivare</value>
+  </data>
+  <data name="Activation Failed" xml:space="preserve">
+    <value>Attivazione non riuscita</value>
+  </data>
+  <data name="Activation_text" xml:space="preserve">
+    <value>Attivazione</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Attivo</value>
+  </data>
+  <data name="Active Status:" xml:space="preserve">
+    <value>Stato attivo:</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>Attività</value>
+  </data>
+  <data name="Activity Code" xml:space="preserve">
+    <value>Codice Attività</value>
+  </data>
+  <data name="Activity Name" xml:space="preserve">
+    <value>Nome attività</value>
+  </data>
+  <data name="Actual Amount" xml:space="preserve">
+    <value>Importo effettivo</value>
+  </data>
+  <data name="Actual Amount (BaseCurrency)" xml:space="preserve">
+    <value>Importo effettivo (valuta di base)</value>
+  </data>
+  <data name="Actual Billing Rate" xml:space="preserve">
+    <value>Fatturazione tasso reale</value>
+  </data>
+  <data name="Actual Cost (BaseCurrency)" xml:space="preserve">
+    <value>Costo effettivo (valuta di base)</value>
+  </data>
+  <data name="Actual Hours" xml:space="preserve">
+    <value>Ore effettive</value>
+  </data>
+  <data name="Actual Time" xml:space="preserve">
+    <value>Tempo effettivo di</value>
+  </data>
+  <data name="Add New Expense Sheet" xml:space="preserve">
+    <value>Aggiungi una nuova spesa </value>
+  </data>
+  <data name="Add New Report" xml:space="preserve">
+    <value>Aggiungi un nuovo report</value>
+  </data>
+  <data name="Add Task" xml:space="preserve">
+    <value>Aggiungi un'operazione</value>
+  </data>
+  <data name="Add Time Off Request" xml:space="preserve">
+    <value>Aggiungere Time Off Richiesta</value>
+  </data>
+  <data name="Add_text" xml:space="preserve">
+    <value>Aggiungere</value>
+  </data>
+  <data name="Address Line 1:" xml:space="preserve">
+    <value>Indirizzo 1:</value>
+  </data>
+  <data name="Address Line 2:" xml:space="preserve">
+    <value>Indirizzo Riga 2:</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Indirizzo1</value>
+  </data>
+  <data name="Address1:" xml:space="preserve">
+    <value>Indirizzo1:</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Indirizzo2</value>
+  </data>
+  <data name="Address2:" xml:space="preserve">
+    <value>Indirizzo2:</value>
+  </data>
+  <data name="Admin Options" xml:space="preserve">
+    <value>Admin Options</value>
+  </data>
+  <data name="Admin Pages" xml:space="preserve">
+    <value>Admin Pages</value>
+  </data>
+  <data name="Admin Reports" xml:space="preserve">
+    <value>Admin Reports</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Administrator / Project Reports" xml:space="preserve">
+    <value>Administrator / Project Reports</value>
+  </data>
+  <data name="Administrator Password:" xml:space="preserve">
+    <value>Administrator Password:</value>
+  </data>
+  <data name="Administrator Username:" xml:space="preserve">
+    <value>Administrator Username:</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avanzato</value>
+  </data>
+  <data name="Air" xml:space="preserve">
+    <value>Aereo</value>
+  </data>
+  <data name="Air Travel" xml:space="preserve">
+    <value>Viaggi aerei</value>
+  </data>
+  <data name="Airport Tax" xml:space="preserve">
+    <value>Tassa aeroportuale</value>
+  </data>
+  <data name="Airport Tax :" xml:space="preserve">
+    <value>Tasse aeroportuali:</value>
+  </data>
+  <data name="Airport Tax:" xml:space="preserve">
+    <value>Tasse aeroportuali:</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="All Client Report" xml:space="preserve">
+    <value>Clienti</value>
+  </data>
+  <data name="All Clients of Organization" xml:space="preserve">
+    <value>Clienti per organizzazione</value>
+  </data>
+  <data name="All Clients Report" xml:space="preserve">
+    <value>Clienti</value>
+  </data>
+  <data name="All Department Report" xml:space="preserve">
+    <value>Reparti</value>
+  </data>
+  <data name="All Departments of Organization" xml:space="preserve">
+    <value>Reparti per organizzazione</value>
+  </data>
+  <data name="All Departments Report" xml:space="preserve">
+    <value>Reparti</value>
+  </data>
+  <data name="All Employee Task:" xml:space="preserve">
+    <value>Operazioni per dipendente</value>
+  </data>
+  <data name="All Employees Of Organization" xml:space="preserve">
+    <value>Dipendenti per organizzazione</value>
+  </data>
+  <data name="All Employees Report" xml:space="preserve">
+    <value>Dipendenti</value>
+  </data>
+  <data name="All Expenses" xml:space="preserve">
+    <value>Spese</value>
+  </data>
+  <data name="All External User Report" xml:space="preserve">
+    <value>Utenti esterni</value>
+  </data>
+  <data name="All External Users Report" xml:space="preserve">
+    <value>Utenti esterni</value>
+  </data>
+  <data name="All Location Report" xml:space="preserve">
+    <value>Sedi</value>
+  </data>
+  <data name="All Locations Report" xml:space="preserve">
+    <value>Sedi</value>
+  </data>
+  <data name="All Open Expenses" xml:space="preserve">
+    <value>Spese "aperte"</value>
+  </data>
+  <data name="All Project Task:" xml:space="preserve">
+    <value>Operazioni:</value>
+  </data>
+  <data name="All Projects of Organization" xml:space="preserve">
+    <value>Tutti i progetti di Organizzazione</value>
+  </data>
+  <data name="All Projects Report" xml:space="preserve">
+    <value>Progetti</value>
+  </data>
+  <data name="Allow All" xml:space="preserve">
+    <value>Consenti tutto</value>
+  </data>
+  <data name="Allow Customization" xml:space="preserve">
+    <value>Consentire la personalizzazione</value>
+  </data>
+  <data name="Allow Own Approval" xml:space="preserve">
+    <value>Consenti Approvazione Propria</value>
+  </data>
+  <data name="Allow Own Project" xml:space="preserve">
+    <value>Consenti progetto proprio</value>
+  </data>
+  <data name="Allow Own Report" xml:space="preserve">
+    <value>Consenti report proprio</value>
+  </data>
+  <data name="Allow Own Sub-Ordinates" xml:space="preserve">
+    <value>Consentire una sua sub-ordinate</value>
+  </data>
+  <data name="Allow Own Team" xml:space="preserve">
+    <value>Consenti proprio Team</value>
+  </data>
+  <data name="Alls" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="American Express" xml:space="preserve">
+    <value>American Express</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Importo</value>
+  </data>
+  <data name="Amount (BaseCurrency)" xml:space="preserve">
+    <value>Importo (valuta di base)</value>
+  </data>
+  <data name="Amount:" xml:space="preserve">
+    <value>Importo:</value>
+  </data>
+  <data name="Application Preference" xml:space="preserve">
+    <value>Applicazione preferenza</value>
+  </data>
+  <data name="Application Preferences" xml:space="preserve">
+    <value>Applicazione delle preferenze</value>
+  </data>
+  <data name="Application Setup" xml:space="preserve">
+    <value>Applicazione di installazione</value>
+  </data>
+  <data name="Approval Date" xml:space="preserve">
+    <value>Data di approvazione</value>
+  </data>
+  <data name="Approval Not Required" xml:space="preserve">
+    <value>Approvazione non richiesta</value>
+  </data>
+  <data name="Approval Path" xml:space="preserve">
+    <value>Percorso di approvazione </value>
+  </data>
+  <data name="Approval Sequence" xml:space="preserve">
+    <value>Sequenza di approvazione</value>
+  </data>
+  <data name="Approval Status" xml:space="preserve">
+    <value>Stato di approvazione</value>
+  </data>
+  <data name="Approval Status:" xml:space="preserve">
+    <value>Stato di approvazione:</value>
+  </data>
+  <data name="Approval Type" xml:space="preserve">
+    <value>Tipo di approvazione</value>
+  </data>
+  <data name="Approval Type List" xml:space="preserve">
+    <value>Lista tipi di approvazione</value>
+  </data>
+  <data name="Approval Type Name" xml:space="preserve">
+    <value>Nome tipo di approvazione</value>
+  </data>
+  <data name="Approval Type Name:" xml:space="preserve">
+    <value>Nome tipo di approvazione:</value>
+  </data>
+  <data name="Approval Type:" xml:space="preserve">
+    <value>Tipo di approvazione:</value>
+  </data>
+  <data name="Approval Types" xml:space="preserve">
+    <value>Tipo di approvazione</value>
+  </data>
+  <data name="Approvals" xml:space="preserve">
+    <value>Approvazioni</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approvato</value>
+  </data>
+  <data name="Approved By :" xml:space="preserve">
+    <value>Approvato da:</value>
+  </data>
+  <data name="Approved By Employee Name" xml:space="preserve">
+    <value>Approvato dal nome dell'impiegato</value>
+  </data>
+  <data name="Approved By:" xml:space="preserve">
+    <value>Approvato da:</value>
+  </data>
+  <data name="Approved Date" xml:space="preserve">
+    <value>Approvato Data</value>
+  </data>
+  <data name="Approved On" xml:space="preserve">
+    <value>Approvata il</value>
+  </data>
+  <data name="Approved On :" xml:space="preserve">
+    <value>Approvata il:</value>
+  </data>
+  <data name="Approved Status:" xml:space="preserve">
+    <value>Stato Approvato:</value>
+  </data>
+  <data name="Approved:" xml:space="preserve">
+    <value>Approvato:</value>
+  </data>
+  <data name="Approver Comments" xml:space="preserve">
+    <value>Commenti dell'approvatore</value>
+  </data>
+  <data name="Approver Email Address" xml:space="preserve">
+    <value>Indirizzo e-mail dell'approvatore</value>
+  </data>
+  <data name="Approver Name" xml:space="preserve">
+    <value>Nome approvatore</value>
+  </data>
+  <data name="Approver Type" xml:space="preserve">
+    <value>Tipo approvatore</value>
+  </data>
+  <data name="Approver's Comments" xml:space="preserve">
+    <value>Commenti approvatore</value>
+  </data>
+  <data name="Apprvoed Hours" xml:space="preserve">
+    <value>Ore approvate</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archivio</value>
+  </data>
+  <data name="Assign To" xml:space="preserve">
+    <value>Assegnare a</value>
+  </data>
+  <data name="Assigned By" xml:space="preserve">
+    <value>Assegnato da</value>
+  </data>
+  <data name="Assigned To" xml:space="preserve">
+    <value>Assegnato a</value>
+  </data>
+  <data name="Assigned To:" xml:space="preserve">
+    <value>Assegnato a:</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Attaccamento</value>
+  </data>
+  <data name="Attachment Add Notification" xml:space="preserve">
+    <value>Aggiungi notifica allegato</value>
+  </data>
+  <data name="Attachment Information" xml:space="preserve">
+    <value>Informazioni allegato</value>
+  </data>
+  <data name="Attachment List" xml:space="preserve">
+    <value>Elenco allegati</value>
+  </data>
+  <data name="Attachment Name" xml:space="preserve">
+    <value>Nome allegato</value>
+  </data>
+  <data name="Attachment Name:" xml:space="preserve">
+    <value>Allegato Nome:</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Allegati</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Partecipazione</value>
+  </data>
+  <data name="Attendance Date" xml:space="preserve">
+    <value>Data Presenze </value>
+  </data>
+  <data name="Attendance Detail Report" xml:space="preserve">
+    <value>Report presenze</value>
+  </data>
+  <data name="AttendanceDetailReport" xml:space="preserve">
+    <value>Report presenze</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Revisione</value>
+  </data>
+  <data name="Audit Trail" xml:space="preserve">
+    <value>Traccia audit</value>
+  </data>
+  <data name="Audit Trial" xml:space="preserve">
+    <value>Traccia audit</value>
+  </data>
+  <data name="Australia, Dollars" xml:space="preserve">
+    <value>Australia, dollari</value>
+  </data>
+  <data name="Authentication Setting" xml:space="preserve">
+    <value>Configurazione di autenticazione</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Auto Rental" xml:space="preserve">
+    <value>Auto a noleggio</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Disponibile</value>
+  </data>
+  <data name="Available Hours" xml:space="preserve">
+    <value>Ore disponibili</value>
+  </data>
+  <data name="Back_text" xml:space="preserve">
+    <value>Indietro</value>
+  </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Valuta di base</value>
+  </data>
+  <data name="Base Currency:" xml:space="preserve">
+    <value>Valuta di base:</value>
+  </data>
+  <data name="Begin Date" xml:space="preserve">
+    <value>Data di inizio</value>
+  </data>
+  <data name="Begin Date:" xml:space="preserve">
+    <value>Data inizio:</value>
+  </data>
+  <data name="Bill Date" xml:space="preserve">
+    <value>Bill Data</value>
+  </data>
+  <data name="Bill Date :" xml:space="preserve">
+    <value>Bill Data:</value>
+  </data>
+  <data name="Bill Date:" xml:space="preserve">
+    <value>Data Fattura:</value>
+  </data>
+  <data name="Bill Hours" xml:space="preserve">
+    <value>Ore fatturate</value>
+  </data>
+  <data name="Billable" xml:space="preserve">
+    <value>Fatturabile</value>
+  </data>
+  <data name="Billable Hours" xml:space="preserve">
+    <value>Ore fatturabili</value>
+  </data>
+  <data name="Billable Total Hours" xml:space="preserve">
+    <value>Totale ore fatturabili</value>
+  </data>
+  <data name="Billable:" xml:space="preserve">
+    <value>Fatturabile:</value>
+  </data>
+  <data name="Billed" xml:space="preserve">
+    <value>Fatturato</value>
+  </data>
+  <data name="Billed Amount" xml:space="preserve">
+    <value>Fatturato Importo</value>
+  </data>
+  <data name="Billed:" xml:space="preserve">
+    <value>Fatturato:</value>
+  </data>
+  <data name="Billing" xml:space="preserve">
+    <value>Fatturazione</value>
+  </data>
+  <data name="Billing Address :" xml:space="preserve">
+    <value>Indirizzo di fatturazione:</value>
+  </data>
+  <data name="Billing Address:" xml:space="preserve">
+    <value>Indirizzo di fatturazione:</value>
+  </data>
+  <data name="Billing Amount" xml:space="preserve">
+    <value>Importo di fatturazione</value>
+  </data>
+  <data name="Billing Amount (BaseCurrency)" xml:space="preserve">
+    <value>Importo di fatturazione (valuta di base)</value>
+  </data>
+  <data name="Billing Category" xml:space="preserve">
+    <value>Categoria di fatturazione</value>
+  </data>
+  <data name="Billing Category:" xml:space="preserve">
+    <value>Categoria di fatturazione:</value>
+  </data>
+  <data name="Billing Cycle End Date" xml:space="preserve">
+    <value>Data di fine ciclo di fatturazione</value>
+  </data>
+  <data name="Billing Cycle End Date:" xml:space="preserve">
+    <value>Data di fine ciclo di fatturazione:</value>
+  </data>
+  <data name="Billing Cycle Start Date" xml:space="preserve">
+    <value>Ciclo di fatturazione Data di inizio</value>
+  </data>
+  <data name="Billing Cycle Start Date:" xml:space="preserve">
+    <value>Ciclo di fatturazione Data di inizio:</value>
+  </data>
+  <data name="Billing Rate" xml:space="preserve">
+    <value>Tariffa di fatturazione</value>
+  </data>
+  <data name="Billing Rate (BaseCurrency)" xml:space="preserve">
+    <value>Tariffa di fatturazione (valuta di base)</value>
+  </data>
+  <data name="Billing Rate Currency" xml:space="preserve">
+    <value>Valuta tariffa di fatturazione</value>
+  </data>
+  <data name="Billing Rate Currency:" xml:space="preserve">
+    <value>Valuta tariffa di fatturazione:</value>
+  </data>
+  <data name="Billing Rate End Date:" xml:space="preserve">
+    <value>Data di fine tariffa di fatturazione:</value>
+  </data>
+  <data name="Billing Rate History" xml:space="preserve">
+    <value>Storico tariffa di fatturazione</value>
+  </data>
+  <data name="Billing Rate Information" xml:space="preserve">
+    <value>Informazioni tariffa di fatturazione</value>
+  </data>
+  <data name="Billing Rate List" xml:space="preserve">
+    <value>Lista tariffe di fatturazione</value>
+  </data>
+  <data name="Billing Rate Start Date:" xml:space="preserve">
+    <value>Data di inizio tariffa di fatturazione:</value>
+  </data>
+  <data name="Billing Rate Type" xml:space="preserve">
+    <value>Tipo tariffa di fatturazione</value>
+  </data>
+  <data name="Billing Rate Type:" xml:space="preserve">
+    <value>Tipo tariffa di fatturazione:</value>
+  </data>
+  <data name="Billing Rate:" xml:space="preserve">
+    <value>Tariffa di fatturazione:</value>
+  </data>
+  <data name="Billing Rates" xml:space="preserve">
+    <value>Tariffe di fatturazione</value>
+  </data>
+  <data name="Billing Report" xml:space="preserve">
+    <value>Report di fatturazione</value>
+  </data>
+  <data name="Billing Setup" xml:space="preserve">
+    <value>Fatturazione Setup</value>
+  </data>
+  <data name="Billing Type" xml:space="preserve">
+    <value>Tipo fatturazione</value>
+  </data>
+  <data name="Billing Type Information" xml:space="preserve">
+    <value>Informazioni tipo di fatturazione</value>
+  </data>
+  <data name="Billing Type List" xml:space="preserve">
+    <value>Lista tipi di fatturazione</value>
+  </data>
+  <data name="Billing Type:" xml:space="preserve">
+    <value>Tipo fatturazione:</value>
+  </data>
+  <data name="Billing Types" xml:space="preserve">
+    <value>Tipi fatturazione</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Entrambi</value>
+  </data>
+  <data name="Both downloadable version and hosted version can be setup instantly." xml:space="preserve">
+    <value>Sia la versione scaricabile e la versione hosted possono essere configurate all'istante.</value>
+  </data>
+  <data name="Browse_text" xml:space="preserve">
+    <value>Sfoglia ....</value>
+  </data>
+  <data name="Bug" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="Buy Tracking" xml:space="preserve">
+    <value>Buy Tracking</value>
+  </data>
+  <data name="Canada, Dollars" xml:space="preserve">
+    <value>Canada, dollari</value>
+  </data>
+  <data name="Cancel_text" xml:space="preserve">
+    <value>Annullare</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancellato</value>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>Didascalia</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Car Mileage" xml:space="preserve">
+    <value>Auto distanza in miglia</value>
+  </data>
+  <data name="Carry Forward" xml:space="preserve">
+    <value>Portare avanti</value>
+  </data>
+  <data name="Carry Over" xml:space="preserve">
+    <value>Rinvii</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>Contanti</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Change Base Currency" xml:space="preserve">
+    <value>Cambia valuta di base</value>
+  </data>
+  <data name="Change plan to..." xml:space="preserve">
+    <value>Cambiare piano per ...</value>
+  </data>
+  <data name="Check All" xml:space="preserve">
+    <value>Controlli tutti</value>
+  </data>
+  <data name="Check All Approved" xml:space="preserve">
+    <value>Controllare tutti gli "approvati"</value>
+  </data>
+  <data name="Check-All" xml:space="preserve">
+    <value>Controllare-Tutto</value>
+  </data>
+  <data name="Check-All Approved" xml:space="preserve">
+    <value>Controllare tutti gli "approvati"</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Città</value>
+  </data>
+  <data name="City:" xml:space="preserve">
+    <value>Comune:</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="Client --&gt; TeamLead" xml:space="preserve">
+    <value>Cliente -&gt; TeamLeader</value>
+  </data>
+  <data name="Client Amount (BaseCurrency)" xml:space="preserve">
+    <value>Importo cliente (valuta di base)</value>
+  </data>
+  <data name="Client Contact" xml:space="preserve">
+    <value>Contatto Cliente</value>
+  </data>
+  <data name="Client Contact Information" xml:space="preserve">
+    <value>Informazioni Contatto Cliente</value>
+  </data>
+  <data name="Client Contact List" xml:space="preserve">
+    <value>Lista contatto cliente</value>
+  </data>
+  <data name="Client Contact Name" xml:space="preserve">
+    <value>Nome Contatto Cliente</value>
+  </data>
+  <data name="Client Contact:" xml:space="preserve">
+    <value>Contatto cliente:</value>
+  </data>
+  <data name="Client Contacts" xml:space="preserve">
+    <value>Contatti cliente</value>
+  </data>
+  <data name="Client Department" xml:space="preserve">
+    <value>Dipartimento cliente</value>
+  </data>
+  <data name="Client Department Code" xml:space="preserve">
+    <value>Codice dipartimento cliente</value>
+  </data>
+  <data name="Client Department Information" xml:space="preserve">
+    <value>Informazioni dipartimento cliente</value>
+  </data>
+  <data name="Client Department List" xml:space="preserve">
+    <value>Lista dipartimento cliente</value>
+  </data>
+  <data name="Client Department Location" xml:space="preserve">
+    <value>Sede dipartimento cliente</value>
+  </data>
+  <data name="Client Department Name" xml:space="preserve">
+    <value>Nome diipartimento cliente</value>
+  </data>
+  <data name="Client Department:" xml:space="preserve">
+    <value>Dipartimento cliente:</value>
+  </data>
+  <data name="Client Departments" xml:space="preserve">
+    <value>Dipartimenti cliente</value>
+  </data>
+  <data name="Client Id" xml:space="preserve">
+    <value>Codice Cliente</value>
+  </data>
+  <data name="Client List" xml:space="preserve">
+    <value>Elenco cliente</value>
+  </data>
+  <data name="Client Name" xml:space="preserve">
+    <value>Nome Cliente</value>
+  </data>
+  <data name="Client Name:" xml:space="preserve">
+    <value>Nome Cliente:</value>
+  </data>
+  <data name="Client Nick" xml:space="preserve">
+    <value>Nick cliente</value>
+  </data>
+  <data name="Client Nick:" xml:space="preserve">
+    <value>Cliente Nick:</value>
+  </data>
+  <data name="Client:" xml:space="preserve">
+    <value>Cliente:</value>
+  </data>
+  <data name="ClientList-ListOfAllClientsDefinedByAccount" xml:space="preserve">
+    <value>Client List - Lista di tutti i clienti Definito da Account</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clienti</value>
+  </data>
+  <data name="Clients Information" xml:space="preserve">
+    <value>Informazione che il cliente</value>
+  </data>
+  <data name="Clients:" xml:space="preserve">
+    <value>Clienti:</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Codice</value>
+  </data>
+  <data name="Column Order" xml:space="preserve">
+    <value>Ordine per colonna</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Commenti</value>
+  </data>
+  <data name="Comments By:" xml:space="preserve">
+    <value>Commenti di:</value>
+  </data>
+  <data name="Comments Information" xml:space="preserve">
+    <value>Informazioni commenti</value>
+  </data>
+  <data name="Comments List" xml:space="preserve">
+    <value>Lista Commenti</value>
+  </data>
+  <data name="Comments:" xml:space="preserve">
+    <value>Commenti:</value>
+  </data>
+  <data name="Company Own Logo" xml:space="preserve">
+    <value>Azienda logo:</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completato</value>
+  </data>
+  <data name="Completed (%)" xml:space="preserve">
+    <value>Completato (%)</value>
+  </data>
+  <data name="Completed Status:" xml:space="preserve">
+    <value>Stato completato:</value>
+  </data>
+  <data name="Completed%:" xml:space="preserve">
+    <value>Completato%:</value>
+  </data>
+  <data name="Completed:" xml:space="preserve">
+    <value>Completato:</value>
+  </data>
+  <data name="CompletedPercent" xml:space="preserve">
+    <value>CompletedPercent</value>
+  </data>
+  <data name="Computer Hardware" xml:space="preserve">
+    <value>Hardware computer</value>
+  </data>
+  <data name="Consolidated" xml:space="preserve">
+    <value>Consolidato</value>
+  </data>
+  <data name="Construction" xml:space="preserve">
+    <value>Costruzione</value>
+  </data>
+  <data name="Consultant" xml:space="preserve">
+    <value>Consulente</value>
+  </data>
+  <data name="Consume Hours" xml:space="preserve">
+    <value>Consumare Ore</value>
+  </data>
+  <data name="Consumed" xml:space="preserve">
+    <value>Consumato</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contatti</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>Imprenditore</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Copy Activities" xml:space="preserve">
+    <value>Copia Attività</value>
+  </data>
+  <data name="Copy From" xml:space="preserve">
+    <value>Copia da:</value>
+  </data>
+  <data name="Copy Timesheet" xml:space="preserve">
+    <value>Copia Timesheet</value>
+  </data>
+  <data name="Copy_Conformation_Message_DayView" xml:space="preserve">
+    <value>Sei sicuro di copiare i dati specificati data in data corrente? </value>
+  </data>
+  <data name="Copy_Conformation_Message_WeekView" xml:space="preserve">
+    <value>Sei sicuro di copiare i dati specificati settimana in settimana in corso? </value>
+  </data>
+  <data name="Copyright 2007 - 2009 Livetecs LLC. All rights reserved." xml:space="preserve">
+    <value>Copyright � 2007 - 2011 Livetecs LLC. Tutti i diritti riservati.</value>
+  </data>
+  <data name="Cost Center" xml:space="preserve">
+    <value>Centro di costo</value>
+  </data>
+  <data name="Cost Center Code" xml:space="preserve">
+    <value>Centro di costo codice</value>
+  </data>
+  <data name="Cost Center Code:" xml:space="preserve">
+    <value>Codice centro di costo:</value>
+  </data>
+  <data name="Cost Center Information" xml:space="preserve">
+    <value>Informazioni centro di costo</value>
+  </data>
+  <data name="Cost Center List" xml:space="preserve">
+    <value>Lista centro di costo</value>
+  </data>
+  <data name="Cost Center:" xml:space="preserve">
+    <value>Centro di Costo:</value>
+  </data>
+  <data name="Costing" xml:space="preserve">
+    <value>Costo</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Conteggio</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Paese</value>
+  </data>
+  <data name="Country:" xml:space="preserve">
+    <value>Paese:</value>
+  </data>
+  <data name="Created Date From:" xml:space="preserve">
+    <value>Data di creazione da:</value>
+  </data>
+  <data name="Created Date Upto:" xml:space="preserve">
+    <value>Data di creazione fino a: </value>
+  </data>
+  <data name="Creates a billing summary report per client, per project for each task within a selected date range." xml:space="preserve">
+    <value>Crea una relazione di sintesi fatturazione per cliente, per ogni progetto per ogni attività all'interno di un intervallo di date selezionato</value>
+  </data>
+  <data name="CSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="CSV Import Export" xml:space="preserve">
+    <value>CSV Import Export</value>
+  </data>
+  <data name="Currencies" xml:space="preserve">
+    <value>Valute</value>
+  </data>
+  <data name="Currencies Information" xml:space="preserve">
+    <value>Informazioni valute</value>
+  </data>
+  <data name="Currencies List" xml:space="preserve">
+    <value>Elenco valute </value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="Currency Already Exist" xml:space="preserve">
+    <value>Valuta già esistente</value>
+  </data>
+  <data name="Currency Code" xml:space="preserve">
+    <value>Valuta Codice</value>
+  </data>
+  <data name="Currency Currency:" xml:space="preserve">
+    <value>Moneta corrente:</value>
+  </data>
+  <data name="Currency Symbol" xml:space="preserve">
+    <value>Simbolo di valuta:</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>Valuta:</value>
+  </data>
+  <data name="CurrencyAmount" xml:space="preserve">
+    <value>CurrencyAmount</value>
+  </data>
+  <data name="Current Base Currency:" xml:space="preserve">
+    <value>Valuta corrente:</value>
+  </data>
+  <data name="Current Date:" xml:space="preserve">
+    <value>Data valuta:</value>
+  </data>
+  <data name="Current Week:" xml:space="preserve">
+    <value>Periodo attuale:</value>
+  </data>
+  <data name="Customer can request their personalized customization." xml:space="preserve">
+    <value>Il Cliente può richiedere personalizzazioni.</value>
+  </data>
+  <data name="Customer Information" xml:space="preserve">
+    <value>Informazioni cliente</value>
+  </data>
+  <data name="Customizable" xml:space="preserve">
+    <value>Personalizzabile</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>Personalizza</value>
+  </data>
+  <data name="Customized" xml:space="preserve">
+    <value>Personalizzato</value>
+  </data>
+  <data name="Daily Expense Approval Pending Notification" xml:space="preserve">
+    <value>Spese giornaliere notifica di approvazione in attesa</value>
+  </data>
+  <data name="Daily Time Off Approval Pending Notification" xml:space="preserve">
+    <value>Ora quotidiana Off Notifica attesa di approvazione</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification" xml:space="preserve">
+    <value>Inserimento ore giornaliero in attesa della notifica</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Administrator" xml:space="preserve">
+    <value>Daily TimeEntry notifica in sospeso da Administrator</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Employee Manager" xml:space="preserve">
+    <value>Daily TimeEntry notifica in sospeso a Gestione dei dipendenti</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Project Manager" xml:space="preserve">
+    <value>In attesa della notifica giornaliera TimeEntry a Project Manager</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Team Lead" xml:space="preserve">
+    <value>In attesa della notifica giornaliera TimeEntry a Team Lead</value>
+  </data>
+  <data name="Daily Timesheet" xml:space="preserve">
+    <value>Daily Timesheet</value>
+  </data>
+  <data name="Daily Timesheet Approval Pending Notification" xml:space="preserve">
+    <value>Timesheet giornaliero in attesa della notifica di approvazione</value>
+  </data>
+  <data name="Data Source" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="Data Source:" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="Database Backup" xml:space="preserve">
+    <value>Database Backup</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Date Range:" xml:space="preserve">
+    <value>Intervallo date:</value>
+  </data>
+  <data name="Date:" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Giorno</value>
+  </data>
+  <data name="Day No" xml:space="preserve">
+    <value>Giornata No</value>
+  </data>
+  <data name="Day No." xml:space="preserve">
+    <value>Giornata No.</value>
+  </data>
+  <data name="Day Off" xml:space="preserve">
+    <value>Giorno di riposo</value>
+  </data>
+  <data name="Day View" xml:space="preserve">
+    <value>Vista giornaliera</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Giorni</value>
+  </data>
+  <data name="Days Off" xml:space="preserve">
+    <value>Giorni liberi</value>
+  </data>
+  <data name="Days Off:" xml:space="preserve">
+    <value>Giorni liberi:</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>Scadenza</value>
+  </data>
+  <data name="Deadline:" xml:space="preserve">
+    <value>Scadenza:</value>
+  </data>
+  <data name="DeadlineDate" xml:space="preserve">
+    <value>DeadlineDate</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Default Billing Rate" xml:space="preserve">
+    <value>Tariffa di fatturazione di default</value>
+  </data>
+  <data name="Default Billing Rate:" xml:space="preserve">
+    <value>Tariffa di fatturazione di default:</value>
+  </data>
+  <data name="Default Cost Center" xml:space="preserve">
+    <value>Centro di costo di default</value>
+  </data>
+  <data name="Default Currency" xml:space="preserve">
+    <value>Valuta di default</value>
+  </data>
+  <data name="Default Currency:" xml:space="preserve">
+    <value>Valuta di default:</value>
+  </data>
+  <data name="Default Department" xml:space="preserve">
+    <value>Dipartimento di default</value>
+  </data>
+  <data name="Default Expense Rate:" xml:space="preserve">
+    <value>Default Expense Rate:</value>
+  </data>
+  <data name="Default Location" xml:space="preserve">
+    <value>Sede di default</value>
+  </data>
+  <data name="Default Milestone" xml:space="preserve">
+    <value>Milestone di default</value>
+  </data>
+  <data name="Default Page" xml:space="preserve">
+    <value>Pagina di default:</value>
+  </data>
+  <data name="Default Priority" xml:space="preserve">
+    <value>Priorità di default</value>
+  </data>
+  <data name="Default Time Entry Mode:" xml:space="preserve">
+    <value>Modalità di default per l'inserimento tempo</value>
+  </data>
+  <data name="Delete Selected Item" xml:space="preserve">
+    <value>Delete selected item</value>
+  </data>
+  <data name="Delete_cofirmation" xml:space="preserve">
+    <value>Sei sicuro di voler cancellare questa voce?</value>
+  </data>
+  <data name="Delete_text" xml:space="preserve">
+    <value>Cancellare</value>
+  </data>
+  <data name="Demo" xml:space="preserve">
+    <value>Dimostrativo</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="Department Code" xml:space="preserve">
+    <value>Codice dipartimento</value>
+  </data>
+  <data name="Department Code:" xml:space="preserve">
+    <value>Codice dipartimento:</value>
+  </data>
+  <data name="Department Id" xml:space="preserve">
+    <value>ID dipartimento</value>
+  </data>
+  <data name="Department Information" xml:space="preserve">
+    <value>Informazioni dipartimento</value>
+  </data>
+  <data name="Department List" xml:space="preserve">
+    <value>Lista dipartimenti</value>
+  </data>
+  <data name="Department List - List Of All Departments Defined By Account" xml:space="preserve">
+    <value>Lista dipartimenti - elenco di tutti i dipartimenti definiti da account </value>
+  </data>
+  <data name="Department Name" xml:space="preserve">
+    <value>Nome del dipartimento</value>
+  </data>
+  <data name="Department Name:" xml:space="preserve">
+    <value>Nome Dipartimento:</value>
+  </data>
+  <data name="Department Wise Timesheet Report" xml:space="preserve">
+    <value>Department Wise Timesheet Report</value>
+  </data>
+  <data name="Department:" xml:space="preserve">
+    <value>Dipartimento:</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>Dipartimenti</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="Description:" xml:space="preserve">
+    <value>Descrizione:</value>
+  </data>
+  <data name="Detail Expense Report" xml:space="preserve">
+    <value>Report dettagliato delle spese</value>
+  </data>
+  <data name="Detail report of employee absence in specified data range. Helpfull for payroll department to get list of absent in specified date range." xml:space="preserve">
+    <value>Report dettagliato delle assenze dei dipendenti nell'intervallo di date specificato. </value>
+  </data>
+  <data name="Detail report of employee absence in specified data range.Helpfull for payroll department to get list of absent in specified date range." xml:space="preserve">
+    <value>Report dettagliato delle assenze dei dipendenti nell'intervallo di date specificato. </value>
+  </data>
+  <data name="Detail Task Report" xml:space="preserve">
+    <value>Report dettagliato delle attività</value>
+  </data>
+  <data name="Detail Time Sheet Report" xml:space="preserve">
+    <value>Report dettagliato Timesheet</value>
+  </data>
+  <data name="Detail TimeSheet Report" xml:space="preserve">
+    <value>Timesheet Report Dettaglio</value>
+  </data>
+  <data name="Detailed" xml:space="preserve">
+    <value>Dettagliato</value>
+  </data>
+  <data name="Disable Account" xml:space="preserve">
+    <value>Disabilita account</value>
+  </data>
+  <data name="Disable My Account" xml:space="preserve">
+    <value>Disabilita mio account</value>
+  </data>
+  <data name="Disable Your Account" xml:space="preserve">
+    <value>Disabilita tuo account</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Disabilitato</value>
+  </data>
+  <data name="Disabled Editing Of Rate:" xml:space="preserve">
+    <value>Disabled Editing Of Rate:</value>
+  </data>
+  <data name="Disabled:" xml:space="preserve">
+    <value>Disabilitato:</value>
+  </data>
+  <data name="Disabled_text" xml:space="preserve">
+    <value>Disabilitato</value>
+  </data>
+  <data name="Disabling account will stop any activities in your TimeLive account. Your employee will not be able to login in TimeLive." xml:space="preserve">
+    <value>La disattivazione dell'account interromperà qualsiasi attività nel tuo account TimeLive. </value>
+  </data>
+  <data name="Discription:" xml:space="preserve">
+    <value>Descrizione:</value>
+  </data>
+  <data name="Downloadable" xml:space="preserve">
+    <value>Scaricabile</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Durata</value>
+  </data>
+  <data name="Duration:" xml:space="preserve">
+    <value>Durata:</value>
+  </data>
+  <data name="Earn Hours" xml:space="preserve">
+    <value>Guadagna Ore</value>
+  </data>
+  <data name="Earn Period" xml:space="preserve">
+    <value>Guadagna Periodo</value>
+  </data>
+  <data name="Earned" xml:space="preserve">
+    <value>Guadagnato</value>
+  </data>
+  <data name="Earned Hours" xml:space="preserve">
+    <value>Ore Earned</value>
+  </data>
+  <data name="Edit_text" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Istruzione</value>
+  </data>
+  <data name="Electric Appliances" xml:space="preserve">
+    <value>Apparecchi elettrici</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>Indirizzo e-mail</value>
+  </data>
+  <data name="EMail Address:" xml:space="preserve">
+    <value>Indirizzo email:</value>
+  </data>
+  <data name="EMail Notification" xml:space="preserve">
+    <value>Notifica e-mail</value>
+  </data>
+  <data name="EMail Notification Preferences" xml:space="preserve">
+    <value>EMail preferenze di notifica</value>
+  </data>
+  <data name="EMail Preference" xml:space="preserve">
+    <value>Preferenza email</value>
+  </data>
+  <data name="EMailAddress" xml:space="preserve">
+    <value>EmailAddress</value>
+  </data>
+  <data name="Employed" xml:space="preserve">
+    <value>Dipendenti</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Dipendente</value>
+  </data>
+  <data name="Employee Absence Detail Report" xml:space="preserve">
+    <value>Report dettagliato assenze dipendente</value>
+  </data>
+  <data name="Employee Add Notification" xml:space="preserve">
+    <value>Aggiungi notifica dipendente</value>
+  </data>
+  <data name="Employee Attendance" xml:space="preserve">
+    <value>Presenze dipendente</value>
+  </data>
+  <data name="Employee Attendance Information" xml:space="preserve">
+    <value>La partecipazione dei dipendenti informazioni</value>
+  </data>
+  <data name="Employee Attendance List" xml:space="preserve">
+    <value>Lista presenze dipendente</value>
+  </data>
+  <data name="Employee Attendance Summary Report" xml:space="preserve">
+    <value>Report di riepilogo delle presenze del dipendente </value>
+  </data>
+  <data name="Employee Code" xml:space="preserve">
+    <value>Dipendente codice</value>
+  </data>
+  <data name="Employee Code:" xml:space="preserve">
+    <value>Codice Dipendente:</value>
+  </data>
+  <data name="Employee Cost" xml:space="preserve">
+    <value>Costo dipendente</value>
+  </data>
+  <data name="Employee Cost (BaseCurrency)" xml:space="preserve">
+    <value>Costo dipendente (valuta di base)</value>
+  </data>
+  <data name="Employee Id" xml:space="preserve">
+    <value>ID dipendente</value>
+  </data>
+  <data name="Employee Information" xml:space="preserve">
+    <value>Informazioni dipendente</value>
+  </data>
+  <data name="Employee List" xml:space="preserve">
+    <value>Lista dipendenti</value>
+  </data>
+  <data name="Employee List Report" xml:space="preserve">
+    <value>Lista dipendenti</value>
+  </data>
+  <data name="Employee Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Employee Manager Expense Entry Approvals" xml:space="preserve">
+    <value>Approvazione spese manager</value>
+  </data>
+  <data name="Employee Manager Time Entry Approvals" xml:space="preserve">
+    <value>Approvazione inserimento ore manager</value>
+  </data>
+  <data name="Employee Manager Time Off Approvals" xml:space="preserve">
+    <value>Dipendente Time Manager Off Approvazioni</value>
+  </data>
+  <data name="Employee Manager:" xml:space="preserve">
+    <value>Manager:</value>
+  </data>
+  <data name="Employee Name" xml:space="preserve">
+    <value>Nome dipendente</value>
+  </data>
+  <data name="Employee Name:" xml:space="preserve">
+    <value>Nome dipendente:</value>
+  </data>
+  <data name="Employee Project" xml:space="preserve">
+    <value>Impiegato Progetto</value>
+  </data>
+  <data name="Employee Project Utilization Report" xml:space="preserve">
+    <value>Employee Project Utilization Report</value>
+  </data>
+  <data name="Employee Rate" xml:space="preserve">
+    <value>Tariffa dipendente </value>
+  </data>
+  <data name="Employee Rate (BaseCurrency)" xml:space="preserve">
+    <value>Tariffa dipendente (valuta di base)</value>
+  </data>
+  <data name="Employee Rate Currency" xml:space="preserve">
+    <value>Valuta tariffa dipendente</value>
+  </data>
+  <data name="Employee Rate Currency:" xml:space="preserve">
+    <value>Valuta tariffa dipendente:</value>
+  </data>
+  <data name="Employee Rate:" xml:space="preserve">
+    <value>Tariffa dipendente:</value>
+  </data>
+  <data name="Employee Status:" xml:space="preserve">
+    <value>Stato del dipendente</value>
+  </data>
+  <data name="Employee Time Of Policy:" xml:space="preserve">
+    <value>Dipendente a tempo della politica:</value>
+  </data>
+  <data name="Employee Time off" xml:space="preserve">
+    <value>Dipendente Tempo libero</value>
+  </data>
+  <data name="Employee Time Off Detail" xml:space="preserve">
+    <value>Dipendente a tempo Off Dettaglio</value>
+  </data>
+  <data name="Employee Timesheet Submission Status Report" xml:space="preserve">
+    <value>Dipendente tempo foglio Presentazione Report di Stato</value>
+  </data>
+  <data name="Employee Type" xml:space="preserve">
+    <value>Tipo dipendente</value>
+  </data>
+  <data name="Employee Type Information" xml:space="preserve">
+    <value>Informazioni tipo dipendente</value>
+  </data>
+  <data name="Employee Type List" xml:space="preserve">
+    <value>Lista tipi dipendenti</value>
+  </data>
+  <data name="Employee Type:" xml:space="preserve">
+    <value>Tipo dipendente:</value>
+  </data>
+  <data name="Employee Types" xml:space="preserve">
+    <value>Tipi dipendente</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>Dipendente:</value>
+  </data>
+  <data name="EmployeeList-ListOfAllEmployeesDefinedByAccount" xml:space="preserve">
+    <value>Dipendente List - Lista di tutti i dipendenti Definito da Account</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>Dipendenti</value>
+  </data>
+  <data name="Employees:" xml:space="preserve">
+    <value>Dipendenti:</value>
+  </data>
+  <data name="Enable Disable" xml:space="preserve">
+    <value>Attiva / Disattiva</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Abilitato</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>Data di fine</value>
+  </data>
+  <data name="End Date:" xml:space="preserve">
+    <value>Data di scadenza:</value>
+  </data>
+  <data name="End Time" xml:space="preserve">
+    <value>Ora fine</value>
+  </data>
+  <data name="End Timer" xml:space="preserve">
+    <value>Fine Timer</value>
+  </data>
+  <data name="End Timer and Save" xml:space="preserve">
+    <value>Timer fine e salva</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>Ora fine</value>
+  </data>
+  <data name="Entered" xml:space="preserve">
+    <value>Entrata</value>
+  </data>
+  <data name="Entertainment" xml:space="preserve">
+    <value>Entertainment</value>
+  </data>
+  <data name="Entry View Type" xml:space="preserve">
+    <value>Entry View Type</value>
+  </data>
+  <data name="Estimated Amount (Base Currency)" xml:space="preserve">
+    <value>Importo stimato (valuta di base)</value>
+  </data>
+  <data name="Estimated Cost" xml:space="preserve">
+    <value>Costo stimato</value>
+  </data>
+  <data name="Estimated Cost (BaseCurrency)" xml:space="preserve">
+    <value>Costo stimato (valuta di base)</value>
+  </data>
+  <data name="Estimated Cost:" xml:space="preserve">
+    <value>Costo stimato:</value>
+  </data>
+  <data name="Estimated Duration" xml:space="preserve">
+    <value>Durata stimata</value>
+  </data>
+  <data name="Estimated Hours:" xml:space="preserve">
+    <value>Ore stimate:</value>
+  </data>
+  <data name="Estimated Time" xml:space="preserve">
+    <value>Tempo previsto</value>
+  </data>
+  <data name="Estimated Time (Hours):" xml:space="preserve">
+    <value>Tempo previsto (ore):</value>
+  </data>
+  <data name="Estimates" xml:space="preserve">
+    <value>Stime</value>
+  </data>
+  <data name="Euro Member Countries" xml:space="preserve">
+    <value>Euro Paesi membri</value>
+  </data>
+  <data name="Exchange Rate" xml:space="preserve">
+    <value>Tasso di cambio</value>
+  </data>
+  <data name="Exchange Rate History" xml:space="preserve">
+    <value>Storico tasso di cambio</value>
+  </data>
+  <data name="Exchange Rate Information" xml:space="preserve">
+    <value>Informazioni tasso di cambio</value>
+  </data>
+  <data name="Exchange Rate List" xml:space="preserve">
+    <value>Lista tassi di cambio</value>
+  </data>
+  <data name="Exchange Rate:" xml:space="preserve">
+    <value>Tasso di cambio:</value>
+  </data>
+  <data name="Expense" xml:space="preserve">
+    <value>Spese</value>
+  </data>
+  <data name="Expense Approval" xml:space="preserve">
+    <value>Approvazione spese</value>
+  </data>
+  <data name="Expense Approval Activity" xml:space="preserve">
+    <value>Attività approvazione spese</value>
+  </data>
+  <data name="Expense Approval Detail" xml:space="preserve">
+    <value>Dettaglio approvazione spese</value>
+  </data>
+  <data name="Expense Approval Type" xml:space="preserve">
+    <value>Tipo approvazione spese</value>
+  </data>
+  <data name="Expense Approval Type:" xml:space="preserve">
+    <value>Tipo approvazione spese:</value>
+  </data>
+  <data name="Expense Billing List" xml:space="preserve">
+    <value>Lista spese da fatturare</value>
+  </data>
+  <data name="Expense Billing Worksheet" xml:space="preserve">
+    <value>Expense Billing Worksheet</value>
+  </data>
+  <data name="Expense By Client Report" xml:space="preserve">
+    <value>Report spese per cliente</value>
+  </data>
+  <data name="Expense By Clients Report" xml:space="preserve">
+    <value>Report spese per clienti</value>
+  </data>
+  <data name="Expense Description" xml:space="preserve">
+    <value>Descrizione di spesa</value>
+  </data>
+  <data name="Expense Entry" xml:space="preserve">
+    <value>Inserimento spesa</value>
+  </data>
+  <data name="Expense Entry Approval" xml:space="preserve">
+    <value>Approvazione spese inserite</value>
+  </data>
+  <data name="Expense Entry Approval Activity" xml:space="preserve">
+    <value>Attività approvazione spese inserite</value>
+  </data>
+  <data name="Expense Entry Approved Notification" xml:space="preserve">
+    <value>Notifica approvazione spese inserite</value>
+  </data>
+  <data name="Expense Entry Approver" xml:space="preserve">
+    <value>Approvatore spese inserite</value>
+  </data>
+  <data name="Expense Entry Archive" xml:space="preserve">
+    <value>Archivio spese inserite</value>
+  </data>
+  <data name="Expense Entry Audit" xml:space="preserve">
+    <value>Spese voce di controllo</value>
+  </data>
+  <data name="Expense Entry Date:" xml:space="preserve">
+    <value>Data inserimento spese:</value>
+  </data>
+  <data name="Expense Entry End Date:" xml:space="preserve">
+    <value>Data di fine inserimento spese:</value>
+  </data>
+  <data name="Expense Entry Id:" xml:space="preserve">
+    <value>ID spesa inserita:</value>
+  </data>
+  <data name="Expense Entry Information" xml:space="preserve">
+    <value>Informazioni spesa inserita</value>
+  </data>
+  <data name="Expense Entry List" xml:space="preserve">
+    <value>Lista spese inserite</value>
+  </data>
+  <data name="Expense Entry Rejected Notification" xml:space="preserve">
+    <value>Notifica spese respinte</value>
+  </data>
+  <data name="Expense Entry Start Date:" xml:space="preserve">
+    <value>Data di inizio inserimento spese:</value>
+  </data>
+  <data name="Expense Information" xml:space="preserve">
+    <value>Informazioni spese</value>
+  </data>
+  <data name="Expense List" xml:space="preserve">
+    <value>Lista spese</value>
+  </data>
+  <data name="Expense Management" xml:space="preserve">
+    <value>Amministrazione di spesa</value>
+  </data>
+  <data name="Expense Name" xml:space="preserve">
+    <value>Nome spesa</value>
+  </data>
+  <data name="Expense Name (Expense Type)" xml:space="preserve">
+    <value>Expense Nome (tipo di spesa)</value>
+  </data>
+  <data name="Expense Name:" xml:space="preserve">
+    <value>Nome spesa:</value>
+  </data>
+  <data name="Expense Setup" xml:space="preserve">
+    <value>Spese di installazione</value>
+  </data>
+  <data name="Expense Sheet" xml:space="preserve">
+    <value>Expense Sheet</value>
+  </data>
+  <data name="Expense Sheet Audit" xml:space="preserve">
+    <value>Spese Foglio Audit</value>
+  </data>
+  <data name="Expense Sheet Audit Trail Report" xml:space="preserve">
+    <value>Expense Sheet Audit Report Trail</value>
+  </data>
+  <data name="Expense sheet copied successfully." xml:space="preserve">
+    <value>foglio Expense copiati correttamente.</value>
+  </data>
+  <data name="Expense Sheet List" xml:space="preserve">
+    <value>Expense Sheet List</value>
+  </data>
+  <data name="Expense Sheet Print Footer:" xml:space="preserve">
+    <value>Expense Sheet Print Footer:</value>
+  </data>
+  <data name="Expense Sheet Report" xml:space="preserve">
+    <value>Expense Sheet Report</value>
+  </data>
+  <data name="Expense Sheet Status" xml:space="preserve">
+    <value>Expense Sheet Status</value>
+  </data>
+  <data name="Expense Tracking" xml:space="preserve">
+    <value>Expense Tracking</value>
+  </data>
+  <data name="Expense Type" xml:space="preserve">
+    <value>Tipo spesa</value>
+  </data>
+  <data name="Expense Type Information" xml:space="preserve">
+    <value>Iinformazioni tipo spesa</value>
+  </data>
+  <data name="Expense Type List" xml:space="preserve">
+    <value>Lista tipi spesa</value>
+  </data>
+  <data name="Expense Type:" xml:space="preserve">
+    <value>Tipo spesa:</value>
+  </data>
+  <data name="Expense Types" xml:space="preserve">
+    <value>Tipi spesa</value>
+  </data>
+  <data name="Expense:" xml:space="preserve">
+    <value>Spesa:</value>
+  </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>Spese</value>
+  </data>
+  <data name="EXPENSES1" xml:space="preserve">
+    <value>SPESE</value>
+  </data>
+  <data name="ExpenseType" xml:space="preserve">
+    <value>ExpenseType</value>
+  </data>
+  <data name="Expert technical support at any hour via email." xml:space="preserve">
+    <value>Supporto tecnico via mail a tutte le ore</value>
+  </data>
+  <data name="Expiry Date:" xml:space="preserve">
+    <value>Data di scadenza:</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="External User" xml:space="preserve">
+    <value>Utente Esterno</value>
+  </data>
+  <data name="External User Client" xml:space="preserve">
+    <value>Esterno utente client</value>
+  </data>
+  <data name="External User Client:" xml:space="preserve">
+    <value>Utente esterno Cliente:</value>
+  </data>
+  <data name="External User Id" xml:space="preserve">
+    <value>ID utente esterno</value>
+  </data>
+  <data name="External User Information" xml:space="preserve">
+    <value>Informazioni di utente esterne</value>
+  </data>
+  <data name="External User List" xml:space="preserve">
+    <value>Lista utenti esterni</value>
+  </data>
+  <data name="External Users" xml:space="preserve">
+    <value>Utenti esterni</value>
+  </data>
+  <data name="ExternalUser" xml:space="preserve">
+    <value>ExternalUser</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Fax:" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="Feature" xml:space="preserve">
+    <value>Caratteristica</value>
+  </data>
+  <data name="Feature Management" xml:space="preserve">
+    <value>Funzione di gestione</value>
+  </data>
+  <data name="Field Name" xml:space="preserve">
+    <value>Nome del campo</value>
+  </data>
+  <data name="File Name" xml:space="preserve">
+    <value>Nome del file</value>
+  </data>
+  <data name="File Path:" xml:space="preserve">
+    <value>Percorso del file:</value>
+  </data>
+  <data name="File Type:" xml:space="preserve">
+    <value>Tipo di file:</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="First Name:" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="Fixed Bid" xml:space="preserve">
+    <value>Fisso offerte</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Cibo</value>
+  </data>
+  <data name="Forgot Your Password? Click Here" xml:space="preserve">
+    <value>Hai dimenticato la password? </value>
+  </data>
+  <data name="Formula" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="Formula Field 1" xml:space="preserve">
+    <value>Campo Formula 1</value>
+  </data>
+  <data name="Formula Field 2" xml:space="preserve">
+    <value>Campo Formula 2</value>
+  </data>
+  <data name="Formula Field 3" xml:space="preserve">
+    <value>Campo Formula 3</value>
+  </data>
+  <data name="Formula Field 4" xml:space="preserve">
+    <value>Campo Formula 4</value>
+  </data>
+  <data name="Formula Field 5" xml:space="preserve">
+    <value>Campo Formula 5</value>
+  </data>
+  <data name="Formula:" xml:space="preserve">
+    <value>Formula:</value>
+  </data>
+  <data name="FreeLite" xml:space="preserve">
+    <value>FreeLite</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Ven</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Venerdì</value>
+  </data>
+  <data name="From Email Address:" xml:space="preserve">
+    <value>Da Indirizzo e-mail:</value>
+  </data>
+  <data name="From Email Display Name" xml:space="preserve">
+    <value>Da E-mail Nome visualizzato:</value>
+  </data>
+  <data name="Full Summary" xml:space="preserve">
+    <value>Full Sintesi</value>
+  </data>
+  <data name="Full-time Hourly" xml:space="preserve">
+    <value>Full-time Hourly</value>
+  </data>
+  <data name="Full-time Salaried" xml:space="preserve">
+    <value>Full-time Salaried</value>
+  </data>
+  <data name="Fully downloadable on local server or individual system for single user." xml:space="preserve">
+    <value>Completamente scaricabile su server o sistema individuale per singolo utente.</value>
+  </data>
+  <data name="Fully Team based collaboration suite" xml:space="preserve">
+    <value>Fully Team based collaboration suite</value>
+  </data>
+  <data name="Gas" xml:space="preserve">
+    <value>Gas</value>
+  </data>
+  <data name="Generate Attendance detail report for a given user for a given period. User can select different parameters like employee startdate enddate." xml:space="preserve">
+    <value>Report dettagliato presenze per un determinato utente per un determinato periodo. </value>
+  </data>
+  <data name="Generate Attendance detail report for a given user for a given period. User can select different parameters like employee, startdate, enddate." xml:space="preserve">
+    <value>Report dettagliato presenze per un determinato utente per un determinato periodo. </value>
+  </data>
+  <data name="Generate Expense Sheet Audit Trail Report" xml:space="preserve">
+    <value>Genera Expense Sheet Audit Report Trail</value>
+  </data>
+  <data name="Generate Timesheet Audit Trail" xml:space="preserve">
+    <value>Genera Timesheet Audit Trail</value>
+  </data>
+  <data name="Generates a department wise timesheet report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Department  timesheet report for a given user for a given time period.</value>
+  </data>
+  <data name="Generates a employee wise project activity summary report with expense detail." xml:space="preserve">
+    <value>Report di riepilogo attività per progetto/dipendente con dettaglio spese</value>
+  </data>
+  <data name="Generates a employee wise project summary report with expense detail." xml:space="preserve">
+    <value>Report di riepilogo  progetto/dipendente con dettaglio spese</value>
+  </data>
+  <data name="Generates a expense report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Report spese per un determinato utente per un periodo di tempo determinato</value>
+  </data>
+  <data name="Generates a project expense detail report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Report spese per progetto per un determinato utente per un periodo di tempo determinato</value>
+  </data>
+  <data name="Generates a project wise billing report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Project billing report for a given user for a given time period. </value>
+  </data>
+  <data name="Generates a task summary report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Task summary report for a given user for a given time period.</value>
+  </data>
+  <data name="Generates a timesheet report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Report timesheet per un determinato utente per un periodo di tempo determinato</value>
+  </data>
+  <data name="Generates employee wise summarize report for time entries with missing entries." xml:space="preserve">
+    <value>Employee summarize report for time entries with missing entries.</value>
+  </data>
+  <data name="Get_text" xml:space="preserve">
+    <value>Ottenere</value>
+  </data>
+  <data name="Goto Login page" xml:space="preserve">
+    <value>Vai alla pagina di Login</value>
+  </data>
+  <data name="Grand Total" xml:space="preserve">
+    <value>Totale</value>
+  </data>
+  <data name="Grand Total:" xml:space="preserve">
+    <value>Totale generale:</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Gruppo</value>
+  </data>
+  <data name="Group Order" xml:space="preserve">
+    <value>Group Order</value>
+  </data>
+  <data name="GST" xml:space="preserve">
+    <value>GST</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Aiuto</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="Hired Date:" xml:space="preserve">
+    <value>Data di noleggio:</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>Vacanza</value>
+  </data>
+  <data name="Holiday Date" xml:space="preserve">
+    <value>Data vacanze</value>
+  </data>
+  <data name="Holiday Date:" xml:space="preserve">
+    <value>Vacanze Data:</value>
+  </data>
+  <data name="Holiday Information" xml:space="preserve">
+    <value>Informazioni utili</value>
+  </data>
+  <data name="Holiday List" xml:space="preserve">
+    <value>Vacanze Elenco</value>
+  </data>
+  <data name="Holiday Name" xml:space="preserve">
+    <value>Nome Vacanze</value>
+  </data>
+  <data name="Holiday Name:" xml:space="preserve">
+    <value>Vacanze Nome:</value>
+  </data>
+  <data name="Holiday Select" xml:space="preserve">
+    <value>Ferie</value>
+  </data>
+  <data name="Holiday Type" xml:space="preserve">
+    <value>Tipo di vacanza</value>
+  </data>
+  <data name="Holiday Type Detail" xml:space="preserve">
+    <value>Holiday tipo di dettagli</value>
+  </data>
+  <data name="Holiday Type Information" xml:space="preserve">
+    <value>Tipo di vacanza Informazioni</value>
+  </data>
+  <data name="Holiday Type List" xml:space="preserve">
+    <value>Tipo di vacanza Lista</value>
+  </data>
+  <data name="Holiday Type Name:" xml:space="preserve">
+    <value>Tipo di vacanza Nome:</value>
+  </data>
+  <data name="Holiday Type:" xml:space="preserve">
+    <value>Tipo di vacanza:</value>
+  </data>
+  <data name="Holiday Types" xml:space="preserve">
+    <value>Tipi di vacanze</value>
+  </data>
+  <data name="Holiday Year" xml:space="preserve">
+    <value>Vacanze di fine anno</value>
+  </data>
+  <data name="Holiday Year:" xml:space="preserve">
+    <value>Vacanze di fine anno:</value>
+  </data>
+  <data name="Holidays" xml:space="preserve">
+    <value>Ferie</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="Home Phone No." xml:space="preserve">
+    <value>Home Telefono</value>
+  </data>
+  <data name="Home Phone No:" xml:space="preserve">
+    <value>Home Phone No:</value>
+  </data>
+  <data name="HomePhoneNo" xml:space="preserve">
+    <value>HomePhoneNo</value>
+  </data>
+  <data name="Hosted Solution (ASP)" xml:space="preserve">
+    <value>Hosted Solution (ASP)</value>
+  </data>
+  <data name="Hotel" xml:space="preserve">
+    <value>Albergo</value>
+  </data>
+  <data name="Hotel Tax" xml:space="preserve">
+    <value>Hotel Tax</value>
+  </data>
+  <data name="Hotel Tax:" xml:space="preserve">
+    <value>Hotel Tax:</value>
+  </data>
+  <data name="Hourly" xml:space="preserve">
+    <value>Orario</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Ore</value>
+  </data>
+  <data name="Hours Off" xml:space="preserve">
+    <value>Ore Off</value>
+  </data>
+  <data name="Hours Off:" xml:space="preserve">
+    <value>Ore Off:</value>
+  </data>
+  <data name="Hours Per Day" xml:space="preserve">
+    <value>Ore al giorno</value>
+  </data>
+  <data name="Hours Per Day:" xml:space="preserve">
+    <value>Ore al giorno:</value>
+  </data>
+  <data name="Hours Per Week" xml:space="preserve">
+    <value>Ore a settimana</value>
+  </data>
+  <data name="Hours Per Week:" xml:space="preserve">
+    <value>Ore alla settimana:</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ID1" xml:space="preserve">
+    <value>Identificazione</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorare</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Import / Export" xml:space="preserve">
+    <value>Import / Export</value>
+  </data>
+  <data name="Import / Export CSV" xml:space="preserve">
+    <value>Import / Export CSV</value>
+  </data>
+  <data name="Import Export" xml:space="preserve">
+    <value>Import Export</value>
+  </data>
+  <data name="In Approval" xml:space="preserve">
+    <value>In approvazione</value>
+  </data>
+  <data name="In Progress" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="In/Out" xml:space="preserve">
+    <value>In / Out</value>
+  </data>
+  <data name="In/Out:" xml:space="preserve">
+    <value>In / out:</value>
+  </data>
+  <data name="InActive" xml:space="preserve">
+    <value>Inattivo</value>
+  </data>
+  <data name="Include Date Range" xml:space="preserve">
+    <value>Includi Date Range</value>
+  </data>
+  <data name="Include Date Range:" xml:space="preserve">
+    <value>Include Intervallo date:</value>
+  </data>
+  <data name="Initial Days Of The Month" xml:space="preserve">
+    <value>Primi giorni del mese</value>
+  </data>
+  <data name="Initial Days Of The Period" xml:space="preserve">
+    <value>Primo giorno del periodo</value>
+  </data>
+  <data name="Initial Set To Hours" xml:space="preserve">
+    <value>Set iniziale alle ore</value>
+  </data>
+  <data name="Instant Setup" xml:space="preserve">
+    <value>Instant Setup</value>
+  </data>
+  <data name="Integrated module to manage your projects tasks within same integrated tool." xml:space="preserve">
+    <value>Integrated module to manage your projects tasks within same integrated tool.</value>
+  </data>
+  <data name="Integrated module to record track and monitor project expenses" xml:space="preserve">
+    <value>Integrated module to record track and monitor project expenses</value>
+  </data>
+  <data name="Integrated timesheet in both hosted and downloadable version" xml:space="preserve">
+    <value>Integrated timesheet in both hosted and downloadable version</value>
+  </data>
+  <data name="Invalid username or password" xml:space="preserve">
+    <value>Nome utente o password non valida</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Fattura</value>
+  </data>
+  <data name="Invoice #:" xml:space="preserve">
+    <value>Fattura #:</value>
+  </data>
+  <data name="Invoice Date" xml:space="preserve">
+    <value>Data fattura</value>
+  </data>
+  <data name="Invoice Date :" xml:space="preserve">
+    <value>Data fattura:</value>
+  </data>
+  <data name="Invoice Date:" xml:space="preserve">
+    <value>Data fattura:</value>
+  </data>
+  <data name="Invoice Details" xml:space="preserve">
+    <value>Dettagli fattura</value>
+  </data>
+  <data name="Invoice Information" xml:space="preserve">
+    <value>Informazioni fattura</value>
+  </data>
+  <data name="Invoice Management" xml:space="preserve">
+    <value>Gestione fattura</value>
+  </data>
+  <data name="Invoice No" xml:space="preserve">
+    <value>Fattura No.</value>
+  </data>
+  <data name="Invoice No Prefix:" xml:space="preserve">
+    <value>Invoice No Prefix:</value>
+  </data>
+  <data name="Invoice No." xml:space="preserve">
+    <value>Fattura No.</value>
+  </data>
+  <data name="Invoice No:" xml:space="preserve">
+    <value>Fattura n.:</value>
+  </data>
+  <data name="Invoice Report" xml:space="preserve">
+    <value>Report fatture</value>
+  </data>
+  <data name="Invoice Summary Report" xml:space="preserve">
+    <value>Report riepilogo fatture</value>
+  </data>
+  <data name="Is Active" xml:space="preserve">
+    <value>È attivo</value>
+  </data>
+  <data name="Is Billable" xml:space="preserve">
+    <value>È fatturabile</value>
+  </data>
+  <data name="Is Completed" xml:space="preserve">
+    <value>È completato</value>
+  </data>
+  <data name="Is For All Employees" xml:space="preserve">
+    <value>È per tutti i dipendenti</value>
+  </data>
+  <data name="Is For All Project Task" xml:space="preserve">
+    <value>È per tutte le operazioni/progetto</value>
+  </data>
+  <data name="Is Parent Task" xml:space="preserve">
+    <value>Is Parent Task</value>
+  </data>
+  <data name="Is ReOpen" xml:space="preserve">
+    <value>È ReOpen</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>IsActive</value>
+  </data>
+  <data name="IsBillable" xml:space="preserve">
+    <value>IsBillable</value>
+  </data>
+  <data name="IsForAllEmployees" xml:space="preserve">
+    <value>IsForAllEmployees</value>
+  </data>
+  <data name="IsForAllProjectTask" xml:space="preserve">
+    <value>IsForAllProjectTask</value>
+  </data>
+  <data name="IsParentTask" xml:space="preserve">
+    <value>IsParentTask</value>
+  </data>
+  <data name="IsReOpen" xml:space="preserve">
+    <value>IsReOpen</value>
+  </data>
+  <data name="IsReOpen:" xml:space="preserve">
+    <value>È ReOpen:</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="Japan, Yen" xml:space="preserve">
+    <value>Giappone, Yen</value>
+  </data>
+  <data name="Job Title:" xml:space="preserve">
+    <value>Qualifica:</value>
+  </data>
+  <data name="Just click on [Go to login page] below to navigate to login page." xml:space="preserve">
+    <value>Fare clic su [Vai alla pagina di login] per passare alla pagina di login.</value>
+  </data>
+  <data name="Last Earned Date" xml:space="preserve">
+    <value>Data ultima Earned</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>Cognome</value>
+  </data>
+  <data name="Last Name:" xml:space="preserve">
+    <value>Cognome:</value>
+  </data>
+  <data name="LDAP Role:" xml:space="preserve">
+    <value>LDAP Role:</value>
+  </data>
+  <data name="Leave Summary Report" xml:space="preserve">
+    <value>Report uscite</value>
+  </data>
+  <data name="Leave Type" xml:space="preserve">
+    <value>Tipo uscita</value>
+  </data>
+  <data name="License Activated Successfully." xml:space="preserve">
+    <value>Licenza attivata con successo.</value>
+  </data>
+  <data name="License Activation" xml:space="preserve">
+    <value>Attivazione licenza</value>
+  </data>
+  <data name="License Key" xml:space="preserve">
+    <value>Chiave di licenza:</value>
+  </data>
+  <data name="License Keys" xml:space="preserve">
+    <value>Chiavi di licenza:</value>
+  </data>
+  <data name="List / View" xml:space="preserve">
+    <value>Elenco / Vista</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Sede</value>
+  </data>
+  <data name="Location Id" xml:space="preserve">
+    <value>ID sede</value>
+  </data>
+  <data name="Location Information" xml:space="preserve">
+    <value>Informazioni sede</value>
+  </data>
+  <data name="Location List" xml:space="preserve">
+    <value>Lista sedi</value>
+  </data>
+  <data name="Location Name" xml:space="preserve">
+    <value>Nome sede</value>
+  </data>
+  <data name="Location:" xml:space="preserve">
+    <value>Sede:</value>
+  </data>
+  <data name="LocationListOfAllLocationDefinedByAccount" xml:space="preserve">
+    <value>Lista di posizione - lista di tutta la posizione definita da Account</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Sedi</value>
+  </data>
+  <data name="Lock In-Approval Records" xml:space="preserve">
+    <value>Lock In-Approvazione Records:</value>
+  </data>
+  <data name="Lock Submitted Records" xml:space="preserve">
+    <value>Lock Inviato Records:</value>
+  </data>
+  <data name="LoggedIn As:" xml:space="preserve">
+    <value>Connesso come:</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login / Employee Information" xml:space="preserve">
+    <value>Informazione login/dipendente</value>
+  </data>
+  <data name="Login Email Address" xml:space="preserve">
+    <value>Login Indirizzo e-mail</value>
+  </data>
+  <data name="Login Email Address:" xml:space="preserve">
+    <value>Login Indirizzo e-mail:</value>
+  </data>
+  <data name="Login Information" xml:space="preserve">
+    <value>Informazioni login</value>
+  </data>
+  <data name="Login:" xml:space="preserve">
+    <value>Login:</value>
+  </data>
+  <data name="Logo size (180x50) px" xml:space="preserve">
+    <value>Logo dimensioni (180x50) px</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Low" xml:space="preserve">
+    <value>Basso</value>
+  </data>
+  <data name="Machine Key:" xml:space="preserve">
+    <value>Machine Key:</value>
+  </data>
+  <data name="Machine Name:" xml:space="preserve">
+    <value>Machine Name:</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Gestione</value>
+  </data>
+  <data name="Manage Project" xml:space="preserve">
+    <value>Gestione progetto</value>
+  </data>
+  <data name="Manage Terminology" xml:space="preserve">
+    <value>Gestione terminologia</value>
+  </data>
+  <data name="Manual Activation" xml:space="preserve">
+    <value>Manuale di attivazione</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
+  <data name="Master Card" xml:space="preserve">
+    <value>Master Card</value>
+  </data>
+  <data name="Maximum Available" xml:space="preserve">
+    <value>Massima disponibile</value>
+  </data>
+  <data name="Maximum Hours Per Day" xml:space="preserve">
+    <value>Numero massimo di ore al giorno</value>
+  </data>
+  <data name="Maximum Hours Per Week" xml:space="preserve">
+    <value>Numero massimo di ore per settimana</value>
+  </data>
+  <data name="Medical" xml:space="preserve">
+    <value>Medico</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medio</value>
+  </data>
+  <data name="Middle Name" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="Middle Name:" xml:space="preserve">
+    <value>Middle Name:</value>
+  </data>
+  <data name="Milestone" xml:space="preserve">
+    <value>Milestone</value>
+  </data>
+  <data name="Milestone Date" xml:space="preserve">
+    <value>Milestone Date</value>
+  </data>
+  <data name="Milestone Date:" xml:space="preserve">
+    <value>Milestone Date:</value>
+  </data>
+  <data name="Milestone Description" xml:space="preserve">
+    <value>Milestone Description</value>
+  </data>
+  <data name="Milestone Description:" xml:space="preserve">
+    <value>Milestone Description:</value>
+  </data>
+  <data name="Milestone:" xml:space="preserve">
+    <value>Milestone:</value>
+  </data>
+  <data name="Milestones" xml:space="preserve">
+    <value>Milestones</value>
+  </data>
+  <data name="Minimum Hours Per Day" xml:space="preserve">
+    <value>Numero minimo di ore per giorno</value>
+  </data>
+  <data name="Minimum Hours Per Week" xml:space="preserve">
+    <value>Numero minimo di ore per settimana</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>Verbale</value>
+  </data>
+  <data name="Miss" xml:space="preserve">
+    <value>Perdere</value>
+  </data>
+  <data name="Mobile Phone No." xml:space="preserve">
+    <value>Cellulare No</value>
+  </data>
+  <data name="Mobile Phone No:" xml:space="preserve">
+    <value>Numero cellulare:</value>
+  </data>
+  <data name="MobilePhoneNo" xml:space="preserve">
+    <value>MobilePhoneNo</value>
+  </data>
+  <data name="Module Name" xml:space="preserve">
+    <value>Nome Modulo</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Lun</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Lunedi</value>
+  </data>
+  <data name="Month No" xml:space="preserve">
+    <value>Mese N.</value>
+  </data>
+  <data name="Month No." xml:space="preserve">
+    <value>Mese N.</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Mensile</value>
+  </data>
+  <data name="Move Down" xml:space="preserve">
+    <value>Sposta in basso</value>
+  </data>
+  <data name="Move Up" xml:space="preserve">
+    <value>Sposta in alto</value>
+  </data>
+  <data name="Mr." xml:space="preserve">
+    <value>Sig.</value>
+  </data>
+  <data name="Mrs." xml:space="preserve">
+    <value>La signora</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>Il mio</value>
+  </data>
+  <data name="My Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="MY AREA CAPS" xml:space="preserve">
+    <value>AREA </value>
+  </data>
+  <data name="My Expense Entries" xml:space="preserve">
+    <value>Spese</value>
+  </data>
+  <data name="My Expense Sheet" xml:space="preserve">
+    <value>Mie spese Fogli</value>
+  </data>
+  <data name="My Open Timesheet Periods" xml:space="preserve">
+    <value>Miei periodi Timesheet Open</value>
+  </data>
+  <data name="My Periods" xml:space="preserve">
+    <value>Il mio periodo</value>
+  </data>
+  <data name="My Preferences" xml:space="preserve">
+    <value>Preferenze</value>
+  </data>
+  <data name="My Profile" xml:space="preserve">
+    <value>Profilo</value>
+  </data>
+  <data name="My Projects" xml:space="preserve">
+    <value>Progetti</value>
+  </data>
+  <data name="My Projects Expense Entry Approvals" xml:space="preserve">
+    <value>Approvazioni spese/progetto</value>
+  </data>
+  <data name="My Projects Time Entry Approvals" xml:space="preserve">
+    <value>Approvazioni inserimenti ore/progetto</value>
+  </data>
+  <data name="My Reported Tasks" xml:space="preserve">
+    <value>Reported Tasks</value>
+  </data>
+  <data name="My Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="My Request Approval" xml:space="preserve">
+    <value>La mia richiesta di approvazione</value>
+  </data>
+  <data name="My Sub-Ordinates" xml:space="preserve">
+    <value>Il mio sub-ordinate</value>
+  </data>
+  <data name="My Task List" xml:space="preserve">
+    <value>Lista operazioni</value>
+  </data>
+  <data name="My Task Summary" xml:space="preserve">
+    <value>Riepilogo operazioni</value>
+  </data>
+  <data name="My Tasks" xml:space="preserve">
+    <value>I miei compiti</value>
+  </data>
+  <data name="My Team Expense Entry Approvals" xml:space="preserve">
+    <value>Team Expense Entry Approvals</value>
+  </data>
+  <data name="My Team Time Entry Approvals:" xml:space="preserve">
+    <value>Team Time Entry Approvals:</value>
+  </data>
+  <data name="My Teams" xml:space="preserve">
+    <value>Teams</value>
+  </data>
+  <data name="My Time Off" xml:space="preserve">
+    <value>Il mio tempo fuori</value>
+  </data>
+  <data name="My Time Off Request" xml:space="preserve">
+    <value>My Time Off Richiesta</value>
+  </data>
+  <data name="My Timesheet" xml:space="preserve">
+    <value>Timesheet</value>
+  </data>
+  <data name="MYAREA" xml:space="preserve">
+    <value>LA MIA ZONA</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Name:" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="Net Amount" xml:space="preserve">
+    <value>Importo netto</value>
+  </data>
+  <data name="Net Amount ()" xml:space="preserve">
+    <value>Importo netto ()</value>
+  </data>
+  <data name="Net Amount (BaseCurrency)" xml:space="preserve">
+    <value>Importo netto (valuta di base)</value>
+  </data>
+  <data name="Net Amount:" xml:space="preserve">
+    <value>Importo netto:</value>
+  </data>
+  <data name="NetAmount" xml:space="preserve">
+    <value>NetAmount</value>
+  </data>
+  <data name="New Value" xml:space="preserve">
+    <value>Nuovo valore</value>
+  </data>
+  <data name="New_text" xml:space="preserve">
+    <value>Nuovo</value>
+  </data>
+  <data name="Next Date" xml:space="preserve">
+    <value>La data prossima</value>
+  </data>
+  <data name="Next Week" xml:space="preserve">
+    <value>Prossima Settimana</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nr.</value>
+  </data>
+  <data name="No Of Blank Rows In Timesheet" xml:space="preserve">
+    <value>Numero di righe vuote In Timesheet:</value>
+  </data>
+  <data name="No. Of Blank Rows In TimeSheet" xml:space="preserve">
+    <value>No. Tra le righe vuote In Timesheet:</value>
+  </data>
+  <data name="Non Billable" xml:space="preserve">
+    <value>Non fatturabile</value>
+  </data>
+  <data name="Non Reimbursement" xml:space="preserve">
+    <value>Non Rimborso</value>
+  </data>
+  <data name="Non-Billable" xml:space="preserve">
+    <value>Non fatturabile</value>
+  </data>
+  <data name="Non-billable Hours" xml:space="preserve">
+    <value>Ore non fatturabili</value>
+  </data>
+  <data name="Non-Billable Total Hours" xml:space="preserve">
+    <value>Ore totali non fatturabili</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
+  <data name="Non-working day" xml:space="preserve">
+    <value>giorno non lavorativo</value>
+  </data>
+  <data name="Not Approved" xml:space="preserve">
+    <value>Non approvato</value>
+  </data>
+  <data name="Not Billed" xml:space="preserve">
+    <value>Non Fatturato</value>
+  </data>
+  <data name="Not Entered" xml:space="preserve">
+    <value>Non iscritta</value>
+  </data>
+  <data name="Not Submitted" xml:space="preserve">
+    <value>Non presentato</value>
+  </data>
+  <data name="Not Submitted:" xml:space="preserve">
+    <value>Non presentato:</value>
+  </data>
+  <data name="Note : Approval Not Required For This Time Entry" xml:space="preserve">
+    <value>Nota: approvazione non richiesta per questo inserimento ore</value>
+  </data>
+  <data name="Note : Approved" xml:space="preserve">
+    <value>Nota: Approvato</value>
+  </data>
+  <data name="Note : Not Submitted - Waiting For Submit" xml:space="preserve">
+    <value>Nota: non presentato - in attesa che venga presentato</value>
+  </data>
+  <data name="Note : Rejected - Waiting For Re-Submit" xml:space="preserve">
+    <value>Nota: respinto - in attesa che venga ri-presentato</value>
+  </data>
+  <data name="Note : Submitted - Waiting For Approval" xml:space="preserve">
+    <value>Nota: presentato - in attesa di approvazione</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Notes:" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="Notification of events / reports via email in order to update users without signing in system" xml:space="preserve">
+    <value>Notifica di eventi / report via e-mail al fine di aggiornare gli utenti senza la firma del sistema</value>
+  </data>
+  <data name="Number of Users" xml:space="preserve">
+    <value>Numero di utenti:</value>
+  </data>
+  <data name="Number of Users:" xml:space="preserve">
+    <value>Numero di utenti:</value>
+  </data>
+  <data name="Office Assets" xml:space="preserve">
+    <value>Office Assets</value>
+  </data>
+  <data name="Old Value" xml:space="preserve">
+    <value>Old Value</value>
+  </data>
+  <data name="OnHold" xml:space="preserve">
+    <value>Sospeso</value>
+  </data>
+  <data name="Online Activation" xml:space="preserve">
+    <value>Attivazione Online</value>
+  </data>
+  <data name="Organization Name" xml:space="preserve">
+    <value>Nome organizzazione</value>
+  </data>
+  <data name="Organization Setup" xml:space="preserve">
+    <value>Setup Organizzazione </value>
+  </data>
+  <data name="OT" xml:space="preserve">
+    <value>OT</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Altro</value>
+  </data>
+  <data name="Others" xml:space="preserve">
+    <value>Altri</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Straordinario</value>
+  </data>
+  <data name="Package Plan:" xml:space="preserve">
+    <value>Package Plan:</value>
+  </data>
+  <data name="Package:" xml:space="preserve">
+    <value>Package:</value>
+  </data>
+  <data name="Page Description" xml:space="preserve">
+    <value>Page Description</value>
+  </data>
+  <data name="Page Permissions" xml:space="preserve">
+    <value>Page Permissions</value>
+  </data>
+  <data name="Page Size" xml:space="preserve">
+    <value>Page Size</value>
+  </data>
+  <data name="Page Size:" xml:space="preserve">
+    <value>Pagina taglia:</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>Pagato</value>
+  </data>
+  <data name="Paid:" xml:space="preserve">
+    <value>A pagamento:</value>
+  </data>
+  <data name="Parent Task Code" xml:space="preserve">
+    <value>Codice operazione capogruppo</value>
+  </data>
+  <data name="Parent Task Name" xml:space="preserve">
+    <value>Nome operazione capogruppo</value>
+  </data>
+  <data name="Parent Task:" xml:space="preserve">
+    <value>Operazione capogruppo:</value>
+  </data>
+  <data name="Parent:" xml:space="preserve">
+    <value>Genitore:</value>
+  </data>
+  <data name="Parking" xml:space="preserve">
+    <value>Parcheggio</value>
+  </data>
+  <data name="Part-time Hourly" xml:space="preserve">
+    <value>Part-time orario</value>
+  </data>
+  <data name="Part-time Salaried" xml:space="preserve">
+    <value>Part-time stipendiati</value>
+  </data>
+  <data name="Party Name:" xml:space="preserve">
+    <value>Party Name:</value>
+  </data>
+  <data name="PartyName" xml:space="preserve">
+    <value>Nome Party</value>
+  </data>
+  <data name="PartyNick" xml:space="preserve">
+    <value>Partito Nick</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Password:" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="Pause Timer" xml:space="preserve">
+    <value>Pausa Timer</value>
+  </data>
+  <data name="Payment Method" xml:space="preserve">
+    <value>Metodo di pagamento</value>
+  </data>
+  <data name="Payment Method Information" xml:space="preserve">
+    <value>Informazioni metodo di pagamento </value>
+  </data>
+  <data name="Payment Method:" xml:space="preserve">
+    <value>Metodo di Pagamento:</value>
+  </data>
+  <data name="Per Hour" xml:space="preserve">
+    <value>Per ora</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Periodo</value>
+  </data>
+  <data name="Period Type" xml:space="preserve">
+    <value>Periodo di tipo</value>
+  </data>
+  <data name="Period View" xml:space="preserve">
+    <value>Visualizzazione periodo</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Autorizzazioni</value>
+  </data>
+  <data name="Personal Information" xml:space="preserve">
+    <value>Dati Personali</value>
+  </data>
+  <data name="Personal Leave" xml:space="preserve">
+    <value>Per motivi personali</value>
+  </data>
+  <data name="Personal Profile" xml:space="preserve">
+    <value>Profilo personale</value>
+  </data>
+  <data name="Petrol" xml:space="preserve">
+    <value>Benzina</value>
+  </data>
+  <data name="Phone #" xml:space="preserve">
+    <value>Telefono #</value>
+  </data>
+  <data name="Phone No" xml:space="preserve">
+    <value>Telefono</value>
+  </data>
+  <data name="Please select employee." xml:space="preserve">
+    <value>Selezionare il dipendente.</value>
+  </data>
+  <data name="PO Number" xml:space="preserve">
+    <value>Numero PO</value>
+  </data>
+  <data name="PO Number :" xml:space="preserve">
+    <value>PO Number:</value>
+  </data>
+  <data name="PO Number:" xml:space="preserve">
+    <value>Numero di PO:</value>
+  </data>
+  <data name="Populate Un-Billed Records" xml:space="preserve">
+    <value>Populate Un-Billed Records</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Preferenze</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Prefisso</value>
+  </data>
+  <data name="Prefix:" xml:space="preserve">
+    <value>Prefisso:</value>
+  </data>
+  <data name="Preiod" xml:space="preserve">
+    <value>Periodo</value>
+  </data>
+  <data name="Present Days" xml:space="preserve">
+    <value>Oggi</value>
+  </data>
+  <data name="Previous Date" xml:space="preserve">
+    <value>Data precedente</value>
+  </data>
+  <data name="Previous Week" xml:space="preserve">
+    <value>Settimana Precedente</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Stampa</value>
+  </data>
+  <data name="Print Invoice" xml:space="preserve">
+    <value>Stampa fattura</value>
+  </data>
+  <data name="Priorities" xml:space="preserve">
+    <value>Priorità</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priorità</value>
+  </data>
+  <data name="priority information" xml:space="preserve">
+    <value>Informazioni priorità</value>
+  </data>
+  <data name="Priority Information:" xml:space="preserve">
+    <value>Informazioni priorità:</value>
+  </data>
+  <data name="Priority List" xml:space="preserve">
+    <value>Lista priorità</value>
+  </data>
+  <data name="Priority Order:" xml:space="preserve">
+    <value>Priority Order:</value>
+  </data>
+  <data name="Priority:" xml:space="preserve">
+    <value>Priorità:</value>
+  </data>
+  <data name="Proceed" xml:space="preserve">
+    <value>Procedere</value>
+  </data>
+  <data name="Proceed_text" xml:space="preserve">
+    <value>Procedere</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>Profitto</value>
+  </data>
+  <data name="Profit (BaseCurrency)" xml:space="preserve">
+    <value>Utile (valuta di base)</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Progetto</value>
+  </data>
+  <data name="Project / Task Setup" xml:space="preserve">
+    <value>Progetto / Attività di installazione</value>
+  </data>
+  <data name="Project Activity Summary Report" xml:space="preserve">
+    <value>Report attività di progetto</value>
+  </data>
+  <data name="Project Admin" xml:space="preserve">
+    <value>Amministratore progetto</value>
+  </data>
+  <data name="Project Administration" xml:space="preserve">
+    <value>Amministrazione progetto</value>
+  </data>
+  <data name="Project And Employee Information" xml:space="preserve">
+    <value>Informazioni progetto e dipendente </value>
+  </data>
+  <data name="Project Billing Rate" xml:space="preserve">
+    <value>Tariffa di fatturazione progetto</value>
+  </data>
+  <data name="Project Billing Rate Type" xml:space="preserve">
+    <value>Tipo tariffa di fatturazione progetto</value>
+  </data>
+  <data name="Project Billing Type" xml:space="preserve">
+    <value>Tipo di fatturazione progetto</value>
+  </data>
+  <data name="Project Billing Type:" xml:space="preserve">
+    <value>Tipo di fatturazione progetto:</value>
+  </data>
+  <data name="Project Code" xml:space="preserve">
+    <value>Codice Progetto</value>
+  </data>
+  <data name="Project Code:" xml:space="preserve">
+    <value>Codice Progetto:</value>
+  </data>
+  <data name="Project Cost And Revenue Report" xml:space="preserve">
+    <value>Report costi e ricavi progetto </value>
+  </data>
+  <data name="Project Cost Report" xml:space="preserve">
+    <value>Report costi progetto</value>
+  </data>
+  <data name="Project Deadline" xml:space="preserve">
+    <value>Termine progetto</value>
+  </data>
+  <data name="Project Description" xml:space="preserve">
+    <value>Descrizione progetto</value>
+  </data>
+  <data name="Project Description:" xml:space="preserve">
+    <value>Descrizione progetto:</value>
+  </data>
+  <data name="Project Employee List" xml:space="preserve">
+    <value>Lista dipendenti/progetto</value>
+  </data>
+  <data name="Project Employees" xml:space="preserve">
+    <value>Dipendenti/progetto</value>
+  </data>
+  <data name="Project Expense Detail Report" xml:space="preserve">
+    <value>Report spese/progetto</value>
+  </data>
+  <data name="Project Id" xml:space="preserve">
+    <value>ID del progetto</value>
+  </data>
+  <data name="Project Id:" xml:space="preserve">
+    <value>ID progetto:</value>
+  </data>
+  <data name="Project Information" xml:space="preserve">
+    <value>Informazioni sul progetto</value>
+  </data>
+  <data name="Project List" xml:space="preserve">
+    <value>Lista progetti</value>
+  </data>
+  <data name="Project List Report" xml:space="preserve">
+    <value>Report lista progetti</value>
+  </data>
+  <data name="Project Management" xml:space="preserve">
+    <value>Gestione progetti</value>
+  </data>
+  <data name="Project Manager" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="Project Manager Pages" xml:space="preserve">
+    <value>Project Manager Pages</value>
+  </data>
+  <data name="Project Manager Reports" xml:space="preserve">
+    <value>Report Project Manager Rapporti</value>
+  </data>
+  <data name="Project Manager:" xml:space="preserve">
+    <value>Project Manager:</value>
+  </data>
+  <data name="Project Milestone" xml:space="preserve">
+    <value>Milestone di progetto</value>
+  </data>
+  <data name="Project Milestone Information" xml:space="preserve">
+    <value>Informazioni milestone di progetto</value>
+  </data>
+  <data name="Project Milestone List" xml:space="preserve">
+    <value>Lista milestone di progetto</value>
+  </data>
+  <data name="Project Milestones" xml:space="preserve">
+    <value>Milestone di progetto</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>Nome del progetto</value>
+  </data>
+  <data name="Project Name:" xml:space="preserve">
+    <value>Nome progetto:</value>
+  </data>
+  <data name="Project Preferences" xml:space="preserve">
+    <value>Preferenze del progetto</value>
+  </data>
+  <data name="Project Reports" xml:space="preserve">
+    <value>Reports progetto</value>
+  </data>
+  <data name="Project Role" xml:space="preserve">
+    <value>Ruolo progetto</value>
+  </data>
+  <data name="Project Roles" xml:space="preserve">
+    <value>Ruoli di progetto</value>
+  </data>
+  <data name="Project Start Date" xml:space="preserve">
+    <value>Data inizio progetto</value>
+  </data>
+  <data name="Project Status" xml:space="preserve">
+    <value>Stato progetto</value>
+  </data>
+  <data name="Project Status:" xml:space="preserve">
+    <value>Stato progetto:</value>
+  </data>
+  <data name="Project Task" xml:space="preserve">
+    <value>Operazione </value>
+  </data>
+  <data name="Project Task Attachment" xml:space="preserve">
+    <value>Allegato</value>
+  </data>
+  <data name="Project Task Attachment Information" xml:space="preserve">
+    <value>Informazioni allegato</value>
+  </data>
+  <data name="Project Task Information" xml:space="preserve">
+    <value>Informazioni operazione </value>
+  </data>
+  <data name="Project Task List" xml:space="preserve">
+    <value>Lista operazioni</value>
+  </data>
+  <data name="Project Task Name:" xml:space="preserve">
+    <value>Nome operazione</value>
+  </data>
+  <data name="Project Tasks" xml:space="preserve">
+    <value>Operazioni </value>
+  </data>
+  <data name="Project Tasks:" xml:space="preserve">
+    <value>Operazioni:</value>
+  </data>
+  <data name="Project Team" xml:space="preserve">
+    <value>Personale addetto al programma</value>
+  </data>
+  <data name="Project Template" xml:space="preserve">
+    <value>Modello progetto</value>
+  </data>
+  <data name="Project Template Information" xml:space="preserve">
+    <value>Informazioni modello progetto</value>
+  </data>
+  <data name="Project Template List" xml:space="preserve">
+    <value>Lista modelli progetto</value>
+  </data>
+  <data name="Project Template:" xml:space="preserve">
+    <value>Modello di progetto:</value>
+  </data>
+  <data name="Project Templates" xml:space="preserve">
+    <value>Modelli di progetto</value>
+  </data>
+  <data name="Project Type" xml:space="preserve">
+    <value>Tipo Progetto</value>
+  </data>
+  <data name="Project Type Information" xml:space="preserve">
+    <value>Informazioni Tipo Progetto </value>
+  </data>
+  <data name="Project Type Information:" xml:space="preserve">
+    <value>Informazioni Tipo Progetto :</value>
+  </data>
+  <data name="Project Type List" xml:space="preserve">
+    <value>Lista tipi progetto</value>
+  </data>
+  <data name="Project Type:" xml:space="preserve">
+    <value>Tipo Progetto:</value>
+  </data>
+  <data name="Project Types" xml:space="preserve">
+    <value>Tipo Progetto</value>
+  </data>
+  <data name="Project/Client" xml:space="preserve">
+    <value>Progetto / Client</value>
+  </data>
+  <data name="Project:" xml:space="preserve">
+    <value>Progetto:</value>
+  </data>
+  <data name="Project_List_Of_All_Projects_Defined_By_Account" xml:space="preserve">
+    <value>Project List - Lista di tutti i progetti Definito da Account</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Progetti</value>
+  </data>
+  <data name="Projects:" xml:space="preserve">
+    <value>Progetti:</value>
+  </data>
+  <data name="PROJECTS1" xml:space="preserve">
+    <value>PROGETTI</value>
+  </data>
+  <data name="ProjectType" xml:space="preserve">
+    <value>Tipo Progetto</value>
+  </data>
+  <data name="Provide Your Information" xml:space="preserve">
+    <value>Fornire informazioni</value>
+  </data>
+  <data name="PST" xml:space="preserve">
+    <value>PST</value>
+  </data>
+  <data name="PST:" xml:space="preserve">
+    <value>PST:</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantità</value>
+  </data>
+  <data name="Quantity Caption" xml:space="preserve">
+    <value>Quantity Caption</value>
+  </data>
+  <data name="Quantity Caption:" xml:space="preserve">
+    <value>Quantity Caption:</value>
+  </data>
+  <data name="Quantity:" xml:space="preserve">
+    <value>Quantità:</value>
+  </data>
+  <data name="Quickbooks (IIF)" xml:space="preserve">
+    <value>Quickbooks (IIF)</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Tasso</value>
+  </data>
+  <data name="Rate:" xml:space="preserve">
+    <value>Tariffa:</value>
+  </data>
+  <data name="Reimburse" xml:space="preserve">
+    <value>Rimborsare</value>
+  </data>
+  <data name="Reimburse:" xml:space="preserve">
+    <value>Rimborsare:</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Rimborso</value>
+  </data>
+  <data name="Reimbursement Currency:" xml:space="preserve">
+    <value>Rimborso Valuta:</value>
+  </data>
+  <data name="Reimbursement Status:" xml:space="preserve">
+    <value>Rimborso Status:</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Rifiutato</value>
+  </data>
+  <data name="Rejected By :" xml:space="preserve">
+    <value>Respinto da:</value>
+  </data>
+  <data name="Rejected By Employee Name" xml:space="preserve">
+    <value>Rifiutato dalla Nome Dipendente</value>
+  </data>
+  <data name="Rejected Date" xml:space="preserve">
+    <value>Respinto Data</value>
+  </data>
+  <data name="Rejected Hours" xml:space="preserve">
+    <value>Ore respinte</value>
+  </data>
+  <data name="Rejected On" xml:space="preserve">
+    <value>Respinto On</value>
+  </data>
+  <data name="Rejected On :" xml:space="preserve">
+    <value>Respinto il:</value>
+  </data>
+  <data name="Rejected:" xml:space="preserve">
+    <value>Respinto:</value>
+  </data>
+  <data name="Report By:" xml:space="preserve">
+    <value>Report By:</value>
+  </data>
+  <data name="Report Category:" xml:space="preserve">
+    <value>Categoria report:</value>
+  </data>
+  <data name="Report Column" xml:space="preserve">
+    <value>Colonna report</value>
+  </data>
+  <data name="Report DataSource" xml:space="preserve">
+    <value>DataSource report</value>
+  </data>
+  <data name="Report Definition" xml:space="preserve">
+    <value>Definizione report</value>
+  </data>
+  <data name="Report Definition Information" xml:space="preserve">
+    <value>Informazioni definizione report</value>
+  </data>
+  <data name="Report Description:" xml:space="preserve">
+    <value>Descrizione report:</value>
+  </data>
+  <data name="Report Design" xml:space="preserve">
+    <value>Report Design</value>
+  </data>
+  <data name="Report Footer:" xml:space="preserve">
+    <value>Report Footer:</value>
+  </data>
+  <data name="Report for generating summary of employee leaves like sick leave casual leave etc in specified range." xml:space="preserve">
+    <value>Report assenze dipendente</value>
+  </data>
+  <data name="Report for generating summary of employee leaves like sick leave, casual leave etc in specified range." xml:space="preserve">
+    <value>Report assenze dipendente</value>
+  </data>
+  <data name="Report Header:" xml:space="preserve">
+    <value>Titolo report:</value>
+  </data>
+  <data name="Report Id:" xml:space="preserve">
+    <value>ID report:</value>
+  </data>
+  <data name="Report Information" xml:space="preserve">
+    <value>Informazioni report</value>
+  </data>
+  <data name="Report Name" xml:space="preserve">
+    <value>Nome report</value>
+  </data>
+  <data name="Report Name:" xml:space="preserve">
+    <value>Nome report:</value>
+  </data>
+  <data name="Report Permission" xml:space="preserve">
+    <value>Autorizzazione report</value>
+  </data>
+  <data name="Report Title:" xml:space="preserve">
+    <value>Titolo report:</value>
+  </data>
+  <data name="Report Type:" xml:space="preserve">
+    <value>Tipo report:</value>
+  </data>
+  <data name="REPORTS1" xml:space="preserve">
+    <value>RELAZIONI</value>
+  </data>
+  <data name="Request Required" xml:space="preserve">
+    <value>Richiesta obbligatori</value>
+  </data>
+  <data name="Reset Hours" xml:space="preserve">
+    <value>Ripristino delle ore</value>
+  </data>
+  <data name="Reset Policy" xml:space="preserve">
+    <value>Reset Politica</value>
+  </data>
+  <data name="Reset To Zero" xml:space="preserve">
+    <value>Azzerato</value>
+  </data>
+  <data name="Resigned" xml:space="preserve">
+    <value>Rassegnato</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Ruolo</value>
+  </data>
+  <data name="Role Information" xml:space="preserve">
+    <value>Informazioni ruolo</value>
+  </data>
+  <data name="Role List" xml:space="preserve">
+    <value>Lista ruoli</value>
+  </data>
+  <data name="Role Permissions" xml:space="preserve">
+    <value>Autorizzazioni ruolo</value>
+  </data>
+  <data name="Role Wise Billing Rate" xml:space="preserve">
+    <value>Role Billing Rate</value>
+  </data>
+  <data name="Role:" xml:space="preserve">
+    <value>Ruolo:</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Ruoli</value>
+  </data>
+  <data name="Root Level" xml:space="preserve">
+    <value>Root Level</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>Sab</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Sabato</value>
+  </data>
+  <data name="Save_cofirmation" xml:space="preserve">
+    <value>Si dovrebbe fare clic sul pulsante Invia, al fine di presentare questi record per l&amp;#39;approvazione.</value>
+  </data>
+  <data name="Save_Confirmation_DayView" xml:space="preserve">
+    <value>Si dovrebbe fare clic sul pulsante Invia a Settimana Vista al fine di presentare questi record per l&amp;#39;approvazione.</value>
+  </data>
+  <data name="Save_Confirmation_Invoice" xml:space="preserve">
+    <value>Fattura � stata salvata.</value>
+  </data>
+  <data name="Save_text" xml:space="preserve">
+    <value>Salvare</value>
+  </data>
+  <data name="Scheduled Email Send Time" xml:space="preserve">
+    <value>Orario invio schedulato email</value>
+  </data>
+  <data name="Scheduled Email Sent Time" xml:space="preserve">
+    <value>Email programmata Ora invio:</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="Search Employees:" xml:space="preserve">
+    <value>Ricerca dipendenti:</value>
+  </data>
+  <data name="Search Parameter" xml:space="preserve">
+    <value>Parametro di ricerca</value>
+  </data>
+  <data name="Search Parameters" xml:space="preserve">
+    <value>Parametri di ricerca</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Selezionare</value>
+  </data>
+  <data name="Select Assigned To:" xml:space="preserve">
+    <value>Selezionare "Assegnato a":</value>
+  </data>
+  <data name="Select Datasource:" xml:space="preserve">
+    <value>Seleziona DataSource:</value>
+  </data>
+  <data name="Select Employee" xml:space="preserve">
+    <value>Selezionare dipendente</value>
+  </data>
+  <data name="Select Employee:" xml:space="preserve">
+    <value>Selezionare dipendente:</value>
+  </data>
+  <data name="Select Option" xml:space="preserve">
+    <value>Selezionare "Opzioni"</value>
+  </data>
+  <data name="Select Project Tasks" xml:space="preserve">
+    <value>Selezionare Operazioni</value>
+  </data>
+  <data name="Select Project:" xml:space="preserve">
+    <value>Selezionare Progetto:</value>
+  </data>
+  <data name="Select Role" xml:space="preserve">
+    <value>Seleziona Ruolo:</value>
+  </data>
+  <data name="Select Tasks" xml:space="preserve">
+    <value>Selezionare Compiti</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Selezionato</value>
+  </data>
+  <data name="Selected_text" xml:space="preserve">
+    <value>Selezionato</value>
+  </data>
+  <data name="Selection" xml:space="preserve">
+    <value>Selezione</value>
+  </data>
+  <data name="Session Time Out" xml:space="preserve">
+    <value>Tempo di sessione fuori:</value>
+  </data>
+  <data name="Sheet Approved" xml:space="preserve">
+    <value>Sheet Approved</value>
+  </data>
+  <data name="Sheet Date" xml:space="preserve">
+    <value>Sheet Date</value>
+  </data>
+  <data name="Sheet Description" xml:space="preserve">
+    <value>Sheet Description</value>
+  </data>
+  <data name="Sheet InApproval" xml:space="preserve">
+    <value>Sheet InApproval</value>
+  </data>
+  <data name="Sheet Rejected" xml:space="preserve">
+    <value>Sheet Rejected</value>
+  </data>
+  <data name="Sheet Submitted" xml:space="preserve">
+    <value>Sheet Submitted</value>
+  </data>
+  <data name="Sheet Submitted Date" xml:space="preserve">
+    <value>Sheet Submitted Date</value>
+  </data>
+  <data name="Show Additional Task Information Type:" xml:space="preserve">
+    <value>Show Additional Task Information Type:</value>
+  </data>
+  <data name="Show All" xml:space="preserve">
+    <value>Mostra tutto</value>
+  </data>
+  <data name="Show Client In Timesheet:" xml:space="preserve">
+    <value>Mostra Client In Timesheet:</value>
+  </data>
+  <data name="Show Clock Start/End" xml:space="preserve">
+    <value>Mostra Avviare Orologio / End:</value>
+  </data>
+  <data name="Show Company Logo:" xml:space="preserve">
+    <value>Mostra Company Logo:</value>
+  </data>
+  <data name="Show Company Own Logo" xml:space="preserve">
+    <value>Mostra logo della propria azienda:</value>
+  </data>
+  <data name="Show Completed Project In Timesheet:" xml:space="preserve">
+    <value>Mostra Completato Project In Timesheet:</value>
+  </data>
+  <data name="Show Completed Task in TimeSheet:" xml:space="preserve">
+    <value>Visualizza Task Completato nel timesheet:</value>
+  </data>
+  <data name="Show Cost Center In TimeSheet" xml:space="preserve">
+    <value>Mostra centro di costo In Timesheet:</value>
+  </data>
+  <data name="Show Data" xml:space="preserve">
+    <value>Mostra dati</value>
+  </data>
+  <data name="Show Description In Period View" xml:space="preserve">
+    <value>Mostra Descrizione nella vista per periodo</value>
+  </data>
+  <data name="Show Description In Period View:" xml:space="preserve">
+    <value>Mostra Descrizione nella vista per periodo:</value>
+  </data>
+  <data name="Show Description In Week View:" xml:space="preserve">
+    <value>Mostra Descrizione nella vista settimanale:</value>
+  </data>
+  <data name="Show Project For TimeOff:" xml:space="preserve">
+    <value>Progetto Show Off Per ora:</value>
+  </data>
+  <data name="Show Quantity" xml:space="preserve">
+    <value>Mostra quantità</value>
+  </data>
+  <data name="Show Quantity:" xml:space="preserve">
+    <value>Quantità di esposizione:</value>
+  </data>
+  <data name="Show Report" xml:space="preserve">
+    <value>Mostri il rapporto</value>
+  </data>
+  <data name="Show Summary" xml:space="preserve">
+    <value>Mostra Sommario</value>
+  </data>
+  <data name="Show TimeOff In Timesheet:" xml:space="preserve">
+    <value>Show Time Off Nella scheda attività:</value>
+  </data>
+  <data name="Show Work Type In TimeSheet" xml:space="preserve">
+    <value>Digitare show Lavora in Timesheet:</value>
+  </data>
+  <data name="Show_text" xml:space="preserve">
+    <value>Mostra</value>
+  </data>
+  <data name="ShowData" xml:space="preserve">
+    <value>Mostra dati</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Congedo per malattia</value>
+  </data>
+  <data name="Sign Up" xml:space="preserve">
+    <value>Iscriviti</value>
+  </data>
+  <data name="Single tool to monitor employee attendance offdays vacation leave" xml:space="preserve">
+    <value>unico strumento per monitorare presenze dei dipendenti, offdays, ferie, congedi</value>
+  </data>
+  <data name="Sort Order" xml:space="preserve">
+    <value>Ordinamento</value>
+  </data>
+  <data name="Sort Order:" xml:space="preserve">
+    <value>Ordinamento:</value>
+  </data>
+  <data name="Specific Employee" xml:space="preserve">
+    <value>Specific Employee</value>
+  </data>
+  <data name="Specific Employee Expense Entry Approvals" xml:space="preserve">
+    <value>Specific Employee Expense Entry Approvals</value>
+  </data>
+  <data name="Specific Employee Time Entry Approvals" xml:space="preserve">
+    <value>Specific Employee Time Entry Approvals</value>
+  </data>
+  <data name="Specific Employee Time Off Approvals" xml:space="preserve">
+    <value>Dipendente tempo specifico Off Approvazioni</value>
+  </data>
+  <data name="Specific External Expense Entry Approvals" xml:space="preserve">
+    <value>Specific External Expense Entry Approvals</value>
+  </data>
+  <data name="Specific External User" xml:space="preserve">
+    <value>Specific External User</value>
+  </data>
+  <data name="Specific External User Time Entry Approvals" xml:space="preserve">
+    <value>Specific External User Time Entry Approvals</value>
+  </data>
+  <data name="ST" xml:space="preserve">
+    <value>St</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Standard and Formats" xml:space="preserve">
+    <value>Standard e formati:</value>
+  </data>
+  <data name="Standards and Formats" xml:space="preserve">
+    <value>Standard e formati:</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Data di inizio</value>
+  </data>
+  <data name="Start Date:" xml:space="preserve">
+    <value>Data di inizio:</value>
+  </data>
+  <data name="Start Time" xml:space="preserve">
+    <value>Ora d&amp;#39;inizio</value>
+  </data>
+  <data name="Start Timer" xml:space="preserve">
+    <value>Start Timer</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>StartDate</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+    <value>Avviato</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Ora inizio</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Stato</value>
+  </data>
+  <data name="State / Province" xml:space="preserve">
+    <value>Regione / Provincia</value>
+  </data>
+  <data name="State / Province:" xml:space="preserve">
+    <value>Stato / Provincia:</value>
+  </data>
+  <data name="State Sales Tax" xml:space="preserve">
+    <value>Tassa statale sulle vendite</value>
+  </data>
+  <data name="State Sales Tax:" xml:space="preserve">
+    <value>Tassa statale sulle vendite:</value>
+  </data>
+  <data name="State:" xml:space="preserve">
+    <value>Stato:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Stato</value>
+  </data>
+  <data name="Status :" xml:space="preserve">
+    <value>Stato:</value>
+  </data>
+  <data name="Status : Approved" xml:space="preserve">
+    <value>Stato: Approvato</value>
+  </data>
+  <data name="Status : Rejected" xml:space="preserve">
+    <value>Stato: Rifiutato</value>
+  </data>
+  <data name="Status : Submitted" xml:space="preserve">
+    <value>Stato: Presentato</value>
+  </data>
+  <data name="Status Information" xml:space="preserve">
+    <value>Informazioni sullo stato</value>
+  </data>
+  <data name="Status Legend" xml:space="preserve">
+    <value>Legenda stato</value>
+  </data>
+  <data name="Status List" xml:space="preserve">
+    <value>Lista stati</value>
+  </data>
+  <data name="Status Type" xml:space="preserve">
+    <value>Tipo stato</value>
+  </data>
+  <data name="Status Type:" xml:space="preserve">
+    <value>Tipo stato:</value>
+  </data>
+  <data name="Status Types" xml:space="preserve">
+    <value>Tipi stato</value>
+  </data>
+  <data name="Status:" xml:space="preserve">
+    <value>Stato:</value>
+  </data>
+  <data name="strmsg" xml:space="preserve">
+    <value>Si dovrebbe essere&amp;#39;&amp;#39;membri&amp;#39;&amp;#39;Project Team per l&amp;#39;aggiunta di attivit� in questo progetto.</value>
+  </data>
+  <data name="Sub Total" xml:space="preserve">
+    <value>Totale parziale</value>
+  </data>
+  <data name="Sub Total:" xml:space="preserve">
+    <value>Totale parziale:</value>
+  </data>
+  <data name="Submission Status:" xml:space="preserve">
+    <value>Presentazione Status:</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Presenta per approvazione</value>
+  </data>
+  <data name="Submit_text" xml:space="preserve">
+    <value>Presentare</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>Presentata</value>
+  </data>
+  <data name="Submitted By :" xml:space="preserve">
+    <value>Presentato da:</value>
+  </data>
+  <data name="Submitted By:" xml:space="preserve">
+    <value>Presentato da:</value>
+  </data>
+  <data name="Submitted Date" xml:space="preserve">
+    <value>Presentato in data</value>
+  </data>
+  <data name="Submitted Hours" xml:space="preserve">
+    <value>Presentato alle ore</value>
+  </data>
+  <data name="Submitted On" xml:space="preserve">
+    <value>Inviato il</value>
+  </data>
+  <data name="Submitted On :" xml:space="preserve">
+    <value>Presentato il:</value>
+  </data>
+  <data name="Submitted On:" xml:space="preserve">
+    <value>Presentato il:</value>
+  </data>
+  <data name="Submitted:" xml:space="preserve">
+    <value>Presentato:</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>Somma</value>
+  </data>
+  <data name="Summarized:" xml:space="preserve">
+    <value>Riassunte:</value>
+  </data>
+  <data name="Summary of all project tasks status. Usefull for project manager to get a high level view of whole project status." xml:space="preserve">
+    <value>Sintesi di tutti i compiti di stato</value>
+  </data>
+  <data name="Summary of employee attendance helpful for user and administrator to generate summary of employee attendance for payroll purpose." xml:space="preserve">
+    <value>Sintesi presenze dipendenti </value>
+  </data>
+  <data name="Summary of Expenses occurred on project. Can be generated based on project client employee and data range." xml:space="preserve">
+    <value>Sintesi spese su progetto</value>
+  </data>
+  <data name="Summary of Expenses occurred on project. Can be generated based on project, client, employee and data range." xml:space="preserve">
+    <value>Sintesi spese su progetto</value>
+  </data>
+  <data name="Summary of Invoice Report." xml:space="preserve">
+    <value>Report fatture</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Dom</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Domenica</value>
+  </data>
+  <data name="Supplies" xml:space="preserve">
+    <value>Forniture</value>
+  </data>
+  <data name="Switzerland, Franc" xml:space="preserve">
+    <value>Svizzera, Franc</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>Simbolo</value>
+  </data>
+  <data name="SystemEMailNotification" xml:space="preserve">
+    <value>Sistema di posta elettronica di notifica</value>
+  </data>
+  <data name="SystemSecurityCategory" xml:space="preserve">
+    <value>Sistema di sicurezza di categoria</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Operazione</value>
+  </data>
+  <data name="Task / Project" xml:space="preserve">
+    <value>Operazione/progetto</value>
+  </data>
+  <data name="Task Add Notification" xml:space="preserve">
+    <value>L'operazione aggiunge la notifica</value>
+  </data>
+  <data name="Task Billing By Project/Clients Report" xml:space="preserve">
+    <value>Report fatturazione progetto/cliente</value>
+  </data>
+  <data name="Task Billing By Projects/Clients" xml:space="preserve">
+    <value>Task Billing By Projects/Clients</value>
+  </data>
+  <data name="Task Billing By Projects/Clients Report" xml:space="preserve">
+    <value>Report fatturazione progetto/cliente</value>
+  </data>
+  <data name="Task Code" xml:space="preserve">
+    <value>Codice operazione</value>
+  </data>
+  <data name="Task Code:" xml:space="preserve">
+    <value>Codice operazione:</value>
+  </data>
+  <data name="Task Description" xml:space="preserve">
+    <value>Descrizione operazione</value>
+  </data>
+  <data name="Task Description:" xml:space="preserve">
+    <value>Descrizione operazione:</value>
+  </data>
+  <data name="Task Estimated Cost" xml:space="preserve">
+    <value>Costo stimato operazione</value>
+  </data>
+  <data name="Task Estimated Cost (BaseCurrency)" xml:space="preserve">
+    <value>Costo stimato operazione (valuta di base)</value>
+  </data>
+  <data name="Task Estimated Hours" xml:space="preserve">
+    <value>Ore stimate per operazione</value>
+  </data>
+  <data name="Task Id:" xml:space="preserve">
+    <value>Id operazione</value>
+  </data>
+  <data name="Task Name" xml:space="preserve">
+    <value>Nome operazione</value>
+  </data>
+  <data name="Task Name:" xml:space="preserve">
+    <value>Nome operazione:</value>
+  </data>
+  <data name="Task Open" xml:space="preserve">
+    <value>Operazione aperta</value>
+  </data>
+  <data name="Task Status" xml:space="preserve">
+    <value>Stato operazione</value>
+  </data>
+  <data name="Task Status Summary Report" xml:space="preserve">
+    <value>Report stato operazione</value>
+  </data>
+  <data name="Task Status:" xml:space="preserve">
+    <value>Stato operazione:</value>
+  </data>
+  <data name="Task Summary Report" xml:space="preserve">
+    <value>Resoconto operazione</value>
+  </data>
+  <data name="Task Type" xml:space="preserve">
+    <value>Tipo operazione</value>
+  </data>
+  <data name="Task Type Information" xml:space="preserve">
+    <value>Iinformazioni tipo operazione</value>
+  </data>
+  <data name="Task Type List" xml:space="preserve">
+    <value>Lista tipo operazione</value>
+  </data>
+  <data name="Task Type:" xml:space="preserve">
+    <value>Tipo operazione:</value>
+  </data>
+  <data name="Task Types" xml:space="preserve">
+    <value>Tipi operazione</value>
+  </data>
+  <data name="Task Update Notification" xml:space="preserve">
+    <value>Notifica dell'aggiornamento di operazione</value>
+  </data>
+  <data name="TaskBillingByProjectsClientsReport" xml:space="preserve">
+    <value>Fatturazione compito Progetti / Relazione Clienti</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Operazioni</value>
+  </data>
+  <data name="TASKS1" xml:space="preserve">
+    <value>COMPITI</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>Imposta</value>
+  </data>
+  <data name="Tax (BaseCurrency)" xml:space="preserve">
+    <value>Imposta (valuta di base)</value>
+  </data>
+  <data name="Tax 1" xml:space="preserve">
+    <value>Tassa di soggiorno 1</value>
+  </data>
+  <data name="Tax 1:" xml:space="preserve">
+    <value>Tassa di soggiorno 1:</value>
+  </data>
+  <data name="Tax 2" xml:space="preserve">
+    <value>Fiscale 2</value>
+  </data>
+  <data name="Tax 2:" xml:space="preserve">
+    <value>Tasse 2:</value>
+  </data>
+  <data name="Tax Amount" xml:space="preserve">
+    <value>Tasse Importo</value>
+  </data>
+  <data name="Tax Code" xml:space="preserve">
+    <value>Codice Fiscale</value>
+  </data>
+  <data name="Tax Code Information" xml:space="preserve">
+    <value>Informazioni Codice Fiscale</value>
+  </data>
+  <data name="Tax Code:" xml:space="preserve">
+    <value>Codice Fiscale:</value>
+  </data>
+  <data name="Tax Zone" xml:space="preserve">
+    <value>Tasse Zone</value>
+  </data>
+  <data name="Tax Zone Information" xml:space="preserve">
+    <value>Informazioni zona fiscale</value>
+  </data>
+  <data name="Tax Zone List" xml:space="preserve">
+    <value>Lista zone fiscali</value>
+  </data>
+  <data name="Tax Zone:" xml:space="preserve">
+    <value>Tasse Zona:</value>
+  </data>
+  <data name="Tax:" xml:space="preserve">
+    <value>Imposta:</value>
+  </data>
+  <data name="TaxAmount" xml:space="preserve">
+    <value>TaxAmount</value>
+  </data>
+  <data name="TaxCode 1" xml:space="preserve">
+    <value>TaxCode 1</value>
+  </data>
+  <data name="TaxCode 2" xml:space="preserve">
+    <value>TaxCode 2</value>
+  </data>
+  <data name="Taxi" xml:space="preserve">
+    <value>Taxi</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Team Based Collaboration" xml:space="preserve">
+    <value>Team Based Collaboration</value>
+  </data>
+  <data name="Team Lead" xml:space="preserve">
+    <value>Team leader</value>
+  </data>
+  <data name="Team Lead -&amp;gt; Project Manager" xml:space="preserve">
+    <value>Team Leader --&gt; Project Manager</value>
+  </data>
+  <data name="Team Lead --&gt; Client" xml:space="preserve">
+    <value>Team Leader --&gt; Cliente</value>
+  </data>
+  <data name="Team Lead --&gt; Project Manager" xml:space="preserve">
+    <value>Team Leader --&gt; Project Manager</value>
+  </data>
+  <data name="Team Lead:" xml:space="preserve">
+    <value>Cavo della squadra:</value>
+  </data>
+  <data name="Team Leader" xml:space="preserve">
+    <value>Leader della squadra</value>
+  </data>
+  <data name="TeamLead" xml:space="preserve">
+    <value>TeamLead</value>
+  </data>
+  <data name="Team-Lead" xml:space="preserve">
+    <value>Team leader</value>
+  </data>
+  <data name="Technology" xml:space="preserve">
+    <value>Tecnologia</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telefono</value>
+  </data>
+  <data name="Telephone:" xml:space="preserve">
+    <value>Telefono:</value>
+  </data>
+  <data name="Telephone1" xml:space="preserve">
+    <value>Telefono 1</value>
+  </data>
+  <data name="Telephone1:" xml:space="preserve">
+    <value>Telefono1:</value>
+  </data>
+  <data name="Telephone2" xml:space="preserve">
+    <value>Telefono 2</value>
+  </data>
+  <data name="Telephone2:" xml:space="preserve">
+    <value>Telefono2:</value>
+  </data>
+  <data name="Terminated" xml:space="preserve">
+    <value>Terminato</value>
+  </data>
+  <data name="Termination Date:" xml:space="preserve">
+    <value>Data di termine:</value>
+  </data>
+  <data name="Terminology Name" xml:space="preserve">
+    <value>Nome Terminologia </value>
+  </data>
+  <data name="Thank you for your interest your TimeLive account has been activated." xml:space="preserve">
+    <value>Account TimeLive attivato</value>
+  </data>
+  <data name="This Email Address will be [Administrator] login name." xml:space="preserve">
+    <value>This Email Address will be [Administrator] login name.</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>Gio</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Giovedi</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Tempo</value>
+  </data>
+  <data name="Time Billing List" xml:space="preserve">
+    <value>Time Billing Elenco</value>
+  </data>
+  <data name="Time Billing Worksheet" xml:space="preserve">
+    <value>Time Billing Worksheet</value>
+  </data>
+  <data name="Time Entry" xml:space="preserve">
+    <value>Inserimento ore</value>
+  </data>
+  <data name="Time Entry Approval Activity" xml:space="preserve">
+    <value>Approvazione ore inserite</value>
+  </data>
+  <data name="Time Entry Approver" xml:space="preserve">
+    <value>Approvatore ore inserite</value>
+  </data>
+  <data name="Time Entry Archive" xml:space="preserve">
+    <value>Archivio ore inserite</value>
+  </data>
+  <data name="Time Entry Date" xml:space="preserve">
+    <value>Data inserimento ore</value>
+  </data>
+  <data name="Time Entry Date :" xml:space="preserve">
+    <value>Data inserimento ore:</value>
+  </data>
+  <data name="Time Entry Date:" xml:space="preserve">
+    <value>Data inserimento ore</value>
+  </data>
+  <data name="Time Entry Day View" xml:space="preserve">
+    <value>Visualizzazione giornaliera inserimento ore</value>
+  </data>
+  <data name="Time Entry DayView" xml:space="preserve">
+    <value>Tempo di entrata dayview</value>
+  </data>
+  <data name="Time Entry Format" xml:space="preserve">
+    <value>Tempo di entrata Formato:</value>
+  </data>
+  <data name="Time Entry Period" xml:space="preserve">
+    <value>Periodo inserimento ore</value>
+  </data>
+  <data name="Time Entry Period View" xml:space="preserve">
+    <value>Visualizzazione per periodo inserimento ore</value>
+  </data>
+  <data name="Time Entry Status - Approved" xml:space="preserve">
+    <value>Inserimento ore approvato</value>
+  </data>
+  <data name="Time Entry Status - Not Submitted" xml:space="preserve">
+    <value>Inserimento ore non presentato</value>
+  </data>
+  <data name="Time Entry Status - Rejected" xml:space="preserve">
+    <value>Inserimento ore rifiutato</value>
+  </data>
+  <data name="Time Entry Status - Submitted" xml:space="preserve">
+    <value>Inserimento ore presentato</value>
+  </data>
+  <data name="Time Entry Time Card View" xml:space="preserve">
+    <value>Time Entry Time Card View</value>
+  </data>
+  <data name="Time Entry Week View" xml:space="preserve">
+    <value>Visualizzazione settimanale inserimento ore</value>
+  </data>
+  <data name="Time Entry Week View Read-only" xml:space="preserve">
+    <value>Visualizzazione settimanale inserimento ore</value>
+  </data>
+  <data name="Time Expense Billing" xml:space="preserve">
+    <value>Fatturazione ore inserite</value>
+  </data>
+  <data name="Time Expense Billing List" xml:space="preserve">
+    <value>Tempo di spesa Elenco di fatturazione</value>
+  </data>
+  <data name="Time Expense Invoice" xml:space="preserve">
+    <value>Gestione fattura</value>
+  </data>
+  <data name="Time Expense Invoice List" xml:space="preserve">
+    <value>Lista fatture ore inserite</value>
+  </data>
+  <data name="Time In" xml:space="preserve">
+    <value>Ora di entrata</value>
+  </data>
+  <data name="Time Off" xml:space="preserve">
+    <value>Tempo libero</value>
+  </data>
+  <data name="Time Off Approval" xml:space="preserve">
+    <value>Time Off Approvazione</value>
+  </data>
+  <data name="Time Off Approval Type:" xml:space="preserve">
+    <value>Time Off omologazione:</value>
+  </data>
+  <data name="Time Off Approved Notification" xml:space="preserve">
+    <value>Time Off Approvato Notifica</value>
+  </data>
+  <data name="Time Off Description" xml:space="preserve">
+    <value>Time Off Descrizione</value>
+  </data>
+  <data name="Time Off End Date:" xml:space="preserve">
+    <value>Time Off Data di fine:</value>
+  </data>
+  <data name="Time Off Policies" xml:space="preserve">
+    <value>Time Off Politiche</value>
+  </data>
+  <data name="Time Off Policies Detail" xml:space="preserve">
+    <value>Time Off Politiche Dettaglio</value>
+  </data>
+  <data name="Time Off Policies Detail List" xml:space="preserve">
+    <value>Time Off Politiche Dettaglio Elenco</value>
+  </data>
+  <data name="Time Off Policy" xml:space="preserve">
+    <value>Time Off Politica</value>
+  </data>
+  <data name="Time Off Policy Information" xml:space="preserve">
+    <value>Time Off politica dell'informazione</value>
+  </data>
+  <data name="Time Off Policy List" xml:space="preserve">
+    <value>Time Off Politica Elenco</value>
+  </data>
+  <data name="Time Off Policy:" xml:space="preserve">
+    <value>Time Off Politica:</value>
+  </data>
+  <data name="Time Off Rejected Notification" xml:space="preserve">
+    <value>Time Off Respinto Notifica</value>
+  </data>
+  <data name="Time Off Request" xml:space="preserve">
+    <value>Time Off Richiesta</value>
+  </data>
+  <data name="Time Off Request Information" xml:space="preserve">
+    <value>Time Off Richiesta informazioni</value>
+  </data>
+  <data name="Time Off Request Required:" xml:space="preserve">
+    <value>Time Off Richiesta richiesto:</value>
+  </data>
+  <data name="Time Off Setup" xml:space="preserve">
+    <value>Time Off Setup</value>
+  </data>
+  <data name="Time Off Start Date:" xml:space="preserve">
+    <value>Ora Off Data di inizio:</value>
+  </data>
+  <data name="Time Off Status" xml:space="preserve">
+    <value>Time Off Stato</value>
+  </data>
+  <data name="Time Off Type" xml:space="preserve">
+    <value>Time Off Tipo</value>
+  </data>
+  <data name="Time Off Types" xml:space="preserve">
+    <value>Time Off Tipi</value>
+  </data>
+  <data name="Time Off Types Information" xml:space="preserve">
+    <value>Time Off tipi di informazioni</value>
+  </data>
+  <data name="Time Off Types List" xml:space="preserve">
+    <value>Time Off Tipi Elenco</value>
+  </data>
+  <data name="Time Off Types:" xml:space="preserve">
+    <value>Time Off Tipi:</value>
+  </data>
+  <data name="Time Out" xml:space="preserve">
+    <value>Tempo fuori</value>
+  </data>
+  <data name="Time Sheet" xml:space="preserve">
+    <value>TimeSheet</value>
+  </data>
+  <data name="Time Sheet Approval" xml:space="preserve">
+    <value>Approvazione TimeSheet</value>
+  </data>
+  <data name="Time Sheet Approval Type" xml:space="preserve">
+    <value>Tipo Approvazione TimeSheet</value>
+  </data>
+  <data name="Time Sheet Approval Type:" xml:space="preserve">
+    <value>Tipo Approvazione TimeSheet:</value>
+  </data>
+  <data name="Time Sheet Approvals" xml:space="preserve">
+    <value>Approvazioni TimeSheet</value>
+  </data>
+  <data name="Time:" xml:space="preserve">
+    <value>Ora:</value>
+  </data>
+  <data name="TimeEntry_Validation" xml:space="preserve">
+    <value>È necessario selezionare "Task" in una riga in modo da salvare "Tempo entrata" record.</value>
+  </data>
+  <data name="TimeEntryDate" xml:space="preserve">
+    <value>TimeEntryDate</value>
+  </data>
+  <data name="TimeIn" xml:space="preserve">
+    <value>Ora di entrata</value>
+  </data>
+  <data name="TimeLive supports unlimited users support up to 30 days. After 30 days it converts to 5 users free account" xml:space="preserve">
+    <value>(TimeLive supporta numero illimitato di utenti di supportare fino a 30 giorni. Dopo 30 giorni, lo converte a 5 utenti account gratuito)</value>
+  </data>
+  <data name="TimeOut" xml:space="preserve">
+    <value>Tempo fuori</value>
+  </data>
+  <data name="Timer" xml:space="preserve">
+    <value>Timer</value>
+  </data>
+  <data name="TIMESHEET" xml:space="preserve">
+    <value>TIMESHEET</value>
+  </data>
+  <data name="Timesheet &amp; Expense Sheet Print Info:" xml:space="preserve">
+    <value>Informazioni di stampa TimeSheet e spese</value>
+  </data>
+  <data name="Timesheet / Project / Billing" xml:space="preserve">
+    <value>Timesheet / Progetto / Fatturazione</value>
+  </data>
+  <data name="TimeSheet Approval" xml:space="preserve">
+    <value>Approvazione TimeSheet</value>
+  </data>
+  <data name="Timesheet Approval Activity" xml:space="preserve">
+    <value>Attività Approvazione TimeSheet</value>
+  </data>
+  <data name="Timesheet Approval Detail" xml:space="preserve">
+    <value>Dettaglio Approvazione TimeSheet</value>
+  </data>
+  <data name="Timesheet Approval Type" xml:space="preserve">
+    <value>Tipo Approvazione TimeSheet</value>
+  </data>
+  <data name="Timesheet Approved Notification" xml:space="preserve">
+    <value>Notifica Approvazione TimeSheet</value>
+  </data>
+  <data name="Timesheet Audit" xml:space="preserve">
+    <value>Timesheet Audit</value>
+  </data>
+  <data name="Timesheet Audit Trail Report" xml:space="preserve">
+    <value>Timesheet Rapporto Audit Trail</value>
+  </data>
+  <data name="Timesheet Billing List" xml:space="preserve">
+    <value>Lista fatturazione TimeSheet</value>
+  </data>
+  <data name="Timesheet Description" xml:space="preserve">
+    <value>Descrizione timesheet</value>
+  </data>
+  <data name="Timesheet Period" xml:space="preserve">
+    <value>Periodo timesheet</value>
+  </data>
+  <data name="Timesheet Period Audit" xml:space="preserve">
+    <value>Timesheet periodo dell'audit</value>
+  </data>
+  <data name="Timesheet Period List" xml:space="preserve">
+    <value>Timesheet Periodo Elenco</value>
+  </data>
+  <data name="Timesheet Period Type" xml:space="preserve">
+    <value>Tipo periodo timesheet:</value>
+  </data>
+  <data name="Timesheet Period Type:" xml:space="preserve">
+    <value>Tipo periodo timesheet:</value>
+  </data>
+  <data name="Timesheet Period Types" xml:space="preserve">
+    <value>Tipi periodo timesheet</value>
+  </data>
+  <data name="Timesheet Periods" xml:space="preserve">
+    <value>Timesheet Periodi</value>
+  </data>
+  <data name="Timesheet Print" xml:space="preserve">
+    <value>Stampa TimeSheet</value>
+  </data>
+  <data name="Timesheet Print Footer:" xml:space="preserve">
+    <value>Stampa piè di paginaTimesheet </value>
+  </data>
+  <data name="Timesheet Rejected Notification" xml:space="preserve">
+    <value>Notifica TimeSheet rifiutato</value>
+  </data>
+  <data name="Timesheet Setup" xml:space="preserve">
+    <value>Scheda attività di installazione</value>
+  </data>
+  <data name="Timesheet Status" xml:space="preserve">
+    <value>Timesheet Stato</value>
+  </data>
+  <data name="Timesheet Status :" xml:space="preserve">
+    <value>Stato TimeSheet :</value>
+  </data>
+  <data name="Timesheet Status:" xml:space="preserve">
+    <value>Stato TimeSheet :</value>
+  </data>
+  <data name="Timesheet Submission Report" xml:space="preserve">
+    <value>Report TimeSheet presentato</value>
+  </data>
+  <data name="Timesheet Total :" xml:space="preserve">
+    <value>Timesheet totale:</value>
+  </data>
+  <data name="Timesheet Total:" xml:space="preserve">
+    <value>Timesheet totale</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>Fuso orario</value>
+  </data>
+  <data name="TimeZone:" xml:space="preserve">
+    <value>TimeZone:</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titolo</value>
+  </data>
+  <data name="Title:" xml:space="preserve">
+    <value>Titolo:</value>
+  </data>
+  <data name="Toll Free: 1-866-252-2107" xml:space="preserve">
+    <value>Numero verde: 1-866-252-2107</value>
+  </data>
+  <data name="Toll Free: 1-888-666-8154" xml:space="preserve">
+    <value>Numero verde: 1-888-666-8154</value>
+  </data>
+  <data name="Tolls" xml:space="preserve">
+    <value>Pedaggi</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Totale</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Importo totale</value>
+  </data>
+  <data name="Total Duration" xml:space="preserve">
+    <value>Durata totale</value>
+  </data>
+  <data name="Total Hours" xml:space="preserve">
+    <value>Ore totali</value>
+  </data>
+  <data name="Total Reimbursement" xml:space="preserve">
+    <value>Rimborso totale</value>
+  </data>
+  <data name="Total Reimbursement:" xml:space="preserve">
+    <value>Rimborso totale:</value>
+  </data>
+  <data name="Total Time" xml:space="preserve">
+    <value>Tempo totale</value>
+  </data>
+  <data name="Total Time:" xml:space="preserve">
+    <value>Tempo totale:</value>
+  </data>
+  <data name="Total:" xml:space="preserve">
+    <value>Totale:</value>
+  </data>
+  <data name="TotalAbsent" xml:space="preserve">
+    <value>Assente Totale:</value>
+  </data>
+  <data name="TotalHours" xml:space="preserve">
+    <value>Totalhours</value>
+  </data>
+  <data name="TotalPresent" xml:space="preserve">
+    <value>Totali presenti:</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>Tempo totale</value>
+  </data>
+  <data name="TR" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="Track and Monitor" xml:space="preserve">
+    <value>Monitorare e controllare</value>
+  </data>
+  <data name="Track and Monitor Your bugs" xml:space="preserve">
+    <value>Monitorare e controllare gli errori</value>
+  </data>
+  <data name="Track and monitor your projects / tasks / timesheets / expenses / bugs with easy to use reports and graphs." xml:space="preserve">
+    <value>Monitorare e controllare progetti / compiti / timesheets / spese / errori </value>
+  </data>
+  <data name="Training" xml:space="preserve">
+    <value>Formazione</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>Viaggio</value>
+  </data>
+  <data name="Trial" xml:space="preserve">
+    <value>prova</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Martedì</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Un Approved" xml:space="preserve">
+    <value>Non approvato</value>
+  </data>
+  <data name="Un Billable" xml:space="preserve">
+    <value>Non fatturabile</value>
+  </data>
+  <data name="Un Completed" xml:space="preserve">
+    <value>Non completato</value>
+  </data>
+  <data name="Unable To Activate License" xml:space="preserve">
+    <value>Impossibile attivare License</value>
+  </data>
+  <data name="UnActive" xml:space="preserve">
+    <value>Inattivo</value>
+  </data>
+  <data name="UnCheck All" xml:space="preserve">
+    <value>Deseleziona tutti</value>
+  </data>
+  <data name="UnCheck All Approved" xml:space="preserve">
+    <value>Deseleziona tutti approvati</value>
+  </data>
+  <data name="Uncheck-All" xml:space="preserve">
+    <value>Deseleziona tutto</value>
+  </data>
+  <data name="Uncheck-All Approved" xml:space="preserve">
+    <value>Deseleziona tutti approvati</value>
+  </data>
+  <data name="Uncompleted" xml:space="preserve">
+    <value>Incompleto</value>
+  </data>
+  <data name="United Kingdom, Pounds" xml:space="preserve">
+    <value>United Kingdom, Pounds</value>
+  </data>
+  <data name="United State Dollar" xml:space="preserve">
+    <value>United State dollaro</value>
+  </data>
+  <data name="Unlimited User Support Expiry:" xml:space="preserve">
+    <value>Unlimited User Support Expiry:</value>
+  </data>
+  <data name="Unlimited users support expiry:" xml:space="preserve">
+    <value>Unlimited users support expiry:</value>
+  </data>
+  <data name="UnPaid" xml:space="preserve">
+    <value>Non pagato</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Aggiornare</value>
+  </data>
+  <data name="Update all record within this range" xml:space="preserve">
+    <value>Aggiornare tutti i record all'interno di questo range</value>
+  </data>
+  <data name="Update all records within this range:" xml:space="preserve">
+    <value>Aggiornare tutti i record all'interno di questo range:</value>
+  </data>
+  <data name="Update By" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Update Currencies" xml:space="preserve">
+    <value>Aggiornamento Valute</value>
+  </data>
+  <data name="Update Date" xml:space="preserve">
+    <value>Data di aggiornamento</value>
+  </data>
+  <data name="Update Email Notification Preferences" xml:space="preserve">
+    <value>Aggiornamento Preferenza email di notifica</value>
+  </data>
+  <data name="Update existing records:" xml:space="preserve">
+    <value>Aggiorna i record esistenti:</value>
+  </data>
+  <data name="Update Expense Entry Approvals" xml:space="preserve">
+    <value>Modifica le approvazioni delle spese</value>
+  </data>
+  <data name="Update Time Entry and Expense Entry Records As Billed" xml:space="preserve">
+    <value>Aggiorne le ore inserite e le spese come fatturabili</value>
+  </data>
+  <data name="Update Time Entry Approvals" xml:space="preserve">
+    <value>Modifica le approvazioni delle entrate</value>
+  </data>
+  <data name="Update Time Entry Records As Billed" xml:space="preserve">
+    <value>Aggiorna i record come fatturabili</value>
+  </data>
+  <data name="Update Time Off" xml:space="preserve">
+    <value>Tempo di aggiornamento Off</value>
+  </data>
+  <data name="Update Time Off Approvals" xml:space="preserve">
+    <value>Tempo di aggiornamento Off Approvazioni</value>
+  </data>
+  <data name="Update_text" xml:space="preserve">
+    <value>Aggiornare</value>
+  </data>
+  <data name="Updated By" xml:space="preserve">
+    <value>Aggiornato da</value>
+  </data>
+  <data name="Updated Date" xml:space="preserve">
+    <value>Data di aggiornamento</value>
+  </data>
+  <data name="Upload Company Own Logo" xml:space="preserve">
+    <value>Carica logo aziendale</value>
+  </data>
+  <data name="Upload File" xml:space="preserve">
+    <value>Carica file:</value>
+  </data>
+  <data name="Upload Own Company Logo" xml:space="preserve">
+    <value>Carica proprio logo aziendale</value>
+  </data>
+  <data name="Upload Report Icon:" xml:space="preserve">
+    <value>Carica icona report:</value>
+  </data>
+  <data name="Upload_text" xml:space="preserve">
+    <value>Caricare</value>
+  </data>
+  <data name="Urgent" xml:space="preserve">
+    <value>Urgente</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Use Employee Own Billing Rate" xml:space="preserve">
+    <value>Utilizza tariffa di fatturazione dipendente</value>
+  </data>
+  <data name="Use Project Employee Billing Rate" xml:space="preserve">
+    <value>Utilizza tariffa di fatturazione progetto/dipendente</value>
+  </data>
+  <data name="Use Project Roles Billing Rate" xml:space="preserve">
+    <value>Utilizza tariffa di fatturazione progetto/profilo</value>
+  </data>
+  <data name="Use Project Task Billing Rate" xml:space="preserve">
+    <value>Utilizza tariffa di fatturazione progetto/operazione</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Utente</value>
+  </data>
+  <data name="User Defined Name" xml:space="preserve">
+    <value>Nome utente</value>
+  </data>
+  <data name="User Interface Language" xml:space="preserve">
+    <value>Lingua interfaccia utente</value>
+  </data>
+  <data name="User Interface Language:" xml:space="preserve">
+    <value>Interfaccia utente Languag:</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>Nome utente</value>
+  </data>
+  <data name="User Name:" xml:space="preserve">
+    <value>Nome Utente:</value>
+  </data>
+  <data name="User Pages" xml:space="preserve">
+    <value>Utente Pages</value>
+  </data>
+  <data name="Username is required." xml:space="preserve">
+    <value>è richiesto il nome utente</value>
+  </data>
+  <data name="Username:" xml:space="preserve">
+    <value>Nome utente</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Utenti</value>
+  </data>
+  <data name="Users Reports" xml:space="preserve">
+    <value>Reports utenti </value>
+  </data>
+  <data name="V 2.93" xml:space="preserve">
+    <value>2,93 V</value>
+  </data>
+  <data name="Vacation" xml:space="preserve">
+    <value>Vacanza</value>
+  </data>
+  <data name="Value 1 Base Currency Unit X New Currency Units" xml:space="preserve">
+    <value>Value (1 unit� monetaria di base = Unit� X nuova valuta)</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>IVA</value>
+  </data>
+  <data name="VAT:" xml:space="preserve">
+    <value>IVA:</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Verificare</value>
+  </data>
+  <data name="Verify Password" xml:space="preserve">
+    <value>Verifica password</value>
+  </data>
+  <data name="Verify Password:" xml:space="preserve">
+    <value>Verifica Password:</value>
+  </data>
+  <data name="Verify:" xml:space="preserve">
+    <value>Verifica:</value>
+  </data>
+  <data name="Visa" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="Web based fully hosted solution (ASP Based)" xml:space="preserve">
+    <value>Web based fully hosted solution (ASP Based)</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Sito web</value>
+  </data>
+  <data name="Website:" xml:space="preserve">
+    <value>Sito web:</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Mer</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Mercoledì</value>
+  </data>
+  <data name="Week No" xml:space="preserve">
+    <value>Settimana n.</value>
+  </data>
+  <data name="Week No." xml:space="preserve">
+    <value>Settimana No.</value>
+  </data>
+  <data name="Week Start Day" xml:space="preserve">
+    <value>Giorno inizio settimana</value>
+  </data>
+  <data name="Week Start Day:" xml:space="preserve">
+    <value>Giorno inizio settimana:</value>
+  </data>
+  <data name="Week Start Day_GridView" xml:space="preserve">
+    <value>Giorno inizio settimana</value>
+  </data>
+  <data name="Week TimeSheet Summary" xml:space="preserve">
+    <value>Riepilogo Timesheet settimanale</value>
+  </data>
+  <data name="Week View" xml:space="preserve">
+    <value>Vista Settimanale</value>
+  </data>
+  <data name="Weekly Timesheet" xml:space="preserve">
+    <value>Timesheet settimanale</value>
+  </data>
+  <data name="Welfair" xml:space="preserve">
+    <value>Welfair</value>
+  </data>
+  <data name="Windows Based" xml:space="preserve">
+    <value>Basato su Windows</value>
+  </data>
+  <data name="Windows based installable on server and local system" xml:space="preserve">
+    <value>Windows basato installabile su server e di sistema locale</value>
+  </data>
+  <data name="Work Phone No." xml:space="preserve">
+    <value>Telefono lavoro</value>
+  </data>
+  <data name="Work Phone No:" xml:space="preserve">
+    <value>Work Phone No:</value>
+  </data>
+  <data name="Work Type" xml:space="preserve">
+    <value>Tipo lavoro</value>
+  </data>
+  <data name="Work Type Code" xml:space="preserve">
+    <value>Codice del tipo di lavoro</value>
+  </data>
+  <data name="Work Type Code:" xml:space="preserve">
+    <value>Codice tipo lavoro:</value>
+  </data>
+  <data name="Work Type Information" xml:space="preserve">
+    <value>Informazioni tipo lavoro</value>
+  </data>
+  <data name="Work Type List" xml:space="preserve">
+    <value>Elenco tipi lavoro</value>
+  </data>
+  <data name="Work Type List:" xml:space="preserve">
+    <value>Elenco tipi lavoro:</value>
+  </data>
+  <data name="Work Type:" xml:space="preserve">
+    <value>Tipo lavoro:</value>
+  </data>
+  <data name="Work Types" xml:space="preserve">
+    <value>Tipi lavoro</value>
+  </data>
+  <data name="Working Day" xml:space="preserve">
+    <value>Giorno lavorativo</value>
+  </data>
+  <data name="Working Day Type" xml:space="preserve">
+    <value>Giornata di lavoro di tipo</value>
+  </data>
+  <data name="Working Day Type Information" xml:space="preserve">
+    <value>Informazioni tipo giorno lavorativo</value>
+  </data>
+  <data name="Working Day Type List" xml:space="preserve">
+    <value>Lista di lavoro di tipo Day</value>
+  </data>
+  <data name="Working Day Type:" xml:space="preserve">
+    <value>Tipo giorno lavorativo:</value>
+  </data>
+  <data name="Working Days" xml:space="preserve">
+    <value>Giorni lavorativi</value>
+  </data>
+  <data name="Working Days List" xml:space="preserve">
+    <value>Elenco dei giorni di lavoro</value>
+  </data>
+  <data name="Working Days:" xml:space="preserve">
+    <value>Giorni lavorativi:</value>
+  </data>
+  <data name="WorkingDay" xml:space="preserve">
+    <value>Giorno lavorativo</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Anno</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sì</value>
+  </data>
+  <data name="You can log-in in TimeLive using your administrator email address and password which you entered in registration form." xml:space="preserve">
+    <value>Puoi effettuare il log-in in TimeLive utilizzando il tuo indirizzo email amministratore e la password che hai inserito nel modulo di registrazione.</value>
+  </data>
+  <data name="You may have to check your JUNK E-MAIL folder. If you do not receive further instructions please contact support using the following toll free numbers:" xml:space="preserve">
+    <value>Potrebbe essere necessario controllare la vostra cartella Junk E-MAIL. </value>
+  </data>
+  <data name="Your password and instructions have been e-mailed to" xml:space="preserve">
+    <value>La password e le istruzioni sono state via e-mail</value>
+  </data>
+  <data name="Your Web TimeSheet Account is Ready" xml:space="preserve">
+    <value>Il tuo account Web Time Sheet � pronto</value>
+  </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>Codice postale</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>CAP:</value>
+  </data>
+  <data name="ZipCode:" xml:space="preserve">
+    <value>Codice postale:</value>
+  </data>
+  <data name="Auto Generate Project Code:" xml:space="preserve">
+    <value>Genera automaticamente codice di progetto:</value>
+  </data>
+  <data name="Invoice Billing Type:" xml:space="preserve">
+    <value>Fatturazione Tipo fattura:</value>
+  </data>
+  <data name="Invoice Footer:" xml:space="preserve">
+    <value>Piè di pagina fattura:</value>
+  </data>
+  <data name="License Users Usage:" xml:space="preserve">
+    <value>Licenza Utenti Uso:</value>
+  </data>
+  <data name="Show Billing Rate In Invoice Report:" xml:space="preserve">
+    <value>Mostra Vota fatturazione Nella relazione della fattura:</value>
+  </data>
+  <data name="Show Percentage In Timesheet:" xml:space="preserve">
+    <value>Mostra Percentuale In Timesheet:</value>
+  </data>
+  <data name="Show Project Name In Invoice Report:" xml:space="preserve">
+    <value>Mostra nome del progetto in rapporto fattura:</value>
+  </data>
+  <data name="Time Entry Clock Format:" xml:space="preserve">
+    <value>Tempo di Entrata Formato Orologio:</value>
+  </data>
+  <data name="Time Entry Hours Format:" xml:space="preserve">
+    <value>Tempo di Entrata Ore Formato:</value>
+  </data>
+  <data name="Timesheet Periods Overdue:" xml:space="preserve">
+    <value>Periodi scheda attività scadute:</value>
+  </data>
+  <data name="Add Custom Field" xml:space="preserve">
+    <value>Add Custom Field</value>
+  </data>
+  <data name="Custom Field" xml:space="preserve">
+    <value>Custom Field</value>
+  </data>
+  <data name="Custom Field Caption" xml:space="preserve">
+    <value>Custom Field Caption</value>
+  </data>
+  <data name="Custom Field Information" xml:space="preserve">
+    <value>Custom Field Information</value>
+  </data>
+  <data name="Custom Field List" xml:space="preserve">
+    <value>Custom Field List</value>
+  </data>
+  <data name="Custom Field Manage" xml:space="preserve">
+    <value>Custom Field Manage</value>
+  </data>
+  <data name="Custom Field Manage List" xml:space="preserve">
+    <value>Custom Field Manage List</value>
+  </data>
+  <data name="Custom Field Name" xml:space="preserve">
+    <value>Custom Field Name</value>
+  </data>
+  <data name="Custom Field Name:" xml:space="preserve">
+    <value>Custom Field Name:</value>
+  </data>
+  <data name="Data Type" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="Database Field Name" xml:space="preserve">
+    <value>Database Field Name</value>
+  </data>
+  <data name="Default Value" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="IsDisable:" xml:space="preserve">
+    <value>IsDisable:</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>IsRequired</value>
+  </data>
+  <data name="IsRequired:" xml:space="preserve">
+    <value>IsRequired:</value>
+  </data>
+  <data name="Maximum Length:" xml:space="preserve">
+    <value>Maximum Length:</value>
+  </data>
+  <data name="Maximum Value:" xml:space="preserve">
+    <value>Maximum Value:</value>
+  </data>
+  <data name="Minimum Value:" xml:space="preserve">
+    <value>Minimum Value:</value>
+  </data>
+  <data name="Options:" xml:space="preserve">
+    <value>Options:</value>
+  </data>
+  <data name="Show Client Department In Project:" xml:space="preserve">
+    <value>Mostra Dipartimento Cliente nel progetto:</value>
+  </data>
+  <data name="Show Client Name In Task:" xml:space="preserve">
+    <value>Mostra Nome client In Task:</value>
+  </data>
+  <data name="Show Copy Activities Button In Timesheet:" xml:space="preserve">
+    <value>Show Copy Activities Button In Timesheet:</value>
+  </data>
+  <data name="Show Copy Timesheet Button:" xml:space="preserve">
+    <value>Mostra Copiare Button Timesheet:</value>
+  </data>
+  <data name="Show Cost Center In Timesheet By:" xml:space="preserve">
+    <value>Mostra Centro di costo In Timesheet By:</value>
+  </data>
+  <data name="Show Entry Date In Invoice Report:" xml:space="preserve">
+    <value>Mostra Data Entry In relazione fattura:</value>
+  </data>
+  <data name="Show Project Name In Task:" xml:space="preserve">
+    <value>Mostra nome del progetto in attività:</value>
+  </data>
+  <data name="Show Task Percentage In Timesheet:" xml:space="preserve">
+    <value>Mostra Percentuale Task In Timesheet:</value>
+  </data>
+  <data name="Sort Timesheet By:" xml:space="preserve">
+    <value>Sort Timesheet By:</value>
+  </data>
+  <data name="Use Electronic Signature:" xml:space="preserve">
+    <value>Utilizzare Firma elettronica:</value>
+  </data>
+</root>

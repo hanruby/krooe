@@ -121,7 +121,7 @@ Partial Class ProjectAdmin_Controls_ctlAccountProjectForm
     Protected Sub FormView1_DataBound(ByVal sender As Object, ByVal e As System.EventArgs)
         AccountPagePermissionBLL.SetPagePermissionForFormView(31, Me.FormView1, "Add")
         'AccountPagePermissionBLL.SetPagePermissionForFormView(28, Me.FormView1, "Add")
-        If Me.FormView1.CurrentMode = FormViewMode.Edit Then
+        If Me.FormView1.CurrentMode = FormViewMode.Edit And Me.FormView1.DataItem IsNot Nothing Then
             Me.FormView1.Visible = True
             If Not IsDBNull(Me.FormView1.DataItem("ProjectBillingRateTypeId")) Then
                 CType(Me.FormView1.FindControl("ddlProjectBillingRateTypeId"), DropDownList).SelectedValue = Me.FormView1.DataItem("ProjectBillingRateTypeId")

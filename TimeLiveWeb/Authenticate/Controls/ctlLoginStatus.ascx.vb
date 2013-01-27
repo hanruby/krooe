@@ -14,6 +14,7 @@ Partial Class Employee_Controls_ctlLoginStatus
         End If
         Dim EmployeeBll As New AccountEmployeeBLL
         Me.L.ImageUrl = EmployeeBll.GetProfilePictureUrl
+
     End Sub
 
     Protected Sub LoginStatus1_LoggingOut(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.LoginCancelEventArgs) Handles S.LoggingOut

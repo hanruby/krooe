@@ -122,7 +122,10 @@ Public Class AppGlobal
 
     Private Sub AppGlobal_Error(sender As Object, e As System.EventArgs) Handles Me.Error
         LoggingBLL.WriteToLog("Unhandled Exception Occur")
-        LoggingBLL.WriteToLog(Server.GetLastError.InnerException.ToString)
+        If Server.GetLastError.InnerException IsNot Nothing Then
+            LoggingBLL.WriteToLog(Server.GetLastError.InnerException.ToString)
+        End If
+
     End Sub
     ''' <summary>
     ''' ASP.Net PreRequestHandlerExecute implementation. It setup culture settings of page 

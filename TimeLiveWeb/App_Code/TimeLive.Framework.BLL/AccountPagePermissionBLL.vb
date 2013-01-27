@@ -353,7 +353,7 @@ Public Function UpdateAccountPagePermission( _
 
     End Function
     Public Shared Function IsPageHasRightsByPage(ByVal objPage As Page) As Boolean
-
+        Return True
         If System.Web.HttpContext.Current.Session("PermissionTable") Is Nothing Then
             Return True
         End If

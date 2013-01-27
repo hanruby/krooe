@@ -21,10 +21,10 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property sequence As Integer
         Public Property reminders As RemindersCollection
         Public Function GetSharedEvent() As SharedEvent
-            Dim res As SharedEvent
+            Dim res As New SharedEvent
             res.Name = summary
             res.Description = description
-            res.MD5= 
+            '  res.MD5= 
             Return res
         End Function
     End Class

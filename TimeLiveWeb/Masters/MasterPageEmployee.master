@@ -20,7 +20,7 @@
                             <b>Google:</b></div>
                         <div>
                             <asp:HyperLink ID="GotoAuthSubLink" runat="server">
-                      <img src="/Images/google-sync-button.png" />
+                      <img src="/Images/google-sync-button.png" Width="150px" />
                             </asp:HyperLink>
                         </div>
                         <asp:UpdateProgress ID="PG" runat="server" DisplayAfter="1">

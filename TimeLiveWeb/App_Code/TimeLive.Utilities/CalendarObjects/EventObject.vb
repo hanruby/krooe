@@ -22,10 +22,24 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property reminders As RemindersCollection
         Public Function GetSharedEvent() As SharedEvent
             Dim res As New SharedEvent
+            res.GoogleEventId = id
+            res.isGoogleCalendarEvent = True
             res.Name = summary
             res.Description = description
-            '  res.MD5= 
+            res.StartDate = DateTime.Parse(start.dateTime)
+            res.EndDate = DateTime.Parse(endTime.dateTime)
+            res.MD5 = res.GetActuallyMD5()
             Return res
         End Function
+    End Class
+    Public Class ShortEventObject
+        Public Property summary As String
+        Public Property location As String
+        Public Property description As String
+        <Newtonsoft.Json.JsonProperty("start")> _
+        Public Property start As DateItem
+        <Newtonsoft.Json.JsonProperty("end")> _
+        Public Property endField As DateItem
+
     End Class
 End Namespace

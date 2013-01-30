@@ -23,6 +23,9 @@
                       <img src="/Images/google-sync-button.png" Width="150px" />
                             </asp:HyperLink>
                         </div>
+                        <div  style="text-align:right; " >
+                        <a href="/Employee/SyncSettings.aspx" style="font-size:8pt; color:#333333" >Settings</a>
+                        </div>
                         <asp:UpdateProgress ID="PG" runat="server" DisplayAfter="1">
                             <ProgressTemplate>
                                 <br />

@@ -15,9 +15,9 @@ Partial Class oauth2callback_Default
 
             Dim parameters As New OAuth2Parameters()
             parameters.AccessCode = Session("ACCESS_CODE").ToString()
-            parameters.RedirectUri = "http://greenrssreader.com/oauth2callback/default.aspx"
-            parameters.ClientId = "755260777773.apps.googleusercontent.com"
-            parameters.ClientSecret = "u0jqn7WLyd3zWQzQ2VQKB7BN"
+            parameters.RedirectUri = TimeLive.Utilities.SettingsHelper.ClientCallbackUrl
+            parameters.ClientId = TimeLive.Utilities.SettingsHelper.ClientID
+            parameters.ClientSecret = TimeLive.Utilities.SettingsHelper.ClientSecret
 
             OAuthUtil.GetAccessToken(parameters)
             Session("ACCESS_TOKEN") = parameters.AccessToken

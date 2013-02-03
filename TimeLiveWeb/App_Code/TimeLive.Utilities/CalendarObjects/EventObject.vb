@@ -26,6 +26,7 @@ Namespace TimeLive.Utilities.CalendarObjects
             res.isGoogleCalendarEvent = True
             res.Name = summary
             res.Description = description
+            res.location = location
             If Not (String.IsNullOrEmpty(start.dateTime)) Then
                 res.StartDate = DateTime.Parse(start.dateTime)
                 If (res.StartDate = DateTime.MinValue) Then

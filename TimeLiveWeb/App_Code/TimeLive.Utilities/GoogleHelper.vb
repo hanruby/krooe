@@ -209,10 +209,11 @@ Namespace TimeLive.Utilities
         Public Shared Sub CreateTask(TaskEvent As SharedEvent, UserId As Integer)
             Dim s As String = ""
             Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
-                Dim dpr As DefaultProjectObject = SettingsHelper.GetDefaultProject(UserId)
+                Dim dpr As DefaultProjectObject = SettingsHelper.GetDefaultProject(UserId, TaskEvent.location)
                 Dim newid As Integer
                 agc.InsertTaskForSync(dpr.ProjectId, TaskEvent.Name, TaskEvent.Description, TaskEvent.EndDate, dpr.MilestoneId, Now, UserId, Now, UserId, 1, "", TaskEvent.StartDate, newid)
                 TaskEvent.TaskId = newid
+                agc.AssignToUser(UserId, newid)
                 UpdateGoogleEventID(TaskEvent, TaskEvent.GoogleEventId)
             End Using
         End Sub

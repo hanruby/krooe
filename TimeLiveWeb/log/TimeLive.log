@@ -13076,3 +13076,74 @@ INFO  2013-02-03 23:44:41,380 4363417ms File                   WriteToLog       
 INFO  2013-02-03 23:47:55,773 4557809ms File                   WriteToLog         - Unhandled Exception Occur
 INFO  2013-02-03 23:50:01,803 4683840ms File                   WriteToLog         - Unhandled Exception Occur
 INFO  2013-02-03 23:53:39,715 4901752ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:04:35,606   131ms File                   WriteToLog         - Application_Start: Initiated
+INFO  2013-02-04 04:04:35,670   195ms File                   WriteToLog         - RegisterCacheEntry:Register Cache for scheduled email
+INFO  2013-02-04 04:05:15,031 39556ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:05:15,055 39580ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:05:15,068 39593ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:05:15,405 39930ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:05:34,271 58795ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:05:34,318 58842ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:08:04,424 208949ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:08:10,958 215482ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:08:47,810 252334ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:09:29,959 294483ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:09:48,920 313445ms File                   WriteToLog         - Before Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,086 313611ms File                   WriteToLog         - After Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,087 313612ms File                   WriteToLog         - Before GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,240 313765ms File                   WriteToLog         - After GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,664 314188ms File                   WriteToLog         - Before Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,712 314236ms File                   WriteToLog         - After Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,712 314236ms File                   WriteToLog         - Before GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,713 314237ms File                   WriteToLog         - After GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:09:49,726 314250ms File                   WriteToLog         - DequeueEmailWithoutThread: Initiated
+INFO  2013-02-04 04:09:49,727 314251ms File                   WriteToLog         - DequeueEmailWithoutThread: DequeueInProgress=False
+INFO  2013-02-04 04:09:49,911 314435ms File                   WriteToLog         - DequeueEmailWithoutThread: EmailListCount=2
+INFO  2013-02-04 04:09:49,913 314437ms File                   WriteToLog         - EmailDispatchThread: EmailListCount=2
+INFO  2013-02-04 04:09:49,927 314451ms File                   WriteToLog         - DequeueEmailWithoutThread: EmailListCount=0
+INFO  2013-02-04 04:09:49,928 314452ms File                   WriteToLog         - DequeueEmailWithoutThread: Finished
+INFO  2013-02-04 04:09:50,221 314745ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:09:53,870 318394ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:09:56,274 320798ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:17:45,656   174ms File                   WriteToLog         - Application_Start: Initiated
+INFO  2013-02-04 04:17:45,809   327ms File                   WriteToLog         - RegisterCacheEntry:Register Cache for scheduled email
+INFO  2013-02-04 04:18:31,003 45521ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:18:31,025 45543ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:18:31,025 45543ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:18:31,162 45680ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:18:57,224 71742ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:18:57,272 71790ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:19:07,204 81722ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:19:12,723 87240ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:19:23,793 98311ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:19:53,653 128171ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:20:12,022 146540ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:20:13,917 148435ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:20:24,618 159135ms File                   WriteToLog         - Before Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:20:24,682 159199ms File                   WriteToLog         - After Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:20:24,682 159199ms File                   WriteToLog         - Before GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:20:24,871 159389ms File                   WriteToLog         - After GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:20:25,409 159927ms File                   WriteToLog         - Before Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:20:25,426 159944ms File                   WriteToLog         - After Create the MailMessage instance TaskUpdatedTemplate
+INFO  2013-02-04 04:20:25,426 159944ms File                   WriteToLog         - Before GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:20:25,427 159945ms File                   WriteToLog         - After GetTemplatedMessage TaskUpdatedTemplate
+INFO  2013-02-04 04:20:25,434 159952ms File                   WriteToLog         - DequeueEmailWithoutThread: Initiated
+INFO  2013-02-04 04:20:25,435 159953ms File                   WriteToLog         - DequeueEmailWithoutThread: DequeueInProgress=False
+INFO  2013-02-04 04:20:25,481 159999ms File                   WriteToLog         - DequeueEmailWithoutThread: EmailListCount=4
+INFO  2013-02-04 04:20:25,482 160000ms File                   WriteToLog         - EmailDispatchThread: EmailListCount=4
+INFO  2013-02-04 04:20:25,496 160014ms File                   WriteToLog         - DequeueEmailWithoutThread: EmailListCount=0
+INFO  2013-02-04 04:20:25,497 160015ms File                   WriteToLog         - DequeueEmailWithoutThread: Finished
+INFO  2013-02-04 04:20:25,852 160370ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:20:31,969 166487ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:20:50,100 184618ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:21:44,910 239428ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:21:59,490 254008ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:03,385 257903ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:06,690 261208ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:08,118 262636ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:20,924 275442ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:31,631 286149ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:33,810 288328ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:42,832 297350ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:22:58,092 312609ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-02-04 04:23:01,202 315719ms File                   WriteToLog         - Unhandled Exception Occur

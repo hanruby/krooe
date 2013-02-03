@@ -25,6 +25,7 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property isGoogleCalendarEvent As Boolean
         Public Property isDBEvent As Boolean
         Public Property MD5 As String
+        Public Property location As String
         Public Function GetActuallyMD5() As String
             Return GetMD5(String.Format("{0}{1}{2}{3}", Name, Description, StartDate.ToUniversalTime().ToString("o"), EndDate.ToUniversalTime().ToString("o")))
         End Function
@@ -53,6 +54,7 @@ Namespace TimeLive.Utilities.CalendarObjects
             res.summary = Name
             res.description = Description
             res.location = "Krooe"
+            If (EndDate < StartDate) Then EndDate = StartDate.AddHours(1)
             res.start = New DateItem2(StartDate)
             res.endField = New DateItem2(EndDate)
             Return res

@@ -29,7 +29,7 @@
                 <asp:Button runat="server" ID="btSave" Text="Save" />
             </div>
             <div>
-                <asp:Label runat="server" ID="lbMessage"  />
+                <asp:Label runat="server" ID="lbMessage" ForeColor="#003300"  />
             </div>
         </asp:View>
         <asp:View runat="server" ID="vwPasswordResetDone">

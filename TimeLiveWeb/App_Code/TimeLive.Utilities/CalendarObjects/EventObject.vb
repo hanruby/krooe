@@ -26,8 +26,23 @@ Namespace TimeLive.Utilities.CalendarObjects
             res.isGoogleCalendarEvent = True
             res.Name = summary
             res.Description = description
-            res.StartDate = DateTime.Parse(start.dateTime)
-            res.EndDate = DateTime.Parse(endTime.dateTime)
+            If Not (String.IsNullOrEmpty(start.dateTime)) Then
+                res.StartDate = DateTime.Parse(start.dateTime)
+                If (res.StartDate = DateTime.MinValue) Then
+                    If Not (String.IsNullOrEmpty(start.dateOnly)) Then res.StartDate = DateTime.Parse(start.dateOnly)
+                End If
+            Else
+                If Not (String.IsNullOrEmpty(start.dateOnly)) Then res.StartDate = DateTime.Parse(start.dateOnly)
+            End If
+
+            If Not (String.IsNullOrEmpty(endTime.dateTime)) Then
+                res.EndDate = DateTime.Parse(endTime.dateTime)
+                If Not (String.IsNullOrEmpty(endTime.dateOnly)) Then res.EndDate = DateTime.Parse(endTime.dateOnly)
+
+            Else
+                If Not (String.IsNullOrEmpty(endTime.dateOnly)) Then res.EndDate = DateTime.Parse(endTime.dateOnly)
+            End If
+            res.LastUpdate = DateTime.Parse(updated)
             res.MD5 = res.GetActuallyMD5()
             Return res
         End Function
@@ -37,9 +52,9 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property location As String
         Public Property description As String
         <Newtonsoft.Json.JsonProperty("start")> _
-        Public Property start As DateItem
+        Public Property start As DateItem2
         <Newtonsoft.Json.JsonProperty("end")> _
-        Public Property endField As DateItem
+        Public Property endField As DateItem2
 
     End Class
 End Namespace

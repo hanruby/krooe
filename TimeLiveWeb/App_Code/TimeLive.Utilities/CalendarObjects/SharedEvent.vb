@@ -5,7 +5,19 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property TaskId As Integer
         Public Property GoogleEventId As String
         Public Property Name As String
+        Dim _decs As String
         Public Property Description As String
+            Get
+                If String.IsNullOrEmpty(_decs) Then
+                    Return ""
+                Else
+                    Return _decs
+                End If
+            End Get
+            Set(value As String)
+                _decs = value
+            End Set
+        End Property
         Public Property StartDate As DateTime
         Public Property EndDate As DateTime
         Public Property LastUpdate As DateTime
@@ -14,7 +26,7 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property isDBEvent As Boolean
         Public Property MD5 As String
         Public Function GetActuallyMD5() As String
-            Return GetMD5(String.Format("{0}{1}{2}{3}", Name, Description, StartDate.ToString("o"), EndDate.ToString("o")))
+            Return GetMD5(String.Format("{0}{1}{2}{3}", Name, Description, StartDate.ToUniversalTime().ToString("o"), EndDate.ToUniversalTime().ToString("o")))
         End Function
         Private Function GetMD5(data As String) As String
             Dim textBytes As Byte() = System.Text.Encoding.Default.GetBytes(data)
@@ -41,8 +53,8 @@ Namespace TimeLive.Utilities.CalendarObjects
             res.summary = Name
             res.description = Description
             res.location = "Krooe"
-            res.start = New DateItem(StartDate)
-            res.endField = New DateItem(EndDate)
+            res.start = New DateItem2(StartDate)
+            res.endField = New DateItem2(EndDate)
             Return res
         End Function
 

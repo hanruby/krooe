@@ -58,11 +58,25 @@ Namespace TimeLive.Utilities
             ans = Newtonsoft.Json.JsonConvert.DeserializeAnonymousType(Of ActionAnswer)(cont, ans)
             Return ans.id
         End Function
-        Public Shared Sub UpdateEvent(TaskEvent As SharedEvent, CalendarId As String, token As String)
-
-        End Sub
+        Public Shared Function UpdateEvent(TaskEvent As SharedEvent, CalendarId As String, token As String) As String
+            DeleteEvent(TaskEvent, CalendarId, token)
+            Return CreateEvent(TaskEvent, CalendarId, token)
+        End Function
         Public Shared Sub DeleteEvent(TaskEvent As SharedEvent, CalendarId As String, token As String)
+            Dim baseURL As String = "https://www.googleapis.com/calendar/v3"
 
+            Dim url As String = baseURL & "/calendars/" & Uri.EscapeDataString(CalendarId) & "/events/" & TaskEvent.GoogleEventId & "?pp=1&key=" + TimeLive.Utilities.SettingsHelper.ClientID
+            Dim rq As HttpWebRequest = HttpWebRequest.Create(url)
+            rq.Headers.Add("Authorization", "OAuth " + token)
+            rq.Headers.Add("Accept-Charset", "utf-8")
+            rq.KeepAlive = True
+            rq.ContentType = "application/json"
+            rq.Method = "DELETE"
+            Dim rs As HttpWebResponse = rq.GetResponse()
+            Dim sr As New StreamReader(rs.GetResponseStream())
+            Dim cont As String = sr.ReadToEnd
+            Dim ans As ActionAnswer
+            ans = Newtonsoft.Json.JsonConvert.DeserializeAnonymousType(Of ActionAnswer)(cont, ans)
         End Sub
         Public Shared ReadOnly Property CurrentGoogleProcessor As GoogleSyncProcessor
             Get
@@ -92,6 +106,13 @@ Namespace TimeLive.Utilities
             End Using
 
         End Function
+        Public Shared Function GetDefaultCalendarID(UserID As Integer) As String
+            Using agc As New AccountGoogleCalendarTableAdapters.AccountGoogleCalendarTableAdapter()
+                Dim calendarID As String = agc.GetDefaultCalendarByUserID(UserID)
+                Return calendarID
+            End Using
+
+        End Function
 
         Public Shared Sub SetDefaultCalendarID(GoogleAccountID As String, GoogleCalendarID As String, CurrentID As Integer)
             Using agc As New AccountGoogleCalendarTableAdapters.AccountGoogleCalendarTableAdapter()
@@ -104,6 +125,26 @@ Namespace TimeLive.Utilities
                 agc.ResetDefaultCalendar(GoogleAccountID)
             End Using
         End Sub
+        Public Shared Function GetSyncedEvents(UserID As Integer) As List(Of SharedEvent)
+            Dim res As New List(Of SharedEvent)
+            Using agc As New AccountGoogleCalendarTableAdapters.vueAccountTasksForSyncTableAdapter()
+                For Each itm As AccountGoogleCalendar.vueAccountTasksForSyncRow In agc.GetSyncedEvents(UserID)
+                    Dim se As New SharedEvent
+                    se.Name = itm.TaskName
+                    se.Description = itm.TaskDescription
+                    se.StartDate = itm.StartDate.ToUniversalTime
+                    se.EndDate = itm.DeadlineDate.ToUniversalTime
+                    se.LastUpdate = itm.ModifiedOn
+                    se.MD5 = itm.MD5Hash
+                    se.TaskId = itm.TaskId
+                    se.GoogleEventId = itm.GoogleEventID
+                    se.isDeleted = itm.isDeleted
+                    se.isDBEvent = True
+                    res.Add(se)
+                Next
+            End Using
+            Return res
+        End Function
         Public Shared Function GetTaskEvents(UserID As Integer) As List(Of SharedEvent)
             Dim res As New List(Of SharedEvent)
             Using agc As New AccountGoogleCalendarTableAdapters.vueAccountTasksForSyncTableAdapter()
@@ -144,9 +185,24 @@ Namespace TimeLive.Utilities
             End Using
             Return res
         End Function
+        Public Shared Function GetDeletedTaskEvents(UserID As Integer) As List(Of SharedEvent)
+            Dim res As New List(Of SharedEvent)
+            Using agc As New AccountGoogleCalendarTableAdapters.AccountTaskSyncInfoTableAdapter()
+                For Each itm As AccountGoogleCalendar.AccountTaskSyncInfoRow In agc.GetDeletedTasks()
+                    Dim se As New SharedEvent
+
+                    se.MD5 = itm.MD5Hash
+                    se.TaskId = itm.TaskId
+                    se.GoogleEventId = itm.GoogleEventID
+                    se.isDeleted = itm.isDeleted
+                    se.isDBEvent = True
+                    res.Add(se)
+                Next
+            End Using
+            Return res
+        End Function
         Public Shared Sub UpdateGoogleEventID(EventItem As SharedEvent, GoogleEventID As String)
             Using agc As New AccountGoogleCalendarTableAdapters.AccountTaskSyncInfoTableAdapter
-
                 agc.UpdateGoogleEventID(GoogleEventID, EventItem.GetActuallyMD5(), EventItem.TaskId)
             End Using
         End Sub
@@ -154,17 +210,28 @@ Namespace TimeLive.Utilities
             Dim s As String = ""
             Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
                 Dim dpr As DefaultProjectObject = SettingsHelper.GetDefaultProject(UserId)
-                Dim newid As Integer = agc.InsertTask(dpr.ProjectId, TaskEvent.Name, TaskEvent.Description, TaskEvent.EndDate, dpr.MilestoneId, Now, UserId, Now, UserId, 1, "111", TaskEvent.StartDate)
+                Dim newid As Integer
+                agc.InsertTaskForSync(dpr.ProjectId, TaskEvent.Name, TaskEvent.Description, TaskEvent.EndDate, dpr.MilestoneId, Now, UserId, Now, UserId, 1, "", TaskEvent.StartDate, newid)
                 TaskEvent.TaskId = newid
+                UpdateGoogleEventID(TaskEvent, TaskEvent.GoogleEventId)
             End Using
         End Sub
         Public Shared Sub DeleteTask(TaskEvent As SharedEvent)
-
+            Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
+                agc.FullDeleteTask(TaskEvent.GoogleEventId)
+            End Using
         End Sub
         Public Shared Sub UpdateTask(TaskEvent As SharedEvent)
-
+            Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
+                agc.UpdateTask(TaskEvent.Name, TaskEvent.Description, TaskEvent.StartDate, TaskEvent.EndDate, TaskEvent.TaskId)
+            End Using
         End Sub
-        
+        Public Shared Sub DeleteSyncInfo(TaskId As Integer)
+            Using agc As New AccountGoogleCalendarTableAdapters.AccountTaskSyncInfoTableAdapter
+                agc.DeleteSyncInfo(TaskId)
+            End Using
+        End Sub
+
     End Class
 
     Public Class GoogleSyncProcessor
@@ -182,15 +249,73 @@ Namespace TimeLive.Utilities
             CurrentState = "Getting events from your google calendar"
 
             CurrentState = "Getting tasks"
+
+            ' Delete from calendar events deleted from DB
+            Dim DelEvents As List(Of SharedEvent) = GoogleDBHelper.GetDeletedTaskEvents(UserId)
+            Dim GCEvents As List(Of SharedEvent) = GoogleHelper.GetEvents(CalendarId, token)
+            For Each se As SharedEvent In GCEvents
+                Dim found As Boolean = False
+                Dim ti As Integer = 0
+                For Each dbse As SharedEvent In DelEvents
+                    If dbse.GoogleEventId = se.GoogleEventId And dbse.isDeleted Then
+                        found = True
+                        ti = dbse.TaskId
+                        Exit For
+                    End If
+                Next
+                If found Then
+                    GoogleHelper.DeleteEvent(se, CalendarId, token)
+                    GoogleDBHelper.DeleteSyncInfo(ti)
+                End If
+            Next
+
+            'Delete from DB event deleted from calendar
+            Dim SyncedDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetSyncedEvents(UserId)
+            For Each dbse As SharedEvent In SyncedDBEvents
+                Dim found As Boolean = False
+                For Each se In GCEvents
+                    If (se.GoogleEventId = dbse.GoogleEventId) Then found = True
+                Next
+                If Not (found) Then
+                    GoogleDBHelper.DeleteTask(dbse)
+                End If
+            Next
+
+            GCEvents = GoogleHelper.GetEvents(CalendarId, token)
+            SyncedDBEvents = GoogleDBHelper.GetSyncedEvents(UserId)
+            ' Update events changed events
+            For Each dbse As SharedEvent In SyncedDBEvents
+                Dim CalSE As SharedEvent = Nothing
+                For Each se In GCEvents
+                    If (se.GoogleEventId = dbse.GoogleEventId) Then CalSE = se
+                Next
+                If Not (CalSE Is Nothing) Then
+                    If dbse.GetActuallyMD5() <> CalSE.GetActuallyMD5() Then
+                        If (dbse.LastUpdate > CalSE.LastUpdate) Then
+                            'update event in calendar
+                            Dim ncid As String = GoogleHelper.UpdateEvent(dbse, CalendarId, token)
+                            GoogleDBHelper.UpdateGoogleEventID(dbse, ncid)
+                        Else
+                            'update event in datatbase
+                            CalSE.TaskId = dbse.TaskId
+                            GoogleDBHelper.UpdateTask(CalSE)
+                        End If
+
+                    End If
+                End If
+            Next
+
+            GCEvents = GoogleHelper.GetEvents(CalendarId, token)
+
             ' New event DB -> GC
             Dim NewDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetTaskEvents(UserId)
             For Each se As SharedEvent In NewDBEvents
                 Dim GoogleCalendarId As String = GoogleHelper.CreateEvent(se, CalendarId, token)
                 GoogleDBHelper.UpdateGoogleEventID(se, GoogleCalendarId)
             Next
-            ' New event DB -> GC
-            Dim GCEvents As List(Of SharedEvent) = GoogleHelper.GetEvents(CalendarId, token)
-            Dim AllDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetTaskEvents(UserId)
+            ' New event GC -> DB
+
+            Dim AllDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetAllTaskEvents(UserId)
             For Each se As SharedEvent In GCEvents
                 Dim found As Boolean = False
                 For Each dbse As SharedEvent In AllDBEvents
@@ -203,7 +328,9 @@ Namespace TimeLive.Utilities
                     GoogleDBHelper.CreateTask(se, UserId)
                 End If
             Next
-            'GoogleHelper.ClearSyncState()
+
+
+
             Dim s As String
         End Sub
     End Class

@@ -29,6 +29,41 @@
                 <h1>
                     Sync in progress...</h1>
             </div>
+            <div id="dLog">
+            </div>
+            <div style="text-align: center; display: none;" id="dResult">
+                <a href="/Employee/MyTasks.aspx">Go to my tasks</a>
+            </div>
+            <script type="text/javascript">
+                var lastTS = -1;
+                loadState();
+                function loadState() {
+                    var xmlhttp;
+                    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp = new XMLHttpRequest();
+                    }
+                    else {// code for IE6, IE5
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    xmlhttp.onreadystatechange = function () {
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            var old = document.getElementById("dLog").innerHTML;
+                             var objJSON = eval("(function(){return " + xmlhttp.responseText + ";})()");
+                            //var objJSON = JSON.parse(xmlhttp.responseText);
+                            document.getElementById("dLog").innerHTML = old + unescape(objJSON.Text);
+                            lastTS = objJSON.TS;
+                            if (objJSON.Done) {
+                                document.getElementById("dResult").style.display = "block";
+                            }
+                            else {
+                                window.setTimeout("loadState()", 500);
+                            }
+                        }
+                    }
+                    xmlhttp.open("POST", "/Employee/SyncTasks.aspx?isCallback=1&TS=" + lastTS, true);
+                    xmlhttp.send();
+                }
+            </script>
         </asp:View>
     </asp:MultiView>
 </asp:Content>

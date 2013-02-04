@@ -20,13 +20,15 @@ Namespace TimeLive.Utilities
             Dim obj As CalendarObjects.EventsAnswer
             obj = Newtonsoft.Json.JsonConvert.DeserializeObject(Of CalendarObjects.EventsAnswer)(cont)
             Dim result As New List(Of SharedEvent)
-            For Each si As CalendarObjects.EventObject In obj.items
-                If si.location IsNot Nothing Then
-                    If si.location.ToLower().Trim() = "krooe" Or si.summary.ToLower.Trim.StartsWith("krooe") Then
-                        result.Add(si.GetSharedEvent)
+            If Not (obj.items Is Nothing) Then
+                For Each si As CalendarObjects.EventObject In obj.items
+                    If si.location IsNot Nothing Then
+                        If si.location.ToLower().Trim() = "krooe" Or si.summary.ToLower.Trim.StartsWith("krooe") Then
+                            result.Add(si.GetSharedEvent)
+                        End If
                     End If
-                End If
-            Next
+                Next
+            End If
             Return result
         End Function
         ''' <summary>
@@ -38,34 +40,43 @@ Namespace TimeLive.Utilities
         ''' <returns>New Google Event ID</returns>
         ''' <remarks></remarks>
         Public Shared Function CreateEvent(TaskEvent As SharedEvent, CalendarId As String, token As String) As String
-            Dim baseURL As String = "https://www.googleapis.com/calendar/v3"
 
-            Dim url As String = baseURL & "/calendars/" & Uri.EscapeDataString(CalendarId) & "/events?pp=1&key=" + TimeLive.Utilities.SettingsHelper.ClientID
-            Dim rq As HttpWebRequest = HttpWebRequest.Create(url)
-            rq.Headers.Add("Authorization", "OAuth " + token)
-            rq.Headers.Add("Accept-Charset", "utf-8")
-            rq.KeepAlive = True
-            rq.ContentType = "application/json"
-            rq.Method = "POST"
-            Dim Post As String = Newtonsoft.Json.JsonConvert.SerializeObject(TaskEvent.GetShortEvent)
-            Dim strm As Stream = rq.GetRequestStream
-            Dim bytes As Byte() = System.Text.Encoding.UTF8.GetBytes(Post)
-            strm.Write(bytes, 0, bytes.Count)
-            Dim rs As HttpWebResponse = rq.GetResponse()
-            Dim sr As New StreamReader(rs.GetResponseStream())
-            Dim cont As String = sr.ReadToEnd
-            Dim ans As ActionAnswer
-            ans = Newtonsoft.Json.JsonConvert.DeserializeAnonymousType(Of ActionAnswer)(cont, ans)
-            Return ans.id
+            Try
+                Dim baseURL As String = "https://www.googleapis.com/calendar/v3"
+
+                Dim url As String = baseURL & "/calendars/" & CalendarId & "/events?pp=1&key=" + TimeLive.Utilities.SettingsHelper.ClientID
+                Dim rq As HttpWebRequest = HttpWebRequest.Create(url)
+                rq.Headers.Add("Authorization", "OAuth " + token)
+                rq.Headers.Add("Accept-Charset", "utf-8")
+                rq.KeepAlive = True
+                rq.ContentType = "application/json"
+                rq.Method = "POST"
+                Dim Post As String = Newtonsoft.Json.JsonConvert.SerializeObject(TaskEvent.GetShortEvent)
+                Dim strm As Stream = rq.GetRequestStream
+                Dim bytes As Byte() = System.Text.Encoding.UTF8.GetBytes(Post)
+                strm.Write(bytes, 0, bytes.Count)
+                Dim rs As HttpWebResponse = rq.GetResponse()
+                Dim sr As New StreamReader(rs.GetResponseStream())
+                Dim cont As String = sr.ReadToEnd
+                Dim ans As ActionAnswer
+                ans = Newtonsoft.Json.JsonConvert.DeserializeAnonymousType(Of ActionAnswer)(cont, ans)
+                Return ans.id
+            Catch ex As Exception
+                Return Nothing
+            End Try
         End Function
         Public Shared Function UpdateEvent(TaskEvent As SharedEvent, CalendarId As String, token As String) As String
-            DeleteEvent(TaskEvent, CalendarId, token)
-            Return CreateEvent(TaskEvent, CalendarId, token)
+
+            Dim nid As String = CreateEvent(TaskEvent, CalendarId, token)
+            If Not (String.IsNullOrEmpty(nid)) Then
+                DeleteEvent(TaskEvent, CalendarId, token)
+            End If
+            Return nid
         End Function
         Public Shared Sub DeleteEvent(TaskEvent As SharedEvent, CalendarId As String, token As String)
             Dim baseURL As String = "https://www.googleapis.com/calendar/v3"
 
-            Dim url As String = baseURL & "/calendars/" & Uri.EscapeDataString(CalendarId) & "/events/" & TaskEvent.GoogleEventId & "?pp=1&key=" + TimeLive.Utilities.SettingsHelper.ClientID
+            Dim url As String = baseURL & "/calendars/" & CalendarId & "/events/" & TaskEvent.GoogleEventId & "?pp=1&key=" + TimeLive.Utilities.SettingsHelper.ClientID
             Dim rq As HttpWebRequest = HttpWebRequest.Create(url)
             rq.Headers.Add("Authorization", "OAuth " + token)
             rq.Headers.Add("Accept-Charset", "utf-8")
@@ -224,7 +235,7 @@ Namespace TimeLive.Utilities
         End Sub
         Public Shared Sub UpdateTask(TaskEvent As SharedEvent)
             Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
-                agc.UpdateTask(TaskEvent.Name, TaskEvent.Description, TaskEvent.StartDate, TaskEvent.EndDate, TaskEvent.TaskId)
+                agc.UpdateTask(TaskEvent.Name, TaskEvent.Description, TaskEvent.EndDate, TaskEvent.StartDate, TaskEvent.TaskId)
             End Using
         End Sub
         Public Shared Sub DeleteSyncInfo(TaskId As Integer)
@@ -240,19 +251,32 @@ Namespace TimeLive.Utilities
         Public Property CalendarId As String
         Public Property UserId As Integer
         Private token As String
+        Public Log As List(Of LogItem)
+        Public TS As Integer
+        Public Done As Boolean
         Public Sub Go()
+            Log = New List(Of LogItem)
+            TS = 0
+            Done = False
             token = System.Web.HttpContext.Current.Session("ACCESS_TOKEN").ToString()
             Dim th As New System.Threading.Thread(New System.Threading.ParameterizedThreadStart(AddressOf InternalGo))
             th.IsBackground = True
             th.Start()
         End Sub
+        Public Sub AddToLog(text As String)
+            Dim li As New LogItem
+            li.TS = TS
+            li.Text = text
+            Log.Add(li)
+            TS += 1
+        End Sub
         Private Sub InternalGo(obj As Object)
-            CurrentState = "Getting events from your google calendar"
-
-            CurrentState = "Getting tasks"
-
+            AddToLog("Start sync. Google calendar: " & CalendarId)
             ' Delete from calendar events deleted from DB
+            AddToLog("Delete from calendar events deleted from database")
+            AddToLog("Getting deleted tasks from database")
             Dim DelEvents As List(Of SharedEvent) = GoogleDBHelper.GetDeletedTaskEvents(UserId)
+            AddToLog("Getting all event from your google calendar")
             Dim GCEvents As List(Of SharedEvent) = GoogleHelper.GetEvents(CalendarId, token)
             For Each se As SharedEvent In GCEvents
                 Dim found As Boolean = False
@@ -265,12 +289,14 @@ Namespace TimeLive.Utilities
                     End If
                 Next
                 If found Then
+                    AddToLog("Delete from calendar '" & se.Name & "'")
                     GoogleHelper.DeleteEvent(se, CalendarId, token)
                     GoogleDBHelper.DeleteSyncInfo(ti)
                 End If
             Next
 
             'Delete from DB event deleted from calendar
+            AddToLog("Delete from DB event deleted from calendar")
             Dim SyncedDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetSyncedEvents(UserId)
             For Each dbse As SharedEvent In SyncedDBEvents
                 Dim found As Boolean = False
@@ -278,13 +304,18 @@ Namespace TimeLive.Utilities
                     If (se.GoogleEventId = dbse.GoogleEventId) Then found = True
                 Next
                 If Not (found) Then
+                    AddToLog("Delete from database task '" & dbse.Name & "'")
                     GoogleDBHelper.DeleteTask(dbse)
                 End If
             Next
 
+
+            AddToLog("Update changed events")
+            AddToLog("Getting all event from your google calendar")
             GCEvents = GoogleHelper.GetEvents(CalendarId, token)
+            AddToLog("Getting tasks from database")
             SyncedDBEvents = GoogleDBHelper.GetSyncedEvents(UserId)
-            ' Update events changed events
+            ' Update changed events
             For Each dbse As SharedEvent In SyncedDBEvents
                 Dim CalSE As SharedEvent = Nothing
                 For Each se In GCEvents
@@ -294,10 +325,12 @@ Namespace TimeLive.Utilities
                     If dbse.GetActuallyMD5() <> CalSE.GetActuallyMD5() Then
                         If (dbse.LastUpdate > CalSE.LastUpdate) Then
                             'update event in calendar
+                            AddToLog("Update event '" & dbse.Name & "' in calendar")
                             Dim ncid As String = GoogleHelper.UpdateEvent(dbse, CalendarId, token)
                             GoogleDBHelper.UpdateGoogleEventID(dbse, ncid)
                         Else
                             'update event in datatbase
+                            AddToLog("Update event '" & CalSE.Name & "' in database")
                             CalSE.TaskId = dbse.TaskId
                             GoogleDBHelper.UpdateTask(CalSE)
                         End If
@@ -306,16 +339,25 @@ Namespace TimeLive.Utilities
                 End If
             Next
 
-            GCEvents = GoogleHelper.GetEvents(CalendarId, token)
-
             ' New event DB -> GC
+            AddToLog("Adding new tasks from database in your google calendar")
+            AddToLog("Getting all event from your google calendar")
+            GCEvents = GoogleHelper.GetEvents(CalendarId, token)
+            AddToLog("Getting new events from database")
             Dim NewDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetTaskEvents(UserId)
             For Each se As SharedEvent In NewDBEvents
                 Dim GoogleCalendarId As String = GoogleHelper.CreateEvent(se, CalendarId, token)
-                GoogleDBHelper.UpdateGoogleEventID(se, GoogleCalendarId)
-            Next
-            ' New event GC -> DB
+                If Not (String.IsNullOrEmpty(GoogleCalendarId)) Then
+                    AddToLog("Adding event '" & se.Name & "' in your google calendar")
+                    GoogleDBHelper.UpdateGoogleEventID(se, GoogleCalendarId)
+                End If
 
+            Next
+
+
+            ' New event GC -> DB
+            AddToLog("Adding new events from your google calendar in database")
+            AddToLog("Getting all tasks from database")
             Dim AllDBEvents As List(Of SharedEvent) = GoogleDBHelper.GetAllTaskEvents(UserId)
             For Each se As SharedEvent In GCEvents
                 Dim found As Boolean = False
@@ -326,13 +368,16 @@ Namespace TimeLive.Utilities
                     End If
                 Next
                 If Not found Then
+                    AddToLog("Adding task '" & se.Name & "' in database")
                     GoogleDBHelper.CreateTask(se, UserId)
                 End If
             Next
-
-
-
-            Dim s As String
+            AddToLog("Done")
+            Done = True
         End Sub
+    End Class
+    Public Class LogItem
+        Public Property TS As Integer
+        Public Property Text As String
     End Class
 End Namespace

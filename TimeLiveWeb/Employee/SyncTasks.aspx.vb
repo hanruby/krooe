@@ -19,6 +19,17 @@ Partial Class Employee_SyncTasks
     End Property
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+
+        If Request.QueryString("IsCallback") = "1" Then
+            Dim prc As TimeLive.Utilities.GoogleSyncProcessor = TimeLive.Utilities.GoogleHelper.CurrentGoogleProcessor
+            Dim lag As String = ""
+            Dim lastTS As Integer = CInt(Request("TS"))
+            For Each li As TimeLive.Utilities.LogItem In prc.Log
+                If li.TS >= lastTS Then lag &= li.Text + "<br/>"
+            Next
+            Response.Write("{Text:" & Chr(34) & Uri.EscapeDataString(lag) & Chr(34) & ",TS:" & prc.TS.ToString() & ",Done:" & prc.Done.ToString().ToLower() & "}")
+            Response.End()
+        End If
         If Not IsPostBack Then
 
             Dim authFactory As New GAuthSubRequestFactory("cl", "KrooeTestApp")
@@ -65,6 +76,6 @@ Partial Class Employee_SyncTasks
 
         GoToStep2(part(part.Count - 1))
 
-       
+
     End Sub
 End Class

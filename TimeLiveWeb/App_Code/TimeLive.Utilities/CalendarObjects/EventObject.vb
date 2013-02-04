@@ -13,7 +13,8 @@ Namespace TimeLive.Utilities.CalendarObjects
         Public Property location As String
         Public Property creator As Person
         Public Property organizer As Person
-        Public Property start As DateItem
+        <Newtonsoft.Json.JsonProperty("start")> _
+          Public Property start As DateItem
         <Newtonsoft.Json.JsonProperty("end")> _
         Public Property endTime As DateItem
 

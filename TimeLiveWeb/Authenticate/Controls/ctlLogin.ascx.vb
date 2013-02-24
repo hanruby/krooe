@@ -37,8 +37,9 @@ Partial Class Auth_Controls_ctlLogin1
                 e.Authenticated = False
             End If
         Catch ex As Exception
-            CType(Me.Login1.FindControl("ErrorText"), Label).Visible = True
-            CType(Me.Login1.FindControl("ErrorText"), Label).Text = "Configuration Error: " & ex.Message
+            Response.Write("Configuration Error: " & ex.Message)
+            'CType(Me.Login1.FindControl("ErrorText"), Label).Visible = True
+            'CType(Me.Login1.FindControl("ErrorText"), Label).Text = "Configuration Error: " & ex.Message
         End Try
     End Sub
     Protected Sub Login1_LoggedIn(ByVal sender As Object, ByVal e As System.EventArgs) Handles Login1.LoggedIn

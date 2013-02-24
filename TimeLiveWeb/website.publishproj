@@ -37,10 +37,6 @@
       <Project>{EB8633FF-CEED-40EE-8D1A-CA1BF5678C42}</Project>
       <Name>TimeLive.FileHelpers.2005</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Google.Apis.Tasks.v1\Google.Apis.Tasks.v1.csproj">
-      <Project>{E9B08EF0-7705-43E4-AD4D-7E262D0902A5}</Project>
-      <Name>Google.Apis.Tasks.v1</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LiveTools\TimeLive.UI.LiveTools.vbproj">
       <Project>{39B6E276-B330-499E-B2BB-8CEC4EC1478E}</Project>
       <Name>TimeLive.UI.LiveTools</Name>

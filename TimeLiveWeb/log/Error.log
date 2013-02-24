@@ -5482,3 +5482,300 @@ Thread Name:
 Win32 ThreadId:7880
 Extended Properties: 
 ----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 04.02.2013 7:36:40
+Message: Email Dispatch Error, EmailMessageID: afe77e38-e5c7-4eba-ba04-55e88fc2d3ef Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-4-130044363435477673
+ProcessId: 7460
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:5844
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 04.02.2013 7:36:43
+Message: Email Dispatch Error, EmailMessageID: 9664eec4-c3b0-42e1-8c4a-8cfce30c1fbf Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-4-130044363435477673
+ProcessId: 7460
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:5844
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 8:50:09
+Message: Email Dispatch Error, EmailMessageID: 0accbb9e-4493-4058-b030-cbbf2adef060 Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-1-130061687170349763
+ProcessId: 4592
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:6308
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 8:50:12
+Message: Email Dispatch Error, EmailMessageID: 41cea49a-9428-4ecf-929e-3f9efe0f2b47 Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-1-130061687170349763
+ProcessId: 4592
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:6308
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 8:50:14
+Message: Email Dispatch Error, EmailMessageID: f01b90ba-03fb-440f-8c4a-e08048dc5e7e Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-1-130061687170349763
+ProcessId: 4592
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:6308
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 9:13:43
+Message: Email Dispatch Error, EmailMessageID: 0accbb9e-4493-4058-b030-cbbf2adef060 Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-2-130061701616382007
+ProcessId: 4592
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:6960
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 9:13:46
+Message: Email Dispatch Error, EmailMessageID: 41cea49a-9428-4ecf-929e-3f9efe0f2b47 Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-2-130061701616382007
+ProcessId: 4592
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:6960
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 9:13:48
+Message: Email Dispatch Error, EmailMessageID: f01b90ba-03fb-440f-8c4a-e08048dc5e7e Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-2-130061701616382007
+ProcessId: 4592
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:6960
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 10:04:33
+Message: Email Dispatch Error, EmailMessageID: 0accbb9e-4493-4058-b030-cbbf2adef060 Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-1-130061731707994416
+ProcessId: 3188
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:1176
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 10:04:35
+Message: Email Dispatch Error, EmailMessageID: 41cea49a-9428-4ecf-929e-3f9efe0f2b47 Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-1-130061731707994416
+ProcessId: 3188
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:1176
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Error Information: 1 : Timestamp: 24.02.2013 10:04:37
+Message: Email Dispatch Error, EmailMessageID: f01b90ba-03fb-440f-8c4a-e08048dc5e7e Exception: System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'YourSMTPServer'
+   в System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   в System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   в System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   в System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider.Dispatch(TList`1 list) в E:\Livetecs\TimeLive4\SmartMassEMail\SmartMassEmail.ImplementedProviders\SMTPDotnet2EmailDispatchProvider.cs:строка 103
+Category: Error
+Priority: -1
+EventId: 1
+Severity: Information
+Title:
+Machine: P
+App Domain: f94fc85e-1-130061731707994416
+ProcessId: 3188
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+Thread Name: 
+Win32 ThreadId:1176
+Extended Properties: 
+----------------------------------------

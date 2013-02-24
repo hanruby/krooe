@@ -62,6 +62,7 @@ Partial Class Employee_SyncTasks
         Dim empTable As AccountEmployee.AccountEmployeeDataTable
         empTable = aeb.GetAccountEmployeesByAccountId(DBUtilities.GetSessionAccountId)
         Dim currentUserId As Integer = empTable(0).AccountId
+        currentUserId = DBUtilities.GetSessionAccountEmployeeId
         TimeLive.Utilities.GoogleHelper.ClearSyncState()
         TimeLive.Utilities.GoogleHelper.RunSync(calendarID, currentUserId)
         mwSync.SetActiveView(vwProgress)

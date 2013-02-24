@@ -217,17 +217,26 @@ Namespace TimeLive.Utilities
                 agc.UpdateGoogleEventID(GoogleEventID, EventItem.GetActuallyMD5(), EventItem.TaskId)
             End Using
         End Sub
-        Public Shared Sub CreateTask(TaskEvent As SharedEvent, UserId As Integer)
+        Public Shared Function CreateTask(TaskEvent As SharedEvent, UserId As Integer) As Boolean
+            Dim res As Boolean = True
             Dim s As String = ""
             Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
                 Dim dpr As DefaultProjectObject = SettingsHelper.GetDefaultProject(UserId, TaskEvent.location)
+                If dpr.ProjectId = -1 Then Return False
                 Dim newid As Integer
                 agc.InsertTaskForSync(dpr.ProjectId, TaskEvent.Name, TaskEvent.Description, TaskEvent.EndDate, dpr.MilestoneId, Now, UserId, Now, UserId, 1, "", TaskEvent.StartDate, newid)
                 TaskEvent.TaskId = newid
-                agc.AssignToUser(UserId, newid)
-                UpdateGoogleEventID(TaskEvent, TaskEvent.GoogleEventId)
+                If (agc.GetDataById(newid).Rows.Count > 0) Then
+                    agc.AssignToUser(UserId, newid)
+                    UpdateGoogleEventID(TaskEvent, TaskEvent.GoogleEventId)
+                    res = True
+                Else
+                    res = False
+                End If
+
             End Using
-        End Sub
+            Return res
+        End Function
         Public Shared Sub DeleteTask(TaskEvent As SharedEvent)
             Using agc As New AccountGoogleCalendarTableAdapters.AccountProjectTaskTableAdapter
                 agc.FullDeleteTask(TaskEvent.GoogleEventId)
@@ -369,7 +378,11 @@ Namespace TimeLive.Utilities
                 Next
                 If Not found Then
                     AddToLog("Adding task '" & se.Name & "' in database")
-                    GoogleDBHelper.CreateTask(se, UserId)
+                    If (GoogleDBHelper.CreateTask(se, UserId)) Then
+                        AddToLog("Success")
+                    Else
+                        AddToLog("Error")
+                    End If
                 End If
             Next
             AddToLog("Done")

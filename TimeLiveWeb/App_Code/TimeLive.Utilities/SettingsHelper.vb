@@ -53,16 +53,16 @@ Namespace TimeLive.Utilities
             If res.ProjectId = -1 Then
                 Using agc As New AccountGoogleCalendarTableAdapters.AccountProject1TableAdapter
                     Dim t As AccountGoogleCalendar.AccountProject1DataTable = agc.GetProjectsForUser(DBUtilities.GetCurrentAccountId)
-                    If (t.Rows.Count = 0) Then
+                    If (t.Rows.Count > 0) Then
                         res.ProjectId = CType(t.Rows(0), AccountGoogleCalendar.AccountProject1Row).AccountProjectId
                     End If
                 End Using
             End If
 
-            If (res.ProjectId > -1 And res.MilestoneId = 1) Then
+            If (res.ProjectId > -1 And res.MilestoneId = -1) Then
                 Using agc1 As New AccountGoogleCalendarTableAdapters.AccountProjectMilestoneTableAdapter
                     Dim t As AccountGoogleCalendar.AccountProjectMilestoneDataTable = agc1.GetMilestones(res.ProjectId)
-                    If (t.Rows.Count = 0) Then
+                    If (t.Rows.Count > 0) Then
                         res.MilestoneId = CType(t.Rows(0), AccountGoogleCalendar.AccountProjectMilestoneRow).AccountProjectMilestoneId
                     End If
                 End Using

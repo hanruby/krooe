@@ -16501,3 +16501,190 @@ INFO  2013-03-06 02:27:51,634 13339ms File                   WriteToLog         
 INFO  2013-03-06 02:27:58,502 20207ms File                   WriteToLog         - Unhandled Exception Occur
 INFO  2013-03-06 02:29:31,080 112785ms File                   WriteToLog         - Unhandled Exception Occur
 INFO  2013-03-06 02:29:46,453 128158ms File                   WriteToLog         - Unhandled Exception Occur
+INFO  2013-03-06 02:37:40,112 601817ms File                   WriteToLog         - MyCacheItemRemovedCallback:DoWorkStart
+INFO  2013-03-06 02:37:40,141 601846ms File                   WriteToLog         - Initated DoWork: Sending scheduled emails
+INFO  2013-03-06 02:37:40,156 601861ms File                   WriteToLog         - DequeueEmailWithoutThread: Initiated
+INFO  2013-03-06 02:37:40,157 601862ms File                   WriteToLog         - DequeueEmailWithoutThread: DequeueInProgress=False
+INFO  2013-03-06 02:37:40,269 601974ms File                   WriteToLog         - DequeueEmailWithoutThread: EmailListCount=0
+INFO  2013-03-06 02:37:40,269 601974ms File                   WriteToLog         - DequeueEmailWithoutThread: Finished
+INFO  2013-03-06 02:37:40,279 601984ms File                   WriteToLog         - Initiated:SendScheduledEmail: SystemCurrentDateTime 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,462 602167ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: Total Employees are 2
+INFO  2013-03-06 02:37:40,477 602182ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,480 602185ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,481 602186ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,481 602186ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,485 602190ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,487 602192ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,487 602192ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,488 602193ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,498 602203ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPending TotalSeconds = 0,0250311 totalemployees = 0
+INFO  2013-03-06 02:37:40,506 602211ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: Total Employees are 2
+INFO  2013-03-06 02:37:40,510 602215ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,512 602217ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,512 602217ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,513 602218ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 82 For Administrator
+INFO  2013-03-06 02:37:40,515 602220ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,517 602222ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,517 602222ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,518 602223ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101 For Administrator
+INFO  2013-03-06 02:37:40,518 602223ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForAdministrator TotalSeconds = 0,0109841 totalemployees = 0
+INFO  2013-03-06 02:37:40,567 602272ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForProjectManager: Total Employees are 1
+INFO  2013-03-06 02:37:40,570 602275ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForProjectManager: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,573 602278ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForProjectManager: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,573 602278ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,573 602278ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForProjectManager: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101For Project Manager
+INFO  2013-03-06 02:37:40,573 602278ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForProjectManager TotalSeconds = 0,0049597 totalemployees = 0
+INFO  2013-03-06 02:37:40,580 602285ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForTeamLead: Total Employees are 1
+INFO  2013-03-06 02:37:40,583 602288ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForTeamLead: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,585 602290ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForTeamLead: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,585 602290ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,586 602291ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForTeamLead: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101 For Team Lead
+INFO  2013-03-06 02:37:40,586 602291ms File                   WriteToLog         - SendScheduledEMailForTimeEntryPendingForTeamLead TotalSeconds = 0,0049853 totalemployees = 0
+INFO  2013-03-06 02:37:40,612 602317ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: Total Employees are 8
+INFO  2013-03-06 02:37:40,615 602320ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 77
+INFO  2013-03-06 02:37:40,618 602323ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 05.03.2013 AccountEmployeeId = 77
+INFO  2013-03-06 02:37:40,618 602323ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,618 602323ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 16.02.2013 AccountEmployeeId = 77
+INFO  2013-03-06 02:37:40,638 602343ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 14:37:40 AccountEmployeeId = 78
+INFO  2013-03-06 02:37:40,640 602345ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 05.03.2013 AccountEmployeeId = 78
+INFO  2013-03-06 02:37:40,640 602345ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,641 602346ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 24.02.2013 AccountEmployeeId = 78
+INFO  2013-03-06 02:37:40,645 602350ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,648 602353ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,648 602353ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,648 602353ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,653 602358ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 14:37:40 AccountEmployeeId = 88
+INFO  2013-03-06 02:37:40,655 602360ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 05.03.2013 AccountEmployeeId = 88
+INFO  2013-03-06 02:37:40,655 602360ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,655 602360ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 16.02.2013 AccountEmployeeId = 88
+INFO  2013-03-06 02:37:40,660 602365ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 06.03.2013 1:37:40 AccountEmployeeId = 95
+INFO  2013-03-06 02:37:40,677 602382ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 06.03.2013 AccountEmployeeId = 95
+INFO  2013-03-06 02:37:40,677 602382ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,678 602383ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 24.02.2013 AccountEmployeeId = 95
+INFO  2013-03-06 02:37:40,682 602387ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 14:37:40 AccountEmployeeId = 96
+INFO  2013-03-06 02:37:40,685 602390ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 05.03.2013 AccountEmployeeId = 96
+INFO  2013-03-06 02:37:40,685 602390ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,685 602390ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 24.02.2013 AccountEmployeeId = 96
+INFO  2013-03-06 02:37:40,690 602395ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 06.03.2013 1:07:40 AccountEmployeeId = 99
+INFO  2013-03-06 02:37:40,692 602397ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 06.03.2013 AccountEmployeeId = 99
+INFO  2013-03-06 02:37:40,693 602398ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,693 602398ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 16.02.2013 AccountEmployeeId = 99
+INFO  2013-03-06 02:37:40,697 602402ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,699 602404ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,699 602404ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,700 602405ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,702 602407ms File                   WriteToLog         - SendScheduledEMailForTimesheetDue TotalSeconds = 0,0890139 totalemployees = 0
+INFO  2013-03-06 02:37:40,711 602416ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: Total Employees are 2
+INFO  2013-03-06 02:37:40,714 602419ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,716 602421ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,717 602422ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,717 602422ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,725 602430ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,728 602433ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,728 602433ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,728 602433ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,733 602438ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdue TotalSeconds = 0,021968 totalemployees = 0
+INFO  2013-03-06 02:37:40,741 602446ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: Total Employees are 2
+INFO  2013-03-06 02:37:40,744 602449ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,747 602452ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,747 602452ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,747 602452ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 82 For Administrator
+INFO  2013-03-06 02:37:40,755 602460ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,757 602462ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,758 602463ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,758 602463ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101 For Administrator
+INFO  2013-03-06 02:37:40,762 602467ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueAdministrator TotalSeconds = 0,0200291 totalemployees = 0
+INFO  2013-03-06 02:37:40,777 602482ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueProjectManager: Total Employees are 1
+INFO  2013-03-06 02:37:40,780 602485ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueProjectManager: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,805 602510ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueProjectManager: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,806 602511ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,806 602511ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueProjectManager: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101 For Project Manager
+INFO  2013-03-06 02:37:40,812 602517ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueProjectManager TotalSeconds = 0,0339928 totalemployees = 0
+INFO  2013-03-06 02:37:40,820 602525ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueTeamLead: Total Employees are 1
+INFO  2013-03-06 02:37:40,823 602528ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueTeamLead: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,825 602530ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueTeamLead: TodaySendTime 05.03.2013 23:00:00 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,826 602531ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,826 602531ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueTeamLead: LastScheduledEmailSentTime 17.02.2013 AccountEmployeeId = 101 For Team Lead
+INFO  2013-03-06 02:37:40,832 602537ms File                   WriteToLog         - SendScheduledEMailForTimesheetOverdueTeamLead TotalSeconds = 0,010987 totalemployees = 0
+INFO  2013-03-06 02:37:40,968 602673ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPending: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,969 602674ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,973 602678ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPending Update IsEmailSend = 0: AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,976 602681ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPending: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,976 602681ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,978 602683ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPending Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:40,986 602691ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:40,987 602692ms File                   WriteToLog         - Now 06.03.2013 2:37:40
+INFO  2013-03-06 02:37:40,989 602694ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForAdministrator Update IsEmailSend = 0: AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,004 602709ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,005 602710ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,007 602712ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForAdministrator Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,016 602721ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForProjectManager: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,017 602722ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,019 602724ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForProjectManager Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,025 602730ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForTeamLead: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,025 602730ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,027 602732ms File                   WriteToLog         - UpdateScheduledEMailForTimeEntryPendingForTeamLead Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,045 602750ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 77
+INFO  2013-03-06 02:37:41,046 602751ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,048 602753ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 77
+INFO  2013-03-06 02:37:41,050 602755ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 14:37:40 AccountEmployeeId = 78
+INFO  2013-03-06 02:37:41,050 602755ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,052 602757ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 78
+INFO  2013-03-06 02:37:41,055 602760ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,055 602760ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,056 602761ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,059 602764ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 14:37:40 AccountEmployeeId = 88
+INFO  2013-03-06 02:37:41,059 602764ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,061 602766ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 88
+INFO  2013-03-06 02:37:41,063 602768ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 06.03.2013 1:37:40 AccountEmployeeId = 95
+INFO  2013-03-06 02:37:41,063 602768ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,065 602770ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 95
+INFO  2013-03-06 02:37:41,067 602772ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 14:37:40 AccountEmployeeId = 96
+INFO  2013-03-06 02:37:41,067 602772ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,069 602774ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 96
+INFO  2013-03-06 02:37:41,072 602777ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 06.03.2013 1:07:40 AccountEmployeeId = 99
+INFO  2013-03-06 02:37:41,072 602777ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,074 602779ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 99
+INFO  2013-03-06 02:37:41,076 602781ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,080 602785ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,082 602787ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetDue Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,088 602793ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,089 602794ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,090 602795ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdue Update IsEmailSend = 0: AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,093 602798ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdue: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,093 602798ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,095 602800ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdue Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,101 602806ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,102 602807ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,103 602808ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForAdministrator Update IsEmailSend = 0: AccountEmployeeId = 82
+INFO  2013-03-06 02:37:41,106 602811ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForAdministrator: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,106 602811ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,108 602813ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForAdministrator Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,117 602822ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForProjectManager: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,117 602822ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,119 602824ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForProjectManager Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,125 602830ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForTeamLead: UserCurrentDateTime 05.03.2013 12:37:40 AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,126 602831ms File                   WriteToLog         - Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,128 602833ms File                   WriteToLog         - UpdateScheduledEMailForTimesheetOverdueForTeamLead Update IsEmailSend = 0: AccountEmployeeId = 101
+INFO  2013-03-06 02:37:41,128 602833ms File                   WriteToLog         - Finished:SendScheduledEmail: SystemCurrentDateTime 06.03.2013 2:37:40 Now 06.03.2013 2:37:41
+INFO  2013-03-06 02:37:41,128 602833ms File                   WriteToLog         - DoWork:End Queue email sending
+INFO  2013-03-06 02:37:41,128 602833ms File                   WriteToLog         - MyCacheItemRemovedCallback:DoWorkEnd
+INFO  2013-03-06 02:37:41,129 602834ms File                   WriteToLog         - MyCacheItemRemovedCallback:HitPage Initiated
+INFO  2013-03-06 02:37:41,129 602834ms File                   WriteToLog         - HitPage:HitPage Initiated Cron.aspx
+ERROR 2013-03-06 02:37:41,261 602966ms File                   eptionNoRaiseToLog - HitPage:HitPage Exception
+System.Net.WebException: Файл 'C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\Cron.aspx' не найден. ---> System.Net.WebException: Файл 'C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\Cron.aspx' не найден. ---> System.IO.FileNotFoundException: Файл 'C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\Cron.aspx' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   в System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   в System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   в System.Net.FileWebRequest.GetResponseCallback(Object state)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadData(Uri address)
+   в System.Net.WebClient.DownloadData(String address)
+   в AppGlobal.HitPage() в C:\Users\Павел\Documents\GitHub\Krooe\TimeLiveWeb\App_Code\Global.vb:строка 73
+INFO  2013-03-06 02:37:41,272 602977ms File                   WriteToLog         - HitPage:HitPage End

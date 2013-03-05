@@ -33,7 +33,11 @@ Partial Class Employee_SyncTasks
         If Not IsPostBack Then
 
             Dim authFactory As New GAuthSubRequestFactory("cl", "KrooeTestApp")
-            authFactory.Token = Session("ACCESS_TOKEN").ToString()
+            If Session("ACCESS_TOKEN") IsNot Nothing Then
+                authFactory.Token = Session("ACCESS_TOKEN").ToString()
+            Else
+
+            End If
             Service = New CalendarService(authFactory.ApplicationName)
             Service.RequestFactory = authFactory
 
@@ -43,15 +47,35 @@ Partial Class Employee_SyncTasks
             GoogleUserID = resultFeed.Authors(0).Email
 
             If resultFeed.Entries.Count = 1 Then
+                ' if calendar one only then select it
                 Dim calendarId As String = resultFeed.Entries(0).Id.AbsoluteUri
                 Dim part As String() = calendarId.Split("/")
                 GoToStep2(part(part.Count - 1))
             Else
                 Dim defCal As String = TimeLive.Utilities.GoogleDBHelper.GetDefaultCalendarID(GoogleUserID)
                 If String.IsNullOrEmpty(defCal) Then
-                    rpCalendars.DataSource = resultFeed.Entries
-                    rpCalendars.DataBind()
+                    'Searching a calendar with name "krooe" 
+                    Dim found As Boolean = False
+
+                    For Each cal As Google.GData.Client.AtomEntry In resultFeed.Entries
+                        If cal.Title.Text.ToLower().Trim() = "krooe" Then
+                            found = True
+                            Dim parts As String() = cal.Id.AbsoluteUri.Split("/")
+                            defCal = parts(parts.Count - 1)
+                        End If
+                    Next
+
+                    If found Then
+                        GoToStep2(defCal)
+
+                    Else
+                        ' Show a dialog for selecting calendar
+                        rpCalendars.DataSource = resultFeed.Entries
+                        rpCalendars.DataBind()
+                    End If
+
                 Else
+                    'Select a calendar from the settings
                     GoToStep2(defCal)
                 End If
             End If

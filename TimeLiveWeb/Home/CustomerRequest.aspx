@@ -1,4 +1,4 @@
-<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageBase.master"  AutoEventWireup="false" CodeFile="CustomerRequest.aspx.vb" Inherits="Home_CustomerRequest" title="TimeLive - New Account"  %>
+<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageBase.master"  AutoEventWireup="false" CodeFile="CustomerRequest.aspx.vb" Inherits="Home_CustomerRequest" title="Krooe - New Account"  %>
 
 <%@ Register Src="Controls/ctlCustomerForm.ascx" TagName="ctlCustomerForm" TagPrefix="uc8" %>
 

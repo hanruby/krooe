@@ -1,4 +1,4 @@
-<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageBase.master" AutoEventWireup="false" CodeFile="SystemSetting.aspx.vb" Inherits="Home_SystemSetting" title="TimeLive - System Settings" %>
+<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageBase.master" AutoEventWireup="false" CodeFile="SystemSetting.aspx.vb" Inherits="Home_SystemSetting" title="Krooe - System Settings" %>
 
 <%@ Register Src="Controls/ctlSystemSetting.ascx" TagName="ctlSystemSetting" TagPrefix="uc1" %>
 <%@ Register Src="Controls/ctlOfferIcon.ascx" TagName="ctlOfferIcon" TagPrefix="uc4" %>

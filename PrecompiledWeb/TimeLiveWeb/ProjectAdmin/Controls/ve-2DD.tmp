@@ -1,0 +1,641 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlAccountProjectForm.ascx.vb" Inherits="ProjectAdmin_Controls_ctlAccountProjectForm" %>
+<%@ Register Assembly="eWorld.UI"
+    Namespace="eWorld.UI" TagPrefix="ew" %>
+
+
+<asp:UpdatePanel ID="UpdatePanel2" runat="server">
+    <ContentTemplate>
+<asp:FormView ID="FormView1" runat="server" DataKeyNames="AccountProjectId" DataSourceID="dsAccountProjectFormObject"
+    DefaultMode="Insert" SkinID="formviewSkinEmployee" Width="95%" OnItemUpdating="FormView1_ItemUpdating" OnDataBound="FormView1_DataBound">
+    <EditItemTemplate><table style="width: 100%">
+        <tr>
+            <td class="FormViewHeader" colspan="2" style="height: 21px">
+                Project Information</td>
+        </tr>
+        <tr>
+            <td class="FormViewSubHeader" colspan="2" style="height: 21px">
+                Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="btnRoleWiseBillingRate" runat="server"
+                    Height="21px" Text="Role Wise Billing Rate" OnClick="btnRoleWiseBillingRate_Click" /><asp:Button ID="btnProjectEmployees" runat="server"
+                    Height="21px" Text="Project Employees" OnClick="btnProjectEmployees_Click" /></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                                    <SPAN 
+                  class=reqasterisk>*</SPAN> Project Type:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="dsProjectTypeObject"
+                        DataTextField="ProjectType" DataValueField="AccountProjectTypeId" SelectedValue='<%# Bind("AccountProjectTypeId") %>' Width="200px">
+                </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                    ControlToValidate="DropDownList1" Display="Dynamic" ErrorMessage="*" Width="1px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                                    <SPAN 
+                  class=reqasterisk>*</SPAN> Client:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="dsClientObject"
+                        DataTextField="PartyName" DataValueField="AccountPartyId" SelectedValue='<%# Bind("AccountClientId") %>' Width="350px">
+                </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                    ControlToValidate="DropDownList2" Display="Dynamic" ErrorMessage="*" Width="1px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                Project Billing Type:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="dsBillingTypeObject"
+                        DataTextField="BillingType" DataValueField="AccountBillingTypeId" SelectedValue='<%# Bind("ProjectBillingTypeId") %>' Width="152px">
+                </asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td class="FormViewLabelCell" style="width: 30%; height: 26px;" valign="baseline" align="right">
+                                                    <SPAN 
+                  class=reqasterisk>*</SPAN> Project Code:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:TextBox ID="ProjectCodeTextBox" runat="server" Text='<%# Bind("ProjectCode") %>' MaxLength="15"></asp:TextBox><asp:RequiredFieldValidator
+                    ID="RequiredFieldValidator7" runat="server" ControlToValidate="ProjectCodeTextBox"
+                    Display="Dynamic" ErrorMessage="*" Width="8px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                                    <SPAN 
+                  class=reqasterisk>*</SPAN> Project Name:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:TextBox ID="ProjectNameTextBox" runat="server" Text='<%# Bind("ProjectName") %>' Width="408px" MaxLength="50"></asp:TextBox><asp:RequiredFieldValidator
+                    ID="RequiredFieldValidator4" runat="server" ControlToValidate="ProjectNameTextBox"
+                    Display="Dynamic" ErrorMessage="*" Width="8px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="top" align="right">
+                                    <SPAN 
+                  class=reqasterisk>*</SPAN> Project Description:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:TextBox ID="ProjectDescriptionTextBox" runat="server" Text='<%# Bind("ProjectDescription") %>' Rows="3" TextMode="MultiLine" Width="472px" MaxLength="5000"></asp:TextBox><asp:RequiredFieldValidator
+                    ID="RequiredFieldValidator5" runat="server" ControlToValidate="ProjectDescriptionTextBox"
+                    Display="Dynamic" ErrorMessage="*" Width="16px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                Start Date:</td>
+            <td style="width: 70%; height: 26px;">
+                <ew:CalendarPopup ID="StartDate" runat="server" PostedDate="" SelectedDate="09/27/2006 17:09:05"
+                        SelectedValue='<%# Bind("StartDate") %>' UpperBoundDate="12/31/9999 23:59:59"
+                        VisibleDate="09/27/2006 17:09:05">
+                </ew:CalendarPopup>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                Deadline:</td>
+            <td style="width: 70%; height: 26px;">
+                <ew:CalendarPopup ID="Deadline" runat="server" SelectedDate="09/27/2006 17:09:05"
+                        SelectedValue='<%# Bind("Deadline") %>'
+                        VisibleDate="09/27/2006 17:09:05">
+                </ew:CalendarPopup>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline">
+                Project Status:</td>
+            <td style="width: 70%; height: 26px">
+                <asp:DropDownList ID="DropDownList6" runat="server" SelectedValue='<%# Bind("ProjectStatusId") %>' DataSourceID="dsProjectStatusObject" DataTextField="Status" DataValueField="AccountStatusId">
+                </asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                Team Lead:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="dsEmployeeObject"
+                        DataTextField="FullName" DataValueField="AccountEmployeeId" SelectedValue='<%# Bind("LeaderEmployeeId") %>' Width="208px">
+                </asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline" align="right">
+                                                    <SPAN 
+                  class=reqasterisk>*</SPAN> Project Manager:</td>
+            <td style="width: 70%; height: 26px"><asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="dsEmployeeObject"
+                        DataTextField="FullName" DataValueField="AccountEmployeeId" SelectedValue='<%# Bind("ProjectManagerEmployeeId") %>' Width="208px">
+            </asp:DropDownList><asp:RequiredFieldValidator ControlToValidate="DropDownList5" Display="Dynamic" ErrorMessage="*" ID="RequiredFieldValidator3" runat="server" Width="16px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td align="right" class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline">
+                       <SPAN 
+                  class=reqasterisk>*</SPAN> Time Sheet Approval Path:</td>
+            <td style="width: 70%; height: 26px">
+                <asp:DropDownList ID="DropDownList9" runat="server" DataSourceID="dsTimeSheetApprovalPath"
+                    DataTextField="TimeSheetApprovalPath" DataValueField="SystemTimeSheetApprovalPathId"
+                    SelectedValue='<%# Bind("TimeSheetApprovalPathId") %>'>
+                </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server"
+                    ControlToValidate="DropDownList9" Display="Dynamic" ErrorMessage="*" Width="16px" CssClass="ErrorMessage"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                Duration:</td>
+            <td style="width: 70%; height: 26px;">
+                <asp:TextBox ID="EstimatedDurationTextBox" runat="server" Text='<%# Bind("EstimatedDuration") %>'
+                    Width="72px"></asp:TextBox>&nbsp;
+                <asp:DropDownList ID="DropDownList7" runat="server" SelectedValue='<%# Bind("EstimatedDurationUnit") %>' DataSourceID="dsDurationObject" DataTextField="SystemDurationUnit" DataValueField="SystemDurationUnit">
+                </asp:DropDownList>
+                <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="EstimatedDurationTextBox"
+                    CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="(Invalid Duration Value)"
+                    MaximumValue="50000" MinimumValue="0" Type="Integer"></asp:RangeValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px" valign="baseline" class="FormViewLabelCell" align="right">
+                Default Billing Rate:</td>
+            <td style="width: 70%; height: 26px">
+                <asp:TextBox ID="DefaultBillingRateTextBox" runat="server" Text='<%# Bind("DefaultBillingRate") %>'></asp:TextBox><br />
+                <asp:RangeValidator
+                    ID="RangeValidator1" runat="server" ControlToValidate="DefaultBillingRateTextBox"
+                    Display="Dynamic" ErrorMessage="Numeric Required" Font-Bold="True" Font-Names="Verdana"
+                    Font-Size="X-Small" MaximumValue="50000" MinimumValue="0" Type="Double" CssClass="ErrorMessage"></asp:RangeValidator></td>
+        </tr>
+        <tr>
+            <td align="right" class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline">
+                Billing Rate Type:</td>
+            <td style="width: 70%; height: 26px">
+                <asp:DropDownList ID="ddlProjectBillingRateTypeId" runat="server"
+                    DataSourceID="dsSystemProjectBillingRateType" DataTextField="SystemProjectBillingRateType"
+                    DataValueField="SystemProjectBillingRateTypeId" Width="200px">
+                </asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td style="width: 30%; height: 26px;" align="right">
+            </td>
+            <td style="width: 70%; height: 26px;">
+                <asp:Button ID="Update" runat="server" CommandName="Update" Text="Update" Width="55px" /><asp:Button ID="Cancel" runat="server" CommandName="Cancel" Text="Cancel" Width="55px" /></td>
+        </tr>
+    </table>
+    </EditItemTemplate>
+    <InsertItemTemplate>
+        <table style="width: 100%">
+            <tr>
+                <td class="FormViewHeader" colspan="2" style="height: 21px">
+                    Project Information</td>
+            </tr>
+            <tr>
+                <td class="FormViewSubHeader" colspan="2" style="height: 21px">
+                    Project</td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                                        <SPAN 
+                  class=reqasterisk>*</SPAN> Project Type:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="dsProjectTypeObject"
+                        DataTextField="ProjectType" DataValueField="AccountProjectTypeId" SelectedValue='<%# Bind("AccountProjectTypeId") %>' Width="300px">
+                    </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="DropDownList1" Display="Dynamic" ErrorMessage="*" Width="1px"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                                        <SPAN 
+                  class=reqasterisk>*</SPAN> Client:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="dsClientObject"
+                        DataTextField="PartyName" DataValueField="AccountPartyId" SelectedValue='<%# Bind("AccountClientId") %>' Width="350px">
+                    </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                        ControlToValidate="DropDownList2" Display="Dynamic" ErrorMessage="*" Width="1px"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                    Project Billing Type:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="dsBillingTypeObject"
+                        DataTextField="BillingType" DataValueField="AccountBillingTypeId" SelectedValue='<%# Bind("ProjectBillingTypeId") %>' Width="152px">
+                    </asp:DropDownList></td>
+            </tr>
+            <tr>
+                <td class="FormViewLabelCell" style="width: 30%; height: 26px;"  align="right">
+                                                        <SPAN 
+                  class=reqasterisk>*</SPAN> Project Code:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:TextBox ID="ProjectCodeTextBox" runat="server" Text='<%# Bind("ProjectCode") %>' MaxLength="15"></asp:TextBox><asp:RequiredFieldValidator
+                        ID="RequiredFieldValidator6" runat="server" ControlToValidate="ProjectCodeTextBox"
+                        Display="Dynamic" ErrorMessage="*" Width="8px"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell"  align="right">
+                                        <SPAN 
+                  class=reqasterisk>*</SPAN> Project Name:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:TextBox ID="ProjectNameTextBox" runat="server" Text='<%# Bind("ProjectName") %>' Width="408px" MaxLength="50"></asp:TextBox><asp:RequiredFieldValidator
+                        ID="RequiredFieldValidator4" runat="server" ControlToValidate="ProjectNameTextBox"
+                        Display="Dynamic" ErrorMessage="*" Width="8px"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="top" align="right">
+                                        <SPAN 
+                  class=reqasterisk>*</SPAN> Project Description:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:TextBox ID="ProjectDescriptionTextBox" runat="server" Text='<%# Bind("ProjectDescription") %>' Rows="3" TextMode="MultiLine" Width="472px" MaxLength="5000"></asp:TextBox><asp:RequiredFieldValidator
+                        ID="RequiredFieldValidator5" runat="server" ControlToValidate="ProjectDescriptionTextBox"
+                        Display="Dynamic" ErrorMessage="*" Width="16px" CssClass="ErrorMessage" EnableClientScript="False"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                    Start Date:</td>
+                <td style="width: 70%; height: 26px;">
+                    <ew:CalendarPopup ID="StartDate" runat="server" PostedDate=""
+                        SelectedValue='<%# Bind("StartDate") %>'  >
+                    </ew:CalendarPopup>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                    Deadline:</td>
+                <td style="width: 70%; height: 26px;">
+                    <ew:CalendarPopup ID="Deadline" runat="server" PostedDate=""
+                        SelectedValue='<%# Bind("Deadline") %>' >
+                    </ew:CalendarPopup>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline">
+                    Project Status:</td>
+                <td style="width: 70%; height: 26px">
+                    <asp:DropDownList ID="DropDownList6" runat="server" SelectedValue='<%# Bind("ProjectStatusId") %>' DataSourceID="dsProjectStatusObject" DataTextField="Status" DataValueField="AccountStatusId">
+                    </asp:DropDownList></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                    Team Lead:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="dsEmployeeObject"
+                        DataTextField="FullName" DataValueField="AccountEmployeeId" SelectedValue='<%# Bind("LeaderEmployeeId") %>' Width="208px">
+                    </asp:DropDownList></td>
+            </tr>
+            <tr>
+                <td class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline" align="right">
+                                        <SPAN 
+                  class=reqasterisk>*</SPAN> Project Manger:</td>
+                <td style="width: 70%; height: 26px">
+                    <asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="dsEmployeeObject"
+                        DataTextField="FullName" DataValueField="AccountEmployeeId" SelectedValue='<%# Bind("ProjectManagerEmployeeId") %>' Width="208px">
+                    </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DropDownList5"
+                        Display="Dynamic" ErrorMessage="*" Width="16px" CssClass="ErrorMessage" EnableClientScript="False"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td align="right" class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline">
+                           <SPAN 
+                  class=reqasterisk>*</SPAN> Time Sheet Approval Path:</td>
+                <td style="width: 70%; height: 26px">
+                    <asp:DropDownList ID="DropDownList8" runat="server" DataSourceID="dsTimeSheetApprovalPath"
+                        DataTextField="TimeSheetApprovalPath" DataValueField="SystemTimeSheetApprovalPathId"
+                        SelectedValue='<%# Bind("TimeSheetApprovalPathId") %>'>
+                    </asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server"
+                        ControlToValidate="DropDownList8" Display="Dynamic" ErrorMessage="*" Width="16px" CssClass="ErrorMessage" EnableClientScript="False"></asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" class="FormViewLabelCell" valign="baseline" align="right">
+                    Duration:</td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:TextBox ID="EstimatedDurationTextBox" runat="server" Text='<%# Bind("EstimatedDuration") %>'
+                        Width="72px"></asp:TextBox>&nbsp;
+                    <asp:DropDownList ID="DropDownList7" runat="server" SelectedValue='<%# Bind("EstimatedDurationUnit") %>' DataSourceID="dsDurationObject" DataTextField="SystemDurationUnit" DataValueField="SystemDurationUnit">
+                    </asp:DropDownList>&nbsp;
+                    <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="EstimatedDurationTextBox"
+                        CssClass="ErrorMessage" Display="Dynamic" ErrorMessage="(Invalid Duration Value)"
+                        MaximumValue="50000" MinimumValue="0" Type="Integer" EnableClientScript="False"></asp:RangeValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px" valign="baseline" class="FormViewLabelCell" align="right">
+                    Default Billing Rate:</td>
+                <td style="width: 70%; height: 26px">
+                    <asp:TextBox ID="DefaultBillingRateTextBox" runat="server" Text='<%# Bind("DefaultBillingRate") %>'></asp:TextBox><br />
+                    <asp:RangeValidator
+                        ID="RangeValidator1" runat="server" ControlToValidate="DefaultBillingRateTextBox"
+                        Display="Dynamic" ErrorMessage="Numeric Required" Font-Bold="True" Font-Names="Verdana"
+                        Font-Size="X-Small" MaximumValue="50000" MinimumValue="0" Type="Integer" CssClass="ErrorMessage" EnableClientScript="False"></asp:RangeValidator></td>
+            </tr>
+            <tr>
+                <td align="right" class="FormViewLabelCell" style="width: 30%; height: 26px" valign="baseline">
+                    Project Billing Rate Type:</td>
+                <td style="width: 70%; height: 26px">
+                    <asp:DropDownList ID="ddlProjectBillingRateTypeId" runat="server" DataSourceID="dsSystemProjectBillingRateType"
+                        DataTextField="SystemProjectBillingRateType" DataValueField="SystemProjectBillingRateTypeId"
+                        SelectedValue='<%# Bind("ProjectBillingRateTypeId") %>'>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; height: 26px;" align="right">
+                </td>
+                <td style="width: 70%; height: 26px;">
+                    <asp:Button ID="Add" runat="server" CommandName="Insert" Text="Add" Width="64px" /></td>
+            </tr>
+        </table>
+    </InsertItemTemplate>
+    <ItemTemplate>
+        AccountProjectId:
+        <asp:Label ID="AccountProjectIdLabel" runat="server" Text='<%# Eval("AccountProjectId") %>'></asp:Label><br />
+        AccountId:
+        <asp:Label ID="AccountIdLabel" runat="server" Text='<%# Bind("AccountId") %>'></asp:Label><br />
+        AccountProjectTypeId:
+        <asp:Label ID="AccountProjectTypeIdLabel" runat="server" Text='<%# Bind("AccountProjectTypeId") %>'></asp:Label><br />
+        AccountClientId:
+        <asp:Label ID="AccountClientIdLabel" runat="server" Text='<%# Bind("AccountClientId") %>'></asp:Label><br />
+        ProjectBillingTypeId:
+        <asp:Label ID="ProjectBillingTypeIdLabel" runat="server" Text='<%# Bind("ProjectBillingTypeId") %>'></asp:Label><br />
+        ProjectName:
+        <asp:Label ID="ProjectNameLabel" runat="server" Text='<%# Bind("ProjectName") %>'></asp:Label><br />
+        ProjectDescription:
+        <asp:Label ID="ProjectDescriptionLabel" runat="server" Text='<%# Bind("ProjectDescription") %>'></asp:Label><br />
+        StartDate:
+        <asp:Label ID="StartDateLabel" runat="server" Text='<%# Bind("StartDate") %>'></asp:Label><br />
+        Deadline:
+        <asp:Label ID="DeadlineLabel" runat="server" Text='<%# Bind("Deadline") %>'></asp:Label><br />
+        LeaderEmployeeId:
+        <asp:Label ID="LeaderEmployeeIdLabel" runat="server" Text='<%# Bind("LeaderEmployeeId") %>'></asp:Label><br />
+        EstimatedTime:
+        <asp:Label ID="EstimatedTimeLabel" runat="server" Text='<%# Bind("EstimatedTime") %>'></asp:Label><br />
+        <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit"
+            Text="Edit"></asp:LinkButton>
+        <asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete"
+            Text="Delete"></asp:LinkButton>
+        <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New"
+            Text="New"></asp:LinkButton>
+    </ItemTemplate>
+</asp:FormView>
+<asp:ObjectDataSource ID="dsProjectTypeObject" runat="server" OldValuesParameterFormatString="original_{0}"
+    SelectMethod="GetAccountProjectTypesByAccountId" TypeName="AccountProjectTypeBLL" DeleteMethod="DeleteAccountProjectType" InsertMethod="AddAccountProjectType" UpdateMethod="UpdateAccountProjectType">
+    <SelectParameters>
+        <asp:SessionParameter DefaultValue="64" Name="AccountId" SessionField="AccountId"
+            Type="Int32" />
+    </SelectParameters>
+    <DeleteParameters>
+        <asp:Parameter Name="Original_AccountProjectTypeId" Type="Int32" />
+    </DeleteParameters>
+    <UpdateParameters>
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="ProjectType" Type="String" />
+        <asp:Parameter Name="Original_AccountProjectTypeId" Type="Int32" />
+        <asp:Parameter Name="CreatedOn" Type="DateTime" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+    </UpdateParameters>
+    <InsertParameters>
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="ProjectType" Type="String" />
+        <asp:Parameter Name="CreatedOn" Type="DateTime" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+    </InsertParameters>
+</asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="dsAccountProjectFormObject" runat="server" DeleteMethod="DeleteAccountProject"
+            InsertMethod="AddAccountProject" OldValuesParameterFormatString="original_{0}"
+            SelectMethod="GetAccountProjectsByAccountProjectId" TypeName="AccountProjectBLL"
+            UpdateMethod="UpdateAccountProject" OnSelecting="dsAccountProjectFormObject_Selecting">
+            <DeleteParameters>
+                <asp:Parameter Name="Original_AccountProjectId" Type="Int32" />
+            </DeleteParameters>
+            <UpdateParameters>
+                <asp:SessionParameter DefaultValue="23" Name="AccountId" SessionField="AccountId"
+                    Type="Int32" />
+                <asp:Parameter Name="AccountProjectTypeId" Type="Int32" />
+                <asp:Parameter Name="AccountClientId" Type="Int32" />
+                <asp:Parameter Name="ProjectBillingTypeId" Type="Int32" />
+                <asp:Parameter Name="ProjectName" Type="String" />
+                <asp:Parameter Name="ProjectDescription" Type="String" />
+                <asp:Parameter Name="StartDate" Type="DateTime" />
+                <asp:Parameter Name="DeadLine" Type="DateTime" />
+                <asp:Parameter Name="ProjectStatusId" Type="Int32" />
+                <asp:Parameter Name="LeaderEmployeeId" Type="Int32" />
+                <asp:Parameter Name="ProjectManagerEmployeeId" Type="Int32" />
+                <asp:Parameter Name="TimeSheetApprovalPathId" Type="Int32" />
+                <asp:Parameter Name="EstimatedDuration" Type="Int32" />
+                <asp:Parameter Name="EstimatedDurationUnit" Type="String" />
+                <asp:Parameter Name="ProjectCode" Type="String" />
+                <asp:Parameter Name="DefaultBillingRate" Type="Decimal" />
+                <asp:Parameter Name="ProjectBillingRateTypeId" Type="Int32" />
+                <asp:Parameter Name="CreatedOn" Type="DateTime" />
+                <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+                <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+                <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+                <asp:Parameter Name="Original_AccountProjectId" Type="Int32" />
+            </UpdateParameters>
+            <SelectParameters>
+                <asp:Parameter DefaultValue="1" Name="AccountProjectId" Type="Int32" />
+            </SelectParameters>
+            <InsertParameters>
+                <asp:SessionParameter DefaultValue="23" Name="AccountId" SessionField="AccountId"
+                    Type="Int32" />
+                <asp:Parameter Name="AccountProjectTypeId" Type="Int32" />
+                <asp:Parameter Name="AccountClientId" Type="Int32" />
+                <asp:Parameter Name="ProjectBillingTypeId" Type="Int32" />
+                <asp:Parameter Name="ProjectName" Type="String" />
+                <asp:Parameter Name="ProjectDescription" Type="String" />
+                <asp:Parameter Name="StartDate" Type="DateTime" />
+                <asp:Parameter Name="DeadLine" Type="DateTime" />
+                <asp:Parameter Name="ProjectStatusId" Type="Int32" />
+                <asp:Parameter Name="LeaderEmployeeId" Type="Int32" />
+                <asp:Parameter Name="ProjectManagerEmployeeId" Type="Int32" />
+                <asp:Parameter Name="TimeSheetApprovalPathId" Type="Int32" />
+                <asp:Parameter Name="EstimatedDuration" Type="Int32" />
+                <asp:Parameter Name="EstimatedDurationUnit" Type="String" />
+                <asp:Parameter Name="ProjectCode" Type="String" />
+                <asp:Parameter Name="DefaultBillingRate" Type="Decimal" />
+                <asp:Parameter Name="ProjectBillingRateTypeId" Type="Int32" />
+                <asp:Parameter Name="CreatedOn" Type="DateTime" />
+                <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+                <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+                <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+            </InsertParameters>
+        </asp:ObjectDataSource>
+<asp:ObjectDataSource ID="dsClientObject" runat="server" OldValuesParameterFormatString="original_{0}"
+    SelectMethod="GetAccountPartiesByAccountId" TypeName="AccountPartyBLL" DeleteMethod="DeleteAccountParty" InsertMethod="AddAccountParty" UpdateMethod="UpdateAccountParty">
+    <SelectParameters>
+        <asp:SessionParameter DefaultValue="64" Name="AccountId" SessionField="AccountId"
+            Type="Int32" />
+    </SelectParameters>
+    <DeleteParameters>
+        <asp:Parameter Name="original_AccountPartyId" Type="Int32" />
+    </DeleteParameters>
+    <UpdateParameters>
+        <asp:Parameter Name="PartyTypeId" Type="Int16" />
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="PartyName" Type="String" />
+        <asp:Parameter Name="PartyNick" Type="String" />
+        <asp:Parameter Name="EMailAddress" Type="String" />
+        <asp:Parameter Name="Address1" Type="String" />
+        <asp:Parameter Name="Address2" Type="String" />
+        <asp:Parameter Name="CountryId" Type="Int16" />
+        <asp:Parameter Name="State" Type="String" />
+        <asp:Parameter Name="City" Type="String" />
+        <asp:Parameter Name="ZipCode" Type="String" />
+        <asp:Parameter Name="Telephone1" Type="String" />
+        <asp:Parameter Name="Telephone2" Type="String" />
+        <asp:Parameter Name="Fax" Type="String" />
+        <asp:Parameter Name="DefaultCurrencyId" Type="Int16" />
+        <asp:Parameter Name="DefaultBillingRate" Type="Decimal" />
+        <asp:Parameter Name="Website" Type="String" />
+        <asp:Parameter Name="Notes" Type="String" />
+        <asp:Parameter Name="IsDisabled" Type="Boolean" />
+        <asp:Parameter Name="IsDeleted" Type="Boolean" />
+        <asp:Parameter Name="CreatedOn" Type="DateTime" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="Original_AccountPartyId" Type="Int32" />
+    </UpdateParameters>
+    <InsertParameters>
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="PartyName" Type="String" />
+        <asp:Parameter Name="PartyNick" Type="String" />
+        <asp:Parameter Name="EMailAddress" Type="String" />
+        <asp:Parameter Name="Address1" Type="String" />
+        <asp:Parameter Name="Address2" Type="String" />
+        <asp:Parameter Name="CountryId" Type="Int16" />
+        <asp:Parameter Name="State" Type="String" />
+        <asp:Parameter Name="City" Type="String" />
+        <asp:Parameter Name="ZipCode" Type="String" />
+        <asp:Parameter Name="Telephone1" Type="String" />
+        <asp:Parameter Name="Telephone2" Type="String" />
+        <asp:Parameter Name="Fax" Type="String" />
+        <asp:Parameter Name="DefaultCurrencyId" Type="Int16" />
+        <asp:Parameter Name="DefaultBillingRate" Type="Decimal" />
+        <asp:Parameter Name="Website" Type="String" />
+        <asp:Parameter Name="Notes" Type="String" />
+        <asp:Parameter Name="IsDisabled" Type="Boolean" />
+        <asp:Parameter Name="IsDeleted" Type="Boolean" />
+        <asp:Parameter Name="CreatedOn" Type="DateTime" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+    </InsertParameters>
+</asp:ObjectDataSource>
+<asp:ObjectDataSource ID="dsEmployeeObject" runat="server" OldValuesParameterFormatString="original_{0}"
+    SelectMethod="GetAccountEmployeesByAccountId" TypeName="AccountEmployeeBLL" DeleteMethod="DeleteAccountEmployee" InsertMethod="AddAccountEmployee2" UpdateMethod="UpdateAccountEmployee">
+    <SelectParameters>
+        <asp:SessionParameter DefaultValue="64" Name="AccountId" SessionField="AccountId"
+            Type="Int32" />
+    </SelectParameters>
+    <DeleteParameters>
+        <asp:Parameter Name="Original_AccountEmployeeId" Type="Int32" />
+    </DeleteParameters>
+    <UpdateParameters>
+        <asp:Parameter Name="Login" Type="String" />
+        <asp:Parameter Name="Password" Type="String" />
+        <asp:Parameter Name="Prefix" Type="String" />
+        <asp:Parameter Name="FirstName" Type="String" />
+        <asp:Parameter Name="LastName" Type="String" />
+        <asp:Parameter Name="MiddleName" Type="String" />
+        <asp:Parameter Name="EMailAddress" Type="String" />
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="AccountDepartmentId" Type="Int32" />
+        <asp:Parameter Name="AccountRoleId" Type="Int32" />
+        <asp:Parameter Name="AccountLocationId" Type="Int32" />
+        <asp:Parameter Name="AddressLine1" Type="String" />
+        <asp:Parameter Name="AddressLine2" Type="String" />
+        <asp:Parameter Name="State" Type="String" />
+        <asp:Parameter Name="City" Type="String" />
+        <asp:Parameter Name="Zip" Type="String" />
+        <asp:Parameter Name="CountryId" Type="Int16" />
+        <asp:Parameter Name="HomePhoneNo" Type="String" />
+        <asp:Parameter Name="WorkPhoneNo" Type="String" />
+        <asp:Parameter Name="MobilePhoneNo" Type="String" />
+        <asp:Parameter Name="BillingRateCurrencyId" Type="Int16" />
+        <asp:Parameter Name="BillingTypeId" Type="Int32" />
+        <asp:Parameter Name="BillingRate" Type="Decimal" />
+        <asp:Parameter Name="BillingRateStartDate" Type="DateTime" />
+        <asp:Parameter Name="StartDate" Type="DateTime" />
+        <asp:Parameter Name="TerminationDate" Type="DateTime" />
+        <asp:Parameter Name="StatusId" Type="Byte" />
+        <asp:Parameter Name="IsDeleted" Type="Boolean" />
+        <asp:Parameter Name="IsDisabled" Type="Boolean" />
+        <asp:Parameter Name="DefaultProjectId" Type="Int32" />
+        <asp:Parameter Name="TimeZoneId" Type="Int16" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="Original_AccountEmployeeId" Type="Int32" />
+    </UpdateParameters>
+    <InsertParameters>
+        <asp:Parameter Name="Login" Type="String" />
+        <asp:Parameter Name="Password" Type="String" />
+        <asp:Parameter Name="Prefix" Type="String" />
+        <asp:Parameter Name="FirstName" Type="String" />
+        <asp:Parameter Name="LastName" Type="String" />
+    </InsertParameters>
+</asp:ObjectDataSource>
+<asp:ObjectDataSource ID="dsBillingTypeObject" runat="server" OldValuesParameterFormatString="original_{0}"
+    SelectMethod="GetAccountBillingTypesForProjectByAccountId" TypeName="AccountBillingTypeBLL" DeleteMethod="DeleteAccountBillingType" InsertMethod="AddAccountBillingType" UpdateMethod="UpdateAccountBillingType">
+    <SelectParameters>
+        <asp:SessionParameter DefaultValue="64" Name="AccountId" SessionField="AccountId"
+            Type="Int32" />
+    </SelectParameters>
+    <DeleteParameters>
+        <asp:Parameter Name="Original_AccountBillingTypeId" Type="Int32" />
+    </DeleteParameters>
+    <UpdateParameters>
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="BillingType" Type="String" />
+        <asp:Parameter Name="BillingCategoryId" Type="Int32" />
+        <asp:Parameter Name="Original_AccountBillingTypeId" Type="Int32" />
+        <asp:Parameter Name="CreatedOn" Type="DateTime" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+    </UpdateParameters>
+    <InsertParameters>
+        <asp:Parameter Name="AccountId" Type="Int32" />
+        <asp:Parameter Name="BillingType" Type="String" />
+        <asp:Parameter Name="BillingCategoryId" Type="Int32" />
+        <asp:Parameter Name="CreatedOn" Type="DateTime" />
+        <asp:Parameter Name="CreatedByEmployeeId" Type="Int32" />
+        <asp:Parameter Name="ModifiedOn" Type="DateTime" />
+        <asp:Parameter Name="ModifiedByEmployeeId" Type="Int32" />
+    </InsertParameters>
+</asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="dsDurationObject" runat="server" OldValuesParameterFormatString="original_{0}"
+            SelectMethod="GetDurationUnit" TypeName="SystemDataBLL"></asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="dsProjectStatusObject" runat="server" OldValuesParameterFormatString="original_{0}"
+            SelectMethod="GetAccountsStatusForProject" TypeName="AccountStatusBLL" DeleteMethod="DeleteAccountStatus" InsertMethod="AddAccountStatus" UpdateMethod="UpdateAccountStatus">
+            <SelectParameters>
+                <asp:SessionParameter DefaultValue="64" Name="AccountId" SessionField="AccountId"
+                    Type="Int32" />
+            </SelectParameters>
+            <DeleteParameters>
+                <asp:Parameter Name="Original_AccountStatusId" Type="Int32" />
+            </DeleteParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="AccountId" Type="Int32" />
+                <asp:Parameter Name="Status" Type="String" />
+                <asp:Parameter Name="StatusTypeId" Type="Int32" />
+                <asp:Parameter Name="Original_AccountStatusId" Type="Int32" />
+            </UpdateParameters>
+            <InsertParameters>
+                <asp:Parameter Name="AccountId" Type="Int32" />
+                <asp:Parameter Name="Status" Type="String" />
+                <asp:Parameter Name="StatusTypeId" Type="Int32" />
+            </InsertParameters>
+        </asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="dsAccountProjectEmployees" runat="server" DeleteMethod="DeleteAccountProjectEmployeeId"
+            InsertMethod="AddAccountProjectEmployee" OldValuesParameterFormatString="original_{0}"
+            SelectMethod="GetAccountProjectEmployeesForSelection" TypeName="AccountProjectEmployeeBLL">
+            <DeleteParameters>
+                <asp:Parameter Name="Original_AccountProjectEmployeeId" Type="Int32" />
+            </DeleteParameters>
+            <SelectParameters>
+                <asp:SessionParameter DefaultValue="64" Name="AccountId" SessionField="AccountId"
+                    Type="Int32" />
+                <asp:QueryStringParameter DefaultValue="1" Name="AccountProjectId" QueryStringField="AccountProjectId"
+                    Type="Int32" />
+            </SelectParameters>
+            <InsertParameters>
+                <asp:Parameter Name="AccountId" Type="Int32" />
+                <asp:Parameter Name="AccountProjectId" Type="Int32" />
+                <asp:Parameter Name="AccountEmployeeId" Type="Int32" />
+            </InsertParameters>
+        </asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="dsSystemProjectBillingRateType" runat="server" OldValuesParameterFormatString="original_{0}"
+            SelectMethod="GetProjectBillingRateType" TypeName="SystemDataBLL"></asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="dsTimeSheetApprovalPath" runat="server" OldValuesParameterFormatString="original_{0}"
+            SelectMethod="GetTimeSheetApprovalPaths" TypeName="SystemDataBLL"></asp:ObjectDataSource>
+    </ContentTemplate>
+</asp:UpdatePanel>

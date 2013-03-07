@@ -551,9 +551,9 @@ Public Class AccountBLL
     End Sub
     Public Sub SendNewAccountSignup(ByVal AccountId As Integer, ByVal ToEMailAddress As String, ByVal ToEMailAddressDisplayName As String, ByVal Password As String)
         If System.Configuration.ConfigurationManager.AppSettings("ApplicationMode") = "Installed" Then
-            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To TimeLive"), "NewSignupTemplate", GetPreparedNameValueForAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName)
+            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To Krooe"), "NewSignupTemplate", GetPreparedNameValueForAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName)
         Else
-            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To TimeLive"), "NewSignupTemplate", GetPreparedNameValueForAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName, , , , True)
+            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To Kroooe"), "NewSignupTemplate", GetPreparedNameValueForAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName, , , , True)
         End If
     End Sub
     Public Function GetPreparedNameValueForAccountSignup(ByVal AccountId As Integer, ByVal Password As String) As StringDictionary
@@ -580,9 +580,9 @@ Public Class AccountBLL
     End Sub
     Public Sub SendNewADAccountSignup(ByVal AccountId As Integer, ByVal ToEMailAddress As String, ByVal ToEMailAddressDisplayName As String, ByVal Password As String)
         If System.Configuration.ConfigurationManager.AppSettings("ApplicationMode") = "Installed" Then
-            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To TimeLive"), "NewADSignupTemplate", GetPreparedNameValueForADAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName)
+            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To Krooe"), "NewADSignupTemplate", GetPreparedNameValueForADAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName)
         Else
-            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To TimeLive"), "NewADSignupTemplate", GetPreparedNameValueForADAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName, , , , True)
+            EMailUtilities.SendEMail(ResourceHelper.GetFromResource("Welcome To Krooe"), "NewADSignupTemplate", GetPreparedNameValueForADAccountSignup(AccountId, Password), ToEMailAddress, ToEMailAddressDisplayName, , , , True)
         End If
     End Sub
 

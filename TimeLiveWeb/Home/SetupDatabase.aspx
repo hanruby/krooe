@@ -1,4 +1,4 @@
-<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageBase.master" AutoEventWireup="false" CodeFile="SetupDatabase.aspx.vb" Inherits="Home_SetupDatabase" title="TimeLive - Setup Database" %>
+<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageBase.master" AutoEventWireup="false" CodeFile="SetupDatabase.aspx.vb" Inherits="Home_SetupDatabase" title="Krooe - Setup Database" %>
 
 <%@ Register Src="Controls/ctlSetupDataBase.ascx" TagName="ctlSetupDataBase" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="C" Runat="Server">

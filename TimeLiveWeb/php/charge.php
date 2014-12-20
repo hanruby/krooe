@@ -3,7 +3,7 @@
 require_once('lib/Stripe.php');
 
 if ($_POST) {
-  Stripe::setApiKey("sk_live_DkNUlvtmHPDjpi1zNBLZKgz8");
+  Stripe::setApiKey("api_key");
   try {
   // Use Stripe's bindings...
 } catch(Stripe_CardError $e) {
